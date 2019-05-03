@@ -13,6 +13,14 @@ charset="utf-8">
 
   <style>
 
+/* Тело всего сайта*/
+body {
+    background: #000000; /* Цвет фона */
+    margin: 0;   /* Жмем страницу к краям */
+    min-width: 1020px; /* Минимальная ширина страницы */
+  }
+
+/* Область сайдбара */
 aside {
     background: #000000; /* Цвет фона */
     padding: 0px 0px 0px 0px; /* Поля */
@@ -22,23 +30,22 @@ aside {
     float: left; /* Обтекание слева */
    }
 
+/* Область статьи */
 article {
    background: #DCDCDC; 
     margin-left: 20%; /* Отступ слева*/
-    display: block; /* Блочный элемент */
     width: 76%; /* Ширина статьи в процентах */
-  padding: 5px 2% 15px 2%; 
-border-radius: 0px; 
-text-align: justify; 
-   align: right; /* Обтекание слева */
+    padding: 5px 2% 15px 2%; /* Поля */
+    text-align: justify; /* Растягиваем текст */
+    align: right; /* Позиционирование справа */
    }
 
-body {
-    background: #000000; /* Цвет фона */
-margin: 0;   
-    min-width: 1020px;
-  }
+/* Стиль для линков */
+ a { color: blue; text-decoration: none;}
+ a:hover { color: green; text-decoration: none; }
+ a:visited { color: purple; text-decoration: none; }
 
+/* Стиль для списка */
 ul {
     list-style-type: none;
     margin: 0;
@@ -47,6 +54,13 @@ ul {
     background-color: black;
 }
 
+/* Стиль для строчек списка */
+li  {
+    display: block;
+    padding: 4px 12px;
+}
+
+/* Стиль для линковых строчек списка */
 li a {
     display: block;
     background: linear-gradient(115deg,  #2F4F4F 25%, #000000 100%);
@@ -56,17 +70,30 @@ li a {
     border-radius: 4px;
 }
 
-li  {
-    display: block;
-    padding: 4px 12px;
-}
-
-/* Change the link color on hover */
+/* Меняем цвет линковой строчки списка при наведении мыши */
 li a:hover {
-    background: linear-gradient(115deg, #555 25%, #000000 100%);
+    background: linear-gradient(115deg, #708090 25%, #000000 100%);
     color: white;
 }
 
+/* Меняем цвет линковой строчки списка после посещения */
+li a:visited {    color: white;}
+
+/* Стиль для заголовков списка, назначается через класс */
+.li-title {
+background: linear-gradient(115deg, #ffffff 25%, #000000 100%);      
+border-radius: 4px;  
+margin: 7px;   
+padding: 8px 14px;
+}
+
+/* Стиль для отступов в списке, назначается через класс */
+.li-blank {
+background-color: black;      
+border-radius: 4px;  
+margin: 7px;   
+padding: 8px 14px;
+}
 
 /* Заголовок статьи */
    h1 {    font-family: Georgia; font-size: 30pt;   letter-spacing: 5px; font-style: bold;  
@@ -112,103 +139,186 @@ normal;  font-weight: 600; }
 
 normal;  font-weight: 100;  } 
 
-
-
 /* Настройки для левосторонней рамки с картинкой */
-   .leftimg {    margin: 7px 15px 15px 0;   padding: 5px 5px 5px 5px;  min-width: 270px;   
-
-border-radius: 8px;}
+.leftimg {    
+margin: 7px 15px 15px 0;   
+padding: 5px 5px 5px 5px;  
+border:  1px solid black;
+border-radius: 8px;    
+width: 30%;
+min-width: 270px;   border-radius: 8px;
+rules: none; 
+position: relative;
+float: left;
+text-align: center;
+}
 
 /* Настройки для правосторонней рамки с картинкой */
-   .rightimg  {    margin: 7px 0 15px 15px;   padding: 5px 5px 5px 5px; border-radius: 
+.rightimg  {    
+margin: 7px 0 15px 15px;   
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;    
+width: 30%;
+border-radius: 8px;    
+min-width: 270px;   
+rules: none; 
+position: relative;
+float: right;
+text-align: center;
+}
 
-8px;    min-width: 270px;   }
-
+/* Настройки для анкеты статьи */
+.anketa  {    
+margin: 7px 0 15px 15px;   
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;    
+width: 40%;
+min-width: 270px;   
+rules: none; 
+position: relative;
+float: right;
+text-align: center;
+}
 
 /* Настройки для ячеек подзаголовков анкет */
+.anketa-title-block {
+display: inline-block;
+background: #6495ED; 
+padding: 0px 0px 0px 0px; 
+border:  1px solid #6495ED;
+border-radius: 4px; 
+width: 99%;
+text-align: center;
+position: relative;
+margin: 2px 0 5px 0;   
+}
+
+/* Настройки для ячеек c контентом анкет */
+.anketa-content-block {
+display: inline-block;
+padding: 0px 0px 0px 0px; 
+width: 99%;
+text-align: left;
+position: relative;
+margin: 0 0 9px 0;   
+}
+
+/* Настройки для картинок анкет */
+.anketa-img {
+width: 99%;
+margin: 2px 0 9px 0;   
+border-radius: 4px; 
+}
+
+/* ?????????? */
 .mini-text-block {
 padding: 0px 0px 0px 0px; 
 border-radius: 4px; 
 width: 100%;
-background-color: #6495ED; 
 }
 
 /* Настройки для cпойлеров */
-   .table-sp {    margin: 0px 0px 0px 0;   padding: 0px 0px 0px 0px;   min-width: 430px; 
-
-border-radius: 4px; }
+   .table-sp {    
+margin: 0px 0px 0px 0;   
+padding: 0;   
+min-width: 430px; 
+border-radius: 0px; 
+overflow: hidden;
+    text-align: justify; /* Растягиваем текст */
+}
 
 input[id^="spoiler"]{
  display: none;
 }
+
 input[id^="spoiler"] + label {
- display: block;
- width: 94%;
- margin: 0 auto;
+display: inline-block;
+width: 100%;
+ margin: 0;
  padding: 1px 20px;
- background: #A9A9A9;
+background-color: #A9A9A9;
+background-image: url(plus1.png);
+background-repeat: no-repeat;
+background-size: contain; 
  color: #000000;
- text-align: left;
+    text-align: justify; /* Растягиваем текст */
  font-size: 24px;
- border-radius: 6px;
+ border-radius: 0px;
  cursor: pointer;
  transition: all .6s;
 }
-input[id^="spoiler"]:checked + label {
- color: #333;
- background: #6495ED;
+
+input[id^="spoiler"]:checked + label { 
+background-color: #A9A9A9;
+background-image: url(minus1.png);
+background-repeat: no-repeat;
+background-size: contain; 
 }
+
+input[id^="spoiler"]:hover + label {
+background-color: #B0C4DE;
+background-image: url(plus1-hover.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+input[id^="spoiler"]:checked:hover + label { 
+background-color: #B0C4DE;
+background-image: url(minus1-hover.png);
+background-repeat: no-repeat;
+background-size: contain; 
+}
+
 input[id^="spoiler"] ~ .spoiler {
- width: 94%;
- height: 0;
+display: inline-block;
+height: 0;
  overflow: hidden;
  opacity: 0;
- margin: 10px auto 0; 
- padding: 10px; 
- border: 1px solid #ccc;
- border-radius: 6px;
+ margin:  0; 
+ padding: 0; 
+ border: 1px solid #A9A9A9;
+ border-radius: 0px;
  transition: all .6s;
 }
+
 input[id^="spoiler"]:checked + label + .spoiler{
  height: auto;
  opacity: 1;
  padding: 10px;
 }
 
+</style>
 
-  </style>
+</head> 
 
- </head> 
 
- <body>
 
- <div >
+<body>
 
-</div> 
+<aside>
 
- <aside>
 <img alt="РумипедиЯ" width="100%" src="rumipedia_glob2.jpg" >
 
 
-
-  <nav>
+<nav>
 <ul>
+
+<li class="li-blank"><p4>  &nbsp; </p4></li>
+<li class="li-title"><p4>  РУМИНАВИГАЦИЯ </p4></li>
+
 <li><p5> <a href="lanin_universe_cat.html"> Главная страница</a></p5></li>
 <li><p5> <a href="lanin_universe_cat.html"> Все категории</a></p5></li>
 
-<li style="background: linear-gradient(115deg, #ffffff 25%, #000000 100%);       
-
-border-radius: 4px;   margin: 7px;   padding: 8px 14px;">
-<p4>  КАТЕГОРИИ </p4></li>
+<li class="li-blank"><p4>  &nbsp; </p4></li>
+<li class="li-title"><p4>  КАТЕГОРИИ </p4></li>
 
 <li><p5>  <a href="corby_cat.html"> Корбиверс </a></p5></li>
 <li><p5><a href="characters_cat.html">Персонажи</a></p5></li>
 
-<li style="background: linear-gradient(115deg, #ffffff 25%, #000000 100%);       
-
-border-radius: 4px;   margin: 7px;   padding: 8px 14px;"><p4>  СВЯЗАННЫЕ  
-
-СТАТЬИ </p4></li>
+<li class="li-blank"><p4>  &nbsp; </p4></li>
+<li class="li-title"><p4>  СВЯЗАННЫЕ  СТАТЬИ </p4></li>
 
 <li><p5><a href="alesya_tokomina.html"> Алеся Токомина </a></p5></li>
 <li><p5><a href="artem_tokomin.html"> Артем Токомин </a></p5></li>
@@ -220,59 +330,64 @@ border-radius: 4px;   margin: 7px;   padding: 8px 14px;"><p4>  СВЯЗАННЫ�
 <li><p5><a href="nik.html"> Ник </a></p5></li>
 <li><p5><a href="corby_novel.html"> &laquo;Песня для Корби&raquo</a></p5></li>
 <li><p5></p5></li>
+
 </ul>
 </nav>
-  </aside>
+
+</aside>
 
 
+<article>
 
-
-  <article>
 <h1>Андрей Токомин</h1>
-<hr size="1">
+<hr  size="1" color="black">
 
-<table class="rightimg" width="40%"  border="1" rules="none" align="right">
-<tr><td class="mini-text-block" bgcolor="#6495ED">
-<center><h3>Андрей Токомин</h3></center>
-</td></tr>
-<tr><td ></td></tr>
 
-<tr><td><img src="Andrei_Tokomin1.jpg" width="100%" alt="Андрей Токомин / 
 
-иллюстрация Анны Комбаровой" style="border-radius: 4px; "></td></tr>
-<tr><td><center><p1>Андрей Токомин </p1><br><p1>иллюстрация Анны 
+<div class="anketa">
+<div class="anketa-title-block"><h3>Андрей Токомин</h3></div>
 
-Комбаровой</p1></center><hr></td></tr>
+<img src="Andrei_Tokomin1.jpg" alt="Андрей Токомин / иллюстрация Анны 
 
-<tr><td class="mini-text-block" bgcolor="#6495ED">
-<center><h3>Общая информация</h3></center>
-</td></tr>
+Комбаровой" class="anketa-img">
 
-<tr><td><p3>Категории:</p3><p2> <a href="corby_cat.html"> Корбиверс </a>, <a 
+<p1>Андрей Токомин </p1><br>
+<p1>иллюстрация Анны Комбаровой</p1>
+<hr  size="1" color="black">
 
-href="characters_cat.html">Персонажи</a>.</p2></td></tr>
-<tr><td><p3>Появления:</p3><p2> романы <a href="corby_novel.html"> 
+<div class="anketa-title-block"><h3>Общая информация</h3></div>
 
-&laquo;Песня для Корби&raquo; </a>и <a 
+<div class="anketa-content-block">
+<p3>Категории:</p3><p2> <a href="corby_cat.html"> Корбиверс</a>, <a 
 
-href="killer_prize_novel.html">&laquo;Награда убийц&raquo;</a>.</p2></td></tr>
+href="characters_cat.html">Персонажи</a>.</p2>
+<br>
+<p3>Появления:</p3><p2> романы <a href="corby_novel.html"> &laquo;Песня для 
 
-<tr><td class="mini-text-block" >
-<center><h3>Характеристики персонажа</h3></center>
-</td></tr>
+Корби&raquo; </a>и <a href="killer_prize_novel.html">&laquo;Награда 
 
-<tr><td><p3>Пол:</p3><p2> мужской.</p2></td></tr>
-<tr><td><p3>Возраст:</p3><p2> в романе &laquo;Песня для Корби&raquo ; ему 
+убийц&raquo;</a>.</p2>
+</div>
 
-около 17 лет.</p2></td></tr>
-<tr><td><p3>Характер:</p3><p2> застенчивый.</p2></td></tr>
-<tr><td><p3>Увлечения:</p3><p2> художник.</p2></td></tr>
-<tr><td><p3>Семья:</p3><p2> мать - <a href="margo_tokomina.html"> 
+<div class="anketa-title-block"><h3>Характеристики персонажа</h3></div>
 
-Маргарита</a>, отец - <a href="artem_tokomin.html"> Артем </a>, сестра - <a 
+<div class="anketa-content-block">
+<p3>Пол:</p3><p2> мужской.</p2><br>
+<p3>Возраст:</p3><p2> в романе &laquo;Песня для Корби&raquo; ему около 17 
 
-href="alesya_tokomina.html"> Алеся</a>. </p2></td></tr>
-</table>
+лет.</p2><br>
+<p3>Характер:</p3><p2> застенчивый.</p2><br>
+<p3>Увлечения:</p3><p2> художник.</p2><br>
+<p3>Семья:</p3><p2> мать - <a href="margo_tokomina.html"> Маргарита</a>, 
+
+отец - <a href="artem_tokomin.html"> Артем </a>, сестра - <a 
+
+href="alesya_tokomina.html"> Алеся</a>. </p2><br>
+</div>
+</div>
+
+
+
 
   <p>   <b>Андрей Токомин</b> - персонаж романов-паралаксов <a 
 
@@ -293,7 +408,7 @@ href="killer_prize_novel.html">&laquo;Награда убийц&raquo;</a>. </p>
 </p>
 
      <h2>История создания персонажа</h2>
-<hr size="1">
+<hr size="1" color="black">
 
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -310,7 +425,7 @@ href="killer_prize_novel.html">&laquo;Награда убийц&raquo;</a>. </p>
 
 
      <h2>Детство Андрея и его семья</h2>
-<hr size="1">
+<hr size="1" color="black">
 
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -330,13 +445,11 @@ href="killer_prize_novel.html">&laquo;Награда убийц&raquo;</a>. </p>
 
 Текст. Текст. Текст. Текст.</p>
 
-<table class="table-sp"  border="0" rules="none" align="center" <tr> <td class="mini-
-
-text-block">
+<div class="table-sp">
 <input type="checkbox" id="spoiler1" /> 
- <label for="spoiler1" align="left" ><h3><img src="plus.png" width="14"> &nbsp; &nbsp; 
+ <label for="spoiler1"><h3> &nbsp; &nbsp; &nbsp; &nbsp; ОСТОРОЖНО! 
 
-ОСТОРОЖНО! СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
+СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
 <div class="spoiler">
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -358,11 +471,11 @@ text-block">
 
 
 </div>
-</td></tr>
-</table>
+</div>
+
 
      <h2>Андрей как художник</h2>
-<hr size="1">
+<hr size="1" color="black">
 
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -373,13 +486,11 @@ text-block">
 
 Текст. Текст. Текст. Текст.</p> 
 
-<table class="table-sp"  border="0" rules="none" align="center" <tr> <td class="mini-
-
-text-block">
+<div class="table-sp">
 <input type="checkbox" id="spoiler2" /> 
- <label for="spoiler2" align="left" ><h3><img src="plus.png" width="14"> &nbsp; &nbsp; 
+ <label for="spoiler2"><h3> &nbsp; &nbsp; &nbsp; &nbsp; ОСТОРОЖНО! 
 
-ОСТОРОЖНО! СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
+СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
 <div class="spoiler">
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -401,11 +512,10 @@ text-block">
 
 
 </div>
-</td></tr>
-</table>
+</div>
 
      <h2>Взаимоотношения Андрея и Корби</h2>
-<hr size="1">
+<hr size="1" color="black">
 
 
 
@@ -419,23 +529,20 @@ text-block">
 Текст. Текст. Текст. Текст.</p>
 
 
-<table class="leftimg" width="30%"  border="1" rules="none" align="left">
-<tr><td><img src="Andrei_Tokomin2.jpg" width="100%" alt="Андрей Токомин / 
+<div class="leftimg">
+<img src="Andrei_Tokomin2.jpg" alt="Андрей Токомин / иллюстрация Анны 
 
-иллюстрация Анны Комбаровой" style="border-radius: 4px;" ></td></tr>
-<tr><td><center><p1>Андрей Токомин </p1><br><p1>иллюстрация Анны 
+Комбаровой"class="anketa-img" >
+<p1>Андрей Токомин </p1>
+<br>
+<p1>иллюстрация Анны Комбаровой</p1>
+</div>
 
-Комбаровой</p1></center><hr></td></tr>
+<div class="table-sp">
+<input type="checkbox" id="spoiler3" /> 
+ <label for="spoiler3"><h3> &nbsp; &nbsp; &nbsp; &nbsp; ОСТОРОЖНО! 
 
-</table>
-
-<table class="table-sp" border="0" rules="none" align="center"> 
-<tr> <td class="mini-text-block">
-<input type="checkbox" id="spoiler3" > 
- <label for="spoiler3" align="left" ><h3><img src="plus.png" width="14"> &nbsp; &nbsp; 
-
-ОСТОРОЖНО! СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
-
+СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
 <div class="spoiler">
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -455,12 +562,12 @@ text-block">
 
 Текст. Текст. Текст. Текст.</p>
 
+
 </div>
-</td></tr>
-</table>
+</div>
 
      <h2>Волшебство и метафизика</h2>
-<hr size="1">
+<hr size="1" color="black">
 
 
 
@@ -473,13 +580,11 @@ text-block">
 
 Текст. Текст. Текст. Текст.</p>
 
-<table class="table-sp" border="0" rules="none" align="center"> 
-<tr> <td class="mini-text-block">
-<input type="checkbox" id="spoiler4" > 
- <label for="spoiler4" align="left" ><h3><img src="plus.png" width="14"> &nbsp; &nbsp; 
+<div class="table-sp">
+<input type="checkbox" id="spoiler4" /> 
+ <label for="spoiler4"><h3> &nbsp; &nbsp; &nbsp; &nbsp; ОСТОРОЖНО! 
 
-ОСТОРОЖНО! СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
-
+СЮЖЕТНЫЙ СПОЙЛЕР!</h3></label>
 <div class="spoiler">
   <p>
 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. 
@@ -501,8 +606,7 @@ text-block">
 
 
 </div>
-</td></tr>
-</table>
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
