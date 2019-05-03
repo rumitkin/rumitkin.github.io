@@ -42,8 +42,8 @@ article {
 
 /* Стиль для линков */
  a { color: blue; text-decoration: none;}
- a:hover { color: green; text-decoration: none; }
- a:visited { color: purple; text-decoration: none; }
+ a:hover { color: #6B8E23; text-decoration: none; }
+ a:visited { color: #8A2BE2; text-decoration: none; }
 
 /* Стиль для списка */
 ul {
@@ -104,7 +104,7 @@ font-variant: small-caps; transform: scaleY(2); color: #000000;  margin-top: 1em
 /* Подзаголовок статьи */
    h2 {    font-family: Georgia; font-size: 20pt;  font-weight: normal; line-height: 20pt;  
 
-letter-spacing: 2px; color: #000000;    } 
+letter-spacing: 2px; color: #000000;  transform: scaleY(2);  } 
 
 /* Подзаголовок для анкеты*/
    h3 {    font-family: Arial; font-size: 14pt;  line-height: 0pt;  font-style: normal;  font-
@@ -212,14 +212,7 @@ margin: 2px 0 9px 0;
 border-radius: 4px; 
 }
 
-/* ?????????? */
-.mini-text-block {
-padding: 0px 0px 0px 0px; 
-border-radius: 4px; 
-width: 100%;
-}
-
-/* Настройки для cпойлеров */
+/* Настройки для формы катов-cпойлеров */
    .table-sp {    
 margin: 0px 0px 0px 0;   
 padding: 0;   
@@ -229,10 +222,14 @@ overflow: hidden;
     text-align: justify; /* Растягиваем текст */
 }
 
+/* Настройки для тега инпут катов-cпойлеров: скрывать сворачиваемую 
+
+область*/
 input[id^="spoiler"]{
  display: none;
 }
 
+/* Настройки для тега инпут катов-cпойлеров: вид до любого действия */
 input[id^="spoiler"] + label {
 display: inline-block;
 width: 100%;
@@ -250,6 +247,7 @@ background-size: contain;
  transition: all .6s;
 }
 
+/* Настройки для тега инпут катов-cпойлеров: вид после клика */
 input[id^="spoiler"]:checked + label { 
 background-color: #A9A9A9;
 background-image: url(minus1.png);
@@ -257,6 +255,7 @@ background-repeat: no-repeat;
 background-size: contain; 
 }
 
+/* Настройки для тега инпут катов-cпойлеров: вид при наведении курсора*/
 input[id^="spoiler"]:hover + label {
 background-color: #B0C4DE;
 background-image: url(plus1-hover.png);
@@ -264,6 +263,9 @@ background-repeat: no-repeat;
 background-size: contain;
 }
 
+/* Настройки для тега инпут катов-cпойлеров: вид при наведении курсора после 
+
+клика */
 input[id^="spoiler"]:checked:hover + label { 
 background-color: #B0C4DE;
 background-image: url(minus1-hover.png);
@@ -271,6 +273,7 @@ background-repeat: no-repeat;
 background-size: contain; 
 }
 
+/* Настройки для тега инпут катов-cпойлеров: вид сворачиваемой области */
 input[id^="spoiler"] ~ .spoiler {
 display: inline-block;
 height: 0;
@@ -283,6 +286,7 @@ height: 0;
  transition: all .6s;
 }
 
+/* Настройки для тега инпут катов-cпойлеров: ХЗ что делает, но оно нужно */
 input[id^="spoiler"]:checked + label + .spoiler{
  height: auto;
  opacity: 1;
