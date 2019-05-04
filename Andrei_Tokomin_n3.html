@@ -356,28 +356,61 @@ text-align: left;
 weight: 600; color: #000000; } 
 
 /* Основной шрифт */
-   p {    font-family: Arial;  font-size: 13pt;   color: #000000;   }
+@media all and (min-width:900px) {
+  p {    
+   font-family: Arial;  
+   font-size: 13pt;   
+   color: #000000;   
+ }  }
+@media all and (max-width:899px) {
+  p {    
+   font-family: Arial;  
+   font-size: 14pt;   
+   color: #000000;   
+ }}
+ 
 
 /* Курсивный шрифт для подписи картинки */
 @media all and (min-width:900px) {
-   p1 {    font-family: Arial; font-size: 11pt;  line-height: 0pt;  font-style: normal;  font-
-
-weight: 100;  font-style: italic; color: #000000;  }  }
+   p1 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 0pt;  
+    font-style: normal;  
+    font-weight: 100;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
 @media all and (max-width:899px) {
-   p1 {    font-family: Arial; font-size: 14pt;  line-height: 16pt;  font-style: normal;  font-
-
-weight: 100;  font-style: italic; color: #000000;  }  }
+   p1 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 16pt;  
+    font-style: normal;  
+    font-weight: 100;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
 
 
 /* Шрифт для анкеты */
 @media all and (min-width:900px) {
-   p2 {    font-family: Arial; font-size: 11pt;  line-height: 0pt;  font-style: normal;  font-
-
-weight: 100; color: #000000;  }  }
+   p2 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 0pt;  
+    font-style: normal;  
+    font-weight: 100; 
+    color: #000000;  
+ }  }
 @media all and (max-width:899px) {
-   p2 {    font-family: Arial; font-size: 14pt;  line-height: 15pt;  font-style: normal;  font-
-
-weight: 100; color: #000000;  }   }
+   p2 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 15pt;  
+    font-style: normal;  
+    font-weight: 100; 
+    color: #000000;  }   }
 
 
 /* Жирный шрифт для анкеты */
