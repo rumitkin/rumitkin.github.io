@@ -1,0 +1,666 @@
+/* Тело всего сайта*/
+body {
+    background: #000000; /* Цвет фона */
+    margin: 0;   /* Жмем страницу к краям */
+overflow-x:hidden;  /*для горизонтального*/
+  }
+
+@font-face{
+font-family: 'wash';
+src: url('../fonts/wash.eot');
+src: url('../fonts/wash.eot?iefix') format('eot'),
+url('../fonts/wash.woff') format('woff'),
+url('../fonts/wash.ttf') format('truetype'),
+url('../fonts/wash.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}    
+    
+    
+/* Область сайдбара */
+@media all and (min-width: 700px) {
+aside {
+    background: #000000; /* Цвет фона */
+    padding: 0px 0px 0px 0px; /* Поля */
+    margin: 0px 0px 0px 0;   
+    width: 20%; /* Ширина сайдбара в процентах */
+    min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 
+
+пикселей */
+    float: left; /* Обтекание слева */
+   }  }
+@media all and (max-width: 699px) {
+aside {
+    background: #000000; /* Цвет фона */
+    padding: 0px 0px 0px 0px; /* Поля */
+    margin: 0px 0px 0px 0;   
+    width: 100%; /* Ширина сайдбара в процентах */
+   } }
+/* Картинка румипедии */
+@media all and (min-width: 700px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob1.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    margin: 0;   /* Жмем картинку к краям */
+    width: 100%; /* Ширина картинки */
+  padding-top: 100%;  
+text-align: center;
+  }}
+@media all and (min-width: 550px) and (max-width: 699px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob2.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    width: 100%; /* Ширина картинки */
+text-align: center;
+  padding-top: 7vw;  
+  padding-bottom: 7vw;  
+  } }
+@media all and (min-width: 490px) and (max-width: 549px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob2.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    width: 100%; /* Ширина картинки */
+text-align: center;
+  padding-top: 5vw;  
+  padding-bottom: 5vw;  
+  } }
+@media all and (min-width: 420px) and (max-width: 489px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob2.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    width: 100%; /* Ширина картинки */
+text-align: center;
+  padding-top: 4px;  
+  padding-bottom: 4px;  
+  } }
+@media all and (min-width: 376px) and (max-width: 419px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob2.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    width: 96%; /* Ширина картинки */
+text-align: left;
+  padding: 1px 2% 1px 2%;  
+  } }
+@media all and (max-width: 375px) {
+.rumipedia_glob {
+    background-color: black; /* Цвет фона */
+background-image: url(rumi_glob2.jpg); /* Цвет фона */
+    background-repeat: no-repeat;
+    background-size: auto 100%; 
+    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    width: 96%; /* Ширина картинки */
+text-align: left;
+  padding: 1px 2% 1px 2%;  
+  } }
+/* Заголовок Румипедия */
+@media all and (min-width:1022px) {
+   h4 {    
+font-family: wash; 
+font-size: 1.8vw;  
+letter-spacing: 0.2vw; 
+font-weight: 300; 
+line-height: 3vw;  
+color: #EEE8AA;  
+transform: scaleY(1.5); 
+margin: 0 0 26px 0; 
+    text-shadow: black 0 0 6px;
+ } 
+   p6 {    
+font-family: wash; 
+font-size: 1vw;  
+font-weight: 100; 
+line-height: 2vw;  
+letter-spacing: 0.1vw; 
+color: #EEE8AA;  
+    text-shadow: black 0 0 2px;
+ }  } 
+@media all and (min-width: 700px) and (max-width:1021px) {
+   h4 {    
+font-family: wash; 
+font-size: 15pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 30pt;  
+color: #EEE8AA;  
+transform: scaleY(1.5); 
+margin: 0 0 26px 0;  
+    text-shadow: black 0 0 6px;
+ } 
+   p6 {    
+font-family: wash; 
+font-size: 8pt;  
+font-weight: 100; 
+line-height: 2pt;  
+letter-spacing: 1pt; 
+color: #EEE8AA;  
+    text-shadow: black 0 0 2px;
+ }  } 
+@media all and (max-width: 699px) {
+   h4 {    
+font-family: wash; 
+font-size: 21pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 30pt;  
+color: #EEE8AA;  
+transform: scaleY(1.5); 
+margin: 30px 40% 26px 0;  
+    text-shadow: black 0 0 8px;
+ } 
+   p6 {    
+font-family: wash; 
+font-size: 11pt;  
+font-weight: 100; 
+line-height: 2pt;  
+letter-spacing: 1pt; 
+color: #EEE8AA;  
+margin: 0 40% 0 0; 
+    text-shadow: black 0 0 4px;
+ }  } 
+/* Область статьи */
+@media all and (min-width:1022px) {
+article {
+   background: #DCDCDC; 
+    margin-left: 20%; /* Отступ слева*/
+    width: 76%; /* Ширина статьи в процентах */
+    padding: 5px 2% 15px 2%; /* Поля */
+    text-align: justify; /* Растягиваем текст */
+    align: right; /* Позиционирование справа */
+  padding-bottom: 10%;  
+   }}
+@media all and (min-width: 700px) and (max-width:1021px) {
+article {
+   background: #DCDCDC; 
+    margin-left: 200px; /* Отступ слева*/
+    padding: 5px 2% 15px 2%; /* Поля */
+    text-align: justify; /* Растягиваем текст */
+    align: right; /* Позиционирование справа */
+  padding-bottom: 10%;  
+   }}
+@media all and (min-width: 450px) and (max-width:699px)  {
+article {
+   background: #DCDCDC; 
+    padding: 5px 4% 15px 4%; /* Поля */
+    text-align: justify; /* Растягиваем текст */
+    align: right; /* Позиционирование справа */
+   } }
+@media all and (max-width: 449px) {
+article {
+   background: #DCDCDC; 
+    padding: 5px 20px 15px 20px; /* Поля */
+    text-align: justify; /* Растягиваем текст */
+   } }
+/* Стиль для линков */
+ a { color: blue; text-decoration: none;}
+ a:hover { color: #006400; text-decoration: underline; }
+ a:visited { color: #8A2BE2; text-decoration: none; }
+ a:visited:hover { color: #006400; text-decoration: underline; }
+/* Стиль для списка */
+@media all and (min-width: 700px) {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+}}
+@media all and (max-width: 699px) {
+ul {
+display: none;
+}}
+/* Стиль для строчек списка */
+li  {
+    display: block;
+    padding: 4px 12px;
+}
+/* Стиль для линковых строчек списка */
+li a {
+    display: block;
+    background: linear-gradient(115deg,  #2F4F4F 25%, #000000 
+
+100%);
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+/* Меняем цвет линковой строчки списка при наведении мыши */
+li a:hover {
+    background: linear-gradient(115deg, #708090 25%, #000000 
+
+100%);
+    color: white;
+    text-decoration: none;
+}
+/* Меняем цвет линковой строчки списка после посещения */
+li a:visited {    color: silver;     text-decoration: none;}
+li a:visited:hover {    color: white;    text-decoration: none;}
+/* Стиль для заголовков списка, назначается через класс */
+.li-title {
+background: linear-gradient(115deg, #ffffff 25%, #000000 100%);      
+border-radius: 4px;  
+margin: 7px;   
+padding: 8px 14px;
+}
+/* Стиль для отступов в списке, назначается через класс */
+@media all and (min-width: 700px) {
+.li-blank {
+background-color: black;      
+border-radius: 4px;  
+margin: 7px;   
+padding: 8px 14px;
+}}
+@media all and (max-width: 699px) {
+.li-blank {
+display: none;
+} }
+/* Заголовок статьи */
+@media all and (min-width:1022px) {
+    h1 {    
+font-family: Georgia; 
+font-size: 30pt;   
+letter-spacing: 1vw; 
+font-style: bold;  
+font-variant: small-caps; 
+transform: scaleY(2); 
+color: #000000;  
+margin: 40px 0 30px 0;   
+text-align: left;
+}  }
+@media all and (min-width: 700px) and (max-width:1021px) {
+     h1 {    
+font-family: Georgia; 
+font-size: 30pt;   
+letter-spacing: 0.5vw; 
+font-style: bold;  
+font-variant: small-caps; 
+transform: scaleY(2); 
+color: #000000;  
+margin: 30px 0 30px 0;  
+text-align: left;
+}  }
+@media all and (min-width: 450px) and (max-width: 699px) {
+     h1 {    
+font-family: Georgia; 
+font-size: 28pt;   
+letter-spacing: 0.1vw; 
+font-style: bold;  
+font-variant: small-caps; 
+color: #000000;  
+margin: 10px 0 10px 0;  
+text-align: center;
+transform: scaleY(2); 
+line-height: 60pt;  
+}  }
+@media all and (max-width: 449px) {
+     h1 {    
+display: none;
+}  }
+/* Подзаголовок статьи */
+@media all and (min-width:1022px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 20pt;  
+font-weight: normal; 
+line-height: 6pt;  
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 20px 0;  
+text-align: left;
+ } }
+@media all and (min-width: 450px) and (max-width:1021px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 20pt;  
+font-weight: normal; 
+line-height: 24pt; 
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 10px 0;  
+text-align: left;
+ } }
+@media all and (max-width: 449px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 16pt;  
+font-weight: normal; 
+line-height: 18pt; 
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 10px 0;  
+text-align: left;
+ } }
+/* Подзаголовок для анкеты и подпись спойлера*/
+@media all and (min-width:450px) {
+   h3 {    
+font-family: Arial; 
+font-size: 14pt;  
+line-height: 0pt;  
+font-style: normal;  
+font-weight: 600; 
+color: #000000; 
+}   }
+@media all and (max-width:449px) {
+   h3 {    
+font-family: Arial; 
+font-size: 14pt;  
+line-height: 15pt;  
+font-style: bold;  
+color: #000000; 
+} }
+/* Основной шрифт */
+@media all and (min-width:900px) {
+  p {    
+   font-family: Arial;  
+   font-size: 13pt;   
+   color: #000000;   
+ }  }
+@media all and (max-width:899px) {
+  p {    
+   font-family: Arial;  
+   font-size: 14pt;   
+   color: #000000;   
+ }}
+ 
+/* Курсивный шрифт для подписи картинки */
+@media all and (min-width:900px) {
+   p1 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 0pt;  
+    font-style: normal;  
+    font-weight: 100;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
+@media all and (max-width:899px) {
+   p1 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 16pt;  
+    font-style: normal;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
+/* Шрифт для анкеты */
+@media all and (min-width:900px) {
+   p2 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 0pt;  
+    font-style: normal;  
+    font-weight: 100; 
+    color: #000000;  
+ }  }
+@media all and (max-width:899px) {
+   p2 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 15pt;  
+    font-style: normal;  
+    color: #000000;  }   }
+/* Жирный шрифт для анкеты */
+@media all and (min-width:900px) {
+   p3 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 0pt;  
+    font-style: bold;  
+    font-weight: 600; 
+    color: #000000;  
+ } }
+@media all and (max-width:899px) {
+   p3 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 15pt;  
+    font-style: bold;  
+    font-weight: 600; 
+    color: #000000;  
+ }  }
+/* Жирный шрифт для заголовка сайдбара */
+   p4 {    font-family: Arial; color: #000000; font-size: 10pt;  line-height: 
+
+14pt;  font-style: normal;  font-weight: 600; } 
+/* обычный шрифт для линков сайдбара */
+   p5 {    font-family: Arial; color: #ffffff; font-size: 10pt;  line-height: 14pt; 
+
+ font-style: normal;  font-weight: 100;  } 
+/* Настройки для левосторонней рамки с картинкой */
+@media all and (min-width: 450px) {
+.leftimg {    
+   background: #DCDCDC; 
+display: inline-block;
+margin: 7px 15px 15px 0;   
+padding: 5px 5px 5px 5px;  
+border:  1px solid black;
+border-radius: 8px;    
+width: 30%;
+min-width: 270px;   border-radius: 8px;
+rules: none; 
+position: relative;
+float: left;
+text-align: center;
+} }
+@media all and (max-width: 449px) {
+.leftimg   {    
+display: inline-block;
+   background: #DCDCDC; 
+margin: 10px 0 10px 0; 
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;  
+width: 97%;
+rules: none; 
+position: relative;
+align: center;
+text-align: center;
+}}
+/* Настройки для правосторонней рамки с картинкой */
+@media all and (min-width: 450px) {
+.rightimg  {    
+   background: #DCDCDC; 
+margin: 7px 0 15px 15px;   
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;    
+width: 30%;
+border-radius: 8px;    
+min-width: 270px;   
+rules: none; 
+position: relative;
+float: right;
+text-align: center;
+} }
+@media all and (max-width: 449px) {
+.rightimg   {    
+display: inline-block;
+   background: #DCDCDC; 
+margin: 10px 0 10px 0; 
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;  
+width: 97%;
+rules: none; 
+position: relative;
+align: center;
+text-align: center;
+}}
+/* Настройки для анкеты статьи */
+@media all and (min-width: 450px) {
+.anketa  {    
+   background: #DCDCDC; 
+margin: 7px 0 15px 15px;   
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;    
+width: 40%;
+min-width: 270px;   
+rules: none; 
+position: relative;
+float: right;
+text-align: center;
+} }
+@media all and (max-width: 449px) {
+.anketa  {    
+display: inline-block;
+   background: #DCDCDC; 
+margin: 10px 0 10px 0; 
+padding: 5px 5px 5px 5px; 
+border:  1px solid black;
+border-radius: 8px;  
+width: 97%;
+rules: none; 
+position: relative;
+align: center;
+text-align: center;
+}}
+/*Класс для простых объектов, которым нужно исчезнуть*/
+@media all and (min-width: 450px) {
+.span-dis  { } }
+@media all and (max-width: 449px) {
+.span-dis  {    display: none;}}
+/* Настройки для ячеек подзаголовков анкет */
+.anketa-title-block {
+display: inline-block;
+background: #6495ED; 
+padding: 0px 0px 0px 0px; 
+border:  1px solid #6495ED;
+border-radius: 4px; 
+width: 99%;
+text-align: center;
+position: relative;
+margin: 2px 0 5px 0;   
+}
+/* Настройки для ячеек c контентом анкет */
+.anketa-content-block {
+display: inline-block;
+padding: 0px 0px 0px 0px; 
+width: 99%;
+text-align: left;
+position: relative;
+margin: 0 0 9px 0;   
+}
+/* Настройки для картинок анкет */
+.anketa-img {
+width: 99%;
+margin: 2px 0 9px 0;   
+border-radius: 4px; 
+}
+/* Настройки для формы катов-cпойлеров */
+@media all and (min-width: 450px) {
+   .table-sp {    
+margin: 0px 0px 0px 0;   
+padding: 0;   
+min-width: 430px; 
+border-radius: 0px; 
+overflow: hidden;
+    text-align: justify; /* Растягиваем текст */
+} }
+@media all and (max-width: 449px) {
+   .table-sp {    
+margin: 0px 0px 0px 0;   
+padding: 0;   
+border-radius: 0px; 
+overflow: hidden;
+    text-align: justify; /* Растягиваем текст */
+}}
+/* Настройки для тега инпут катов-cпойлеров: скрывать 
+
+сворачиваемую область*/
+input[id^="spoiler"]{
+ display: none;
+}
+/* Настройки для тега инпут катов-cпойлеров: вид до любого 
+
+действия */
+@media all and (min-width: 450px) {
+input[id^="spoiler"] + label {
+display: inline-block;
+width: 100%;
+ margin: 0;
+ padding: 1px 20px;
+background-color: #A9A9A9;
+background-image: url(plus1.png);
+background-repeat: no-repeat;
+background-size: contain; 
+ color: #000000;
+    text-align: justify; /* Растягиваем текст */
+ font-size: 24px;
+ border-radius: 0px;
+ cursor: pointer;
+ transition: all .6s;
+} }
+@media all and (max-width: 449px) {
+input[id^="spoiler"] + label {
+display: inline-block;
+width: 100%;
+ margin: 0;
+ padding: 1px 20px;
+background-color: #A9A9A9;
+background-image: url(plus1.png);
+background-repeat: no-repeat;
+background-size: contain; 
+ color: #000000;
+    text-align: center; /* Растягиваем текст */
+ font-size: 24px;
+ border-radius: 0px;
+ cursor: pointer;
+ transition: all .6s;
+} }
+/* Настройки для тега инпут катов-cпойлеров: вид после клика */
+input[id^="spoiler"]:checked + label { 
+background-color: #A9A9A9;
+background-image: url(minus1.png);
+background-repeat: no-repeat;
+background-size: contain; 
+}
+/* Настройки для тега инпут катов-cпойлеров: вид при наведении 
+
+курсора*/
+input[id^="spoiler"]:hover + label {
+background-color: #B0C4DE;
+background-image: url(plus1-hover.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+/* Настройки для тега инпут катов-cпойлеров: вид при наведении 
+
+курсора после клика */
+input[id^="spoiler"]:checked:hover + label { 
+background-color: #B0C4DE;
+background-image: url(minus1-hover.png);
+background-repeat: no-repeat;
+background-size: contain; 
+}
+/* Настройки для тега инпут катов-cпойлеров: вид свернутой 
+
+области */
+input[id^="spoiler"] ~ .spoiler {
+display: none;
+}
+/* Настройки для тега инпут катов-cпойлеров: вид развернутой 
+
+области */
+input[id^="spoiler"]:checked + label + .spoiler{
+display: inline-block;
+ height: auto;
+ opacity: 1;
+ padding: 10px;
+ border: 1px solid #A9A9A9;
+font: italic 13pt/15pt arial;
+}
