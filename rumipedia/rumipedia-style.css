@@ -595,7 +595,7 @@ width: 100%;
  margin: 0;
  padding: 1px 20px;
 background-color: #A9A9A9;
-background-image: url(plus1.png);
+background-image: url(../rumipedia/img/plus1.png);
 background-repeat: no-repeat;
 background-size: contain; 
  color: #000000;
@@ -612,7 +612,7 @@ width: 100%;
  margin: 0;
  padding: 1px 20px;
 background-color: #A9A9A9;
-background-image: url(plus1.png);
+background-image: url(../rumipedia/img/plus1.png);
 background-repeat: no-repeat;
 background-size: contain; 
  color: #000000;
@@ -625,7 +625,7 @@ background-size: contain;
 /* Настройки для тега инпут катов-cпойлеров: вид после клика */
 input[id^="spoiler"]:checked + label { 
 background-color: #A9A9A9;
-background-image: url(minus1.png);
+background-image: url(../rumipedia/img/minus1.png);
 background-repeat: no-repeat;
 background-size: contain; 
 }
@@ -634,7 +634,7 @@ background-size: contain;
 курсора*/
 input[id^="spoiler"]:hover + label {
 background-color: #B0C4DE;
-background-image: url(plus1-hover.png);
+background-image: url(../rumipedia/img/plus1-hover.png);
 background-repeat: no-repeat;
 background-size: contain;
 }
@@ -643,7 +643,7 @@ background-size: contain;
 курсора после клика */
 input[id^="spoiler"]:checked:hover + label { 
 background-color: #B0C4DE;
-background-image: url(minus1-hover.png);
+background-image: url(../rumipedia/img/minus1-hover.png);
 background-repeat: no-repeat;
 background-size: contain; 
 }
