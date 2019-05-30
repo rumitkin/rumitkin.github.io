@@ -40,7 +40,7 @@ aside {
 @media all and (min-width: 700px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob1.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob1.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: 100% auto; 
     margin: 0;   /* Жмем картинку к краям */
@@ -51,7 +51,7 @@ text-align: center;
 @media all and (min-width: 550px) and (max-width: 699px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob2.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: 100% auto; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
@@ -63,7 +63,7 @@ text-align: center;
 @media all and (min-width: 490px) and (max-width: 549px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob2.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: 100% auto; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
@@ -75,7 +75,7 @@ text-align: center;
 @media all and (min-width: 420px) and (max-width: 489px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob2.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: 100% auto; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
@@ -87,7 +87,7 @@ text-align: center;
 @media all and (min-width: 376px) and (max-width: 419px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob2.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: 100% auto; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
@@ -98,7 +98,7 @@ text-align: left;
 @media all and (max-width: 375px) {
 .rumipedia_glob {
     background-color: black; /* Цвет фона */
-background-image: url(rumi_glob2.jpg); /* Цвет фона */
+background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
     background-repeat: no-repeat;
     background-size: auto 100%; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
