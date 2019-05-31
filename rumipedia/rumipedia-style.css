@@ -63,7 +63,7 @@ main {
 
 @media all and (min-width: 700px) {
 aside {
-    background: url(../img/rumipedia/rumi_glob1.jpg) no-repeat black; /* Цвет фона */
+    background: url(../rumipedia/img/rumi_glob1.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     margin:  0  0 1vw 1vw;   
@@ -76,7 +76,7 @@ aside {
     margin: 0 1vw 1vw 1vw;   
     border-radius: 2vw;
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../img/rumipedia/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 29vw;
@@ -86,7 +86,7 @@ aside {
     margin: 0 1vw 1vw 1vw;   
     border-radius: 2vw;
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../img/rumipedia/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 35vw;
@@ -96,7 +96,7 @@ aside {
     margin: 0 1vw 1vw 1vw;   
     border-radius: 2vw;
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../img/rumipedia/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 40vw;
@@ -116,7 +116,7 @@ aside {
     margin: 0 1vw 1vw 1vw;   
     border-radius: 2vw;
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../img/rumipedia/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: auto 100%;
     padding: 0; /* Поля */
     height: 50vw;
