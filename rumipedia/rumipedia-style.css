@@ -1,84 +1,156 @@
-/* Тело всего сайта*/
+/* Тушка */
+
 body {
-    background: #000000; /* Цвет фона */
+    background: #DCDCDC; /* Цвет фона */
     margin: 0;   /* Жмем страницу к краям */
-overflow-x:hidden;  /*для горизонтального*/
+    overflow-x:hidden;  /*для горизонтального*/
   }
 
-@font-face{
-font-family: 'wash';
-src: url('../fonts/wash.eot');
-src: url('../fonts/wash.eot?iefix') format('eot'),
-url('../fonts/wash.woff') format('woff'),
-url('../fonts/wash.ttf') format('truetype'),
-url('../fonts/wash.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}    
-    
-    
-/* Область сайдбара */
-@media all and (min-width: 700px) {
-aside {
-    background: #000000; /* Цвет фона */
-    padding: 0px 0px 0px 0px; /* Поля */
-    margin: 0px 0px 0px 0;   
-    width: 20%; /* Ширина сайдбара в процентах */
-    min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 
+/* Добавочные шрифты*/
 
-пикселей */
-    float: left; /* Обтекание слева */
-   }  }
-@media all and (max-width: 699px) {
-aside {
-    background: #000000; /* Цвет фона */
+@font-face{
+    font-family: 'wash';
+    src: url('../fonts/wash.eot');
+    src: url('../fonts/wash.eot?iefix') format('eot'),
+    url('../fonts/wash.woff') format('woff'),
+    url('../fonts/wash.ttf') format('truetype'),
+    url('../fonts/wash.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+/* Шапка */
+
+@media all {
+header {
+    background: url(../img/header_bg.jpg) 100% 100% no-repeat black; /* Цвет фона */
+    background-size: cover; 
     padding: 0px 0px 0px 0px; /* Поля */
-    margin: 0px 0px 0px 0;   
+    margin: 1vw 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 пикселей */
+    float: center; /* Обтекание слева */
+    text-align: center;
+   }  } 
+
+/* Настройки для айфрема в шапке */
+
+.ifr1 {
     width: 100%; /* Ширина сайдбара в процентах */
-   } }
-/* Картинка румипедии */
+    height: 29vw;
+    border: 0;
+    align: center;
+}
+
+/* Контейнер с флексом для управления сайдбаром и статьёй */
+
 @media all and (min-width: 700px) {
+main {
+  display: flex;
+  table-layout:fixed;
+  width: 100%;
+} }
+@media all and (max-width: 699px) {
+main {
+  display: flex;
+  table-layout:fixed;
+  width: 100%;
+  flex-direction: column;
+} }
+
+/* Область сайдбара */
+
+@media all and (min-width: 700px) {
+aside {
+    background: url(rumi_glob1.jpg) no-repeat black; /* Цвет фона */
+    background-size: 100% auto;
+    padding: 0; /* Поля */
+    margin:  0  0 1vw 1vw;   
+    border-radius: 2vw;
+    width: 21%; /* Ширина сайдбара в процентах */
+    min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 пикселей */
+   }  }
+@media all and (min-width: 550px) and (max-width: 699px) {
+aside {
+    margin: 0 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background-size: 100% auto;
+    padding: 0; /* Поля */
+    height: 29vw;
+   } }
+@media all and (min-width: 490px) and (max-width: 549px) {
+aside {
+    margin: 0 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background-size: 100% auto;
+    padding: 0; /* Поля */
+    height: 35vw;
+   } }
+@media all and (min-width: 420px) and (max-width: 489px) {
+aside {
+    margin: 0 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background-size: 100% auto;
+    padding: 0; /* Поля */
+    height: 40vw;
+   } }
+@media all and (min-width: 376px) and (max-width: 419px) {
+aside {
+    margin: 0 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background-size: 100% auto;
+    padding: 0; /* Поля */
+    height: 45vw;
+   } }
+@media all and (max-width: 375px) {
+aside {
+    margin: 0 1vw 1vw 1vw;   
+    border-radius: 2vw;
+    width: 98%; /* Ширина сайдбара в процентах */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background-size: auto 100%;
+    padding: 0; /* Поля */
+    height: 50vw;
+   } }
+
+/* Зона над картинкой румипедии */
+
+@media all and (min-width: 1024px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob1.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
-    margin: 0;   /* Жмем картинку к краям */
+    margin-top: 20vw;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
-  padding-top: 100%;  
-text-align: center;
+    text-align: center;
   }}
+@media all and (min-width: 700px) and (max-width: 1023px) {
+.rumipedia_glob {
+    margin-top: 200px;   /* Жмем картинку к краям */
+    width: 100%; /* Ширина картинки */
+    text-align: center;
+  } }
 @media all and (min-width: 550px) and (max-width: 699px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
-    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    margin-top: 20px;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
-text-align: center;
-  padding-top: 7vw;  
-  padding-bottom: 7vw;  
+    text-align: center;
   } }
 @media all and (min-width: 490px) and (max-width: 549px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
-    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    margin: 0;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
 text-align: center;
-  padding-top: 5vw;  
-  padding-bottom: 5vw;  
   } }
 @media all and (min-width: 420px) and (max-width: 489px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
-    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+     margin: 0 10px 0 0;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
 text-align: center;
   padding-top: 4px;  
@@ -86,10 +158,6 @@ text-align: center;
   } }
 @media all and (min-width: 376px) and (max-width: 419px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
     margin: 0 10px 0 0;   /* Жмем картинку к краям */
     width: 96%; /* Ширина картинки */
 text-align: left;
@@ -97,16 +165,14 @@ text-align: left;
   } }
 @media all and (max-width: 375px) {
 .rumipedia_glob {
-    background-color: black; /* Цвет фона */
-background-image: url(../rumipedia/img/rumi_glob2.jpg); /* Цвет фона */
-    background-repeat: no-repeat;
-    background-size: auto 100%; 
-    margin: 0 10px 0 0;   /* Жмем картинку к краям */
+    margin: 0;   /* Жмем картинку к краям */
     width: 96%; /* Ширина картинки */
 text-align: left;
-  padding: 1px 2% 1px 2%;  
+  padding: 0 6% 1px 2%;  
   } }
+
 /* Заголовок Румипедия */
+
 @media all and (min-width:1022px) {
    h4 {    
 font-family: wash; 
@@ -171,45 +237,41 @@ color: #EEE8AA;
 margin: 0 40% 0 0; 
     text-shadow: black 0 0 4px;
  }  } 
+
 /* Область статьи */
+
+@media all and (min-width:1022px) {
 @media all and (min-width:1022px) {
 article {
-   background: #DCDCDC; 
-    margin-left: 20%; /* Отступ слева*/
     width: 76%; /* Ширина статьи в процентах */
-    padding: 5px 2% 15px 2%; /* Поля */
+    padding: 0 2% 15px 2vw; /* Поля */
     text-align: justify; /* Растягиваем текст */
-    align: right; /* Позиционирование справа */
-  padding-bottom: 10%;  
    }}
 @media all and (min-width: 700px) and (max-width:1021px) {
 article {
-   background: #DCDCDC; 
-    margin-left: 200px; /* Отступ слева*/
     padding: 5px 2% 15px 2%; /* Поля */
     text-align: justify; /* Растягиваем текст */
-    align: right; /* Позиционирование справа */
-  padding-bottom: 10%;  
    }}
 @media all and (min-width: 450px) and (max-width:699px)  {
 article {
-   background: #DCDCDC; 
     padding: 5px 4% 15px 4%; /* Поля */
     text-align: justify; /* Растягиваем текст */
-    align: right; /* Позиционирование справа */
    } }
 @media all and (max-width: 449px) {
 article {
-   background: #DCDCDC; 
     padding: 5px 20px 15px 20px; /* Поля */
     text-align: justify; /* Растягиваем текст */
    } }
+    
 /* Стиль для линков */
+    
  a { color: blue; text-decoration: none;}
  a:hover { color: #006400; text-decoration: underline; }
  a:visited { color: #8A2BE2; text-decoration: none; }
  a:visited:hover { color: #006400; text-decoration: underline; }
-/* Стиль для списка */
+    
+/* Стиль для списка внутри сайдбара */
+    
 @media all and (min-width: 700px) {
 ul {
     list-style-type: none;
