@@ -55,25 +55,206 @@ header {
         
         
 article {
-    padding: 0; /* Поля */
-    text-align: justify; /* Растягиваем текст */
-   }
+	display: flex;
+	flex-direction: column;
+	padding: 0; /* Поля */
+	table-layout: fixed;
+	width: 100%;
+	}
         
 .book-main-block  {    
-margin: 1vw 0 1vw 1vw;   
-padding: 5px 5px 5px 5px; 
-border:  2px solid black;
-border-radius: 8px;    
-width: 30%;
-border-radius: 2vw;    
-min-width: 270px;   
-rules: none; 
-position: relative;
-float: center;
+	display: flex;
+	flex-direction: raw;
+	margin: 0 1vw 1vw 1vw;   
+	padding: 5px 5px 5px 5px; 
+	border:  0.2vw solid black;
+	border-radius: 2vw;    
+	min-width: 270px;   
+	}        
+
+.book-img-block {    
+	margin: 1vw 0 1vw 1vw;   
+	padding: 5px 5px 5px 5px; 
+	min-width: 270px;   
+	width: 30%;
+	}        
+
+.book-text-block {    
+	flex-grow: 1;
+	margin: 1vw  1vw 1vw 0;   
+	padding: 5px 5px 5px 1vw; 
+	border-left:  0.2vw solid black;
+	min-width: 270px;   
+	text-align: justify;
+	}        
+        
+
+/* Заголовок статьи */
+@media all and (min-width:1022px) {
+    h1 {    
+font-family: Georgia; 
+font-size: 30pt;   
+line-height: 60pt;  
+letter-spacing: 1vw; 
+font-style: bold;  
+font-variant: small-caps; 
+transform: scaleY(2); 
+color: #000000;  
+margin: 1vw 0 1vw 0;   
+text-align: left;
+}  }
+@media all and (min-width: 700px) and (max-width:1021px) {
+     h1 {    
+font-family: Georgia; 
+font-size: 30pt;   
+line-height: 60pt;  
+letter-spacing: 0.5vw; 
+font-style: bold;  
+font-variant: small-caps; 
+transform: scaleY(2); 
+color: #000000;  
+margin: 0.8vw 0 0.8vw 0;   
+text-align: left;
+}  }
+@media all and (min-width: 450px) and (max-width: 699px) {
+     h1 {    
+font-family: Georgia; 
+font-size: 28pt;   
+line-height: 60pt;  
+letter-spacing: 0.1vw; 
+font-style: bold;  
+font-variant: small-caps; 
+color: #000000;  
+margin: 0.4vw 0 0.4vw 0;   
 text-align: center;
-}        
-        
-        
+transform: scaleY(2); 
+}  }
+@media all and (max-width: 449px) {
+     h1 {    
+display: none;
+}  }
+
+/* Подзаголовок статьи */
+@media all and (min-width:1022px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 20pt;  
+font-weight: normal; 
+line-height: 6pt;  
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 20px 0;  
+text-align: left;
+ } }
+@media all and (min-width: 450px) and (max-width:1021px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 20pt;  
+font-weight: normal; 
+line-height: 24pt; 
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 10px 0;  
+text-align: left;
+ } }
+@media all and (max-width: 449px) {
+   h2 {    
+font-family: Georgia; 
+font-size: 16pt;  
+font-weight: normal; 
+line-height: 18pt; 
+letter-spacing: 1px; 
+color: #000000;  
+margin: 40px 0 10px 0;  
+text-align: left;
+ } }
+
+/* Основной шрифт */
+@media all and (min-width:900px) {
+  p {    
+   font-family: Arial;  
+   font-size: 13pt;   
+   color: #000000;   
+ }  }
+@media all and (max-width:899px) {
+  p {    
+   font-family: Arial;  
+   font-size: 14pt;   
+   color: #000000;   
+ }}
+ 
+/* Курсивный шрифт для подписи картинки */
+@media all and (min-width:900px) {
+   p1 {    
+    font-family: Arial; 
+    font-size: 11pt;  
+    line-height: 20pt;  
+    font-style: normal;  
+    font-weight: 100;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
+@media all and (max-width:899px) {
+   p1 {    
+    font-family: Arial; 
+    font-size: 14pt;  
+    line-height: 20pt;  
+    font-style: normal;  
+    font-style: italic; 
+    color: #000000;  
+ }  }
+/* Шрифт для анкеты */
+@media all and (min-width:900px) {
+   p2 {    
+    font-family: Arial; 
+    font-size: 16pt;  
+    line-height: 24pt;  
+    font-style: normal;  
+    font-weight: 100; 
+    color: #000000;  
+ }  }
+@media all and (max-width:899px) {
+   p2 {    
+    font-family: Arial; 
+    font-size: 16pt;  
+    line-height: 24pt;  
+    font-style: normal;  
+    color: #000000;  }   }
+/* Жирный шрифт для анкеты */
+@media all and (min-width:900px) {
+   p3 {    
+    font-family: Arial; 
+    font-size: 16pt;  
+    line-height: 24pt;  
+    font-style: bold;  
+    font-weight: 600; 
+    color: #000000;  
+ } }
+@media all and (max-width:899px) {
+   p3 {    
+    font-family: Arial; 
+    font-size: 16pt;  
+    line-height: 24pt;  
+    font-style: bold;  
+    font-weight: 600; 
+    color: #000000;  
+ }  }
+
+
+
+/* Настройки для картинок анкет */
+.book-title-img {
+width: 99%;
+margin: 2px 0 9px 0;   
+border-radius: 4px; 
+}
+
+/* Стиль для линков */
+ a { color: blue; text-decoration: none;}
+ a:hover { color: #006400; text-decoration: underline; }
+ a:visited { color: #8A2BE2; text-decoration: none; }
+ a:visited:hover { color: #006400; text-decoration: underline; }
+
         </style>
 </head> 
 
@@ -86,6 +267,94 @@ text-align: center;
 </header>
   
  <article> 
+
+
+ <div class="book-main-block">
+
+	<div class="book-img-block">
+	<img src="corbi_novel1.jpg" alt="Румит Кин. Песня для Корби. Обложка." 
+
+class="book-title-img">
+	</div>
+
+	<div class="book-text-block">
+	<h1>Песня для Корби</h1>
+	<hr>
+	<p3>Жанр: </p3><p2>Роман / Мистика, Приключения, Ужасы,  
+
+Подростковая проза.</p2>
+	<br>
+	<p3>Объём: </p3><p2>684 651 зн. / 17,12 а.л.</p2>
+	<br>
+	<p3>Даты: </p3><p2>написан: 17 октября 2012 – 7 марта 2013 / издан: 
+
+в апреле 2019 </p2>
+	<br>
+	<p3>Теги: </p3><p2>дружба, смерть, музыка, магия, мистика, 
+
+подростки, приключения, психология, современность, ужасы, руферы.</p2>
+
+	<h2>Аннотация</h2>
+	<hr><p>
+За несколько дней до выпускного Коля Рябин, по прозвищу Корби, заключает 
+
+опрометчивое пари со своим странным одноклассником Андреем Токоминым. 
+
+Поначалу все кажется не более чем игрой, и ни он, ни его друзья не 
+
+подозревают, чем обернется для них эта последняя шалость их уходящего 
+
+детства. Однако теперь они все связаны страшной судьбой, а смерть идет за 
+
+ними по пятам. 
+	</p>
+
+
+	<h2>Примечание авторов</h2>
+	<hr><p>
+«Песня для Корби» – это попытка ответить на важный вопрос: какой могла бы 
+
+быть история положительного героя подросткового возраста, наследника 
+
+«крапивинских мальчиков» и «волшебных детей» сегодня, в современном 
+
+контексте, в обыденно-реалистических декорациях (поначалу), но не по 
+
+заимствованному шаблону вроде магической школы или городского фэнтези? 
+
+Мы решили быть достаточно мрачными, жесткими и даже грубоватыми в 
+
+каких-то отдельных моментах, чтобы на их фоне отчетливее подчеркнуть: это 
+
+светлая вещь. Это история о дружбе; о том, что люди способны измениться – 
+
+это имеет предельное значение для нас; о том, кто мы друг для друга; о поисках 
+
+той идеи, философии или мифологии, на которую «волшебный ребенок», равно 
+
+как и пишущий о нем, мог бы опереться сегодня, в эпоху страшной 
+
+неуверенности и утраты всех привычных горизонтов смысла.
+ </p>
+
+	<h2>Ссылки</h2>
+	<hr><p>
+Более подробно о романе и его героях можно узнать из энциклопедии <a 
+
+href="corby_novel.html"> &laquo;Румипедии&raquo;</a>. 
+	</p>
+	<p>
+Книгу в бумажном варианте можно купить в <a 
+
+href="corby_novel.html">магазине</a>.
+	</p>
+	</div>
+
+</div>
+
+ <div class="book-main-block">
+   12345
+   </div>
  <div class="book-main-block">
    12345
    </div>
