@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
   <title>Румит Кин</title>
  
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" 
+
+charset="utf-8">
 <meta content="true" name="HandheldFriendly"/>
 <meta content="width" name="MobileOptimized"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
@@ -17,94 +19,173 @@
   <style>
   
 body {
-
+background: url(header.jpg) no-repeat #2f2f2f;
+    background-size: 100% auto;
     margin: 0;   /* Жмем страницу к краям */
 overflow-x:hidden;  /*для горизонтального*/
     height: 22vw;
   }
 
 @font-face{
-font-family: 'wash';
-src: url('fonts/wash.eot');
-src: url('fonts/wash.eot?iefix') format('eot'),
-url('fonts/wash.woff') format('woff'),
-url('fonts/wash.ttf') format('truetype'),
-url('fonts/wash.svg#webfont') format('svg');
+font-family: 'helios';
+src: url('fonts/helios.eot');
+src: url('fonts/helios.eot?iefix') format('eot'),
+url('fonts/helios.woff') format('woff'),
+url('fonts/helios.ttf') format('truetype'),
+url('fonts/helios.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}    
+
+@font-face{
+font-family: 'robotoslab';
+src: url('fonts/robotoslab.eot');
+src: url('fonts/robotoslab.eot?iefix') format('eot'),
+url('fonts/robotoslab.woff') format('woff'),
+url('fonts/robotoslab.ttf') format('truetype'),
+url('fonts/robotoslab.svg#webfont') format('svg');
 font-weight: normal;
 font-style: normal;
 }    
 
 header {
+text-align: right;
+background: linear-gradient(45deg, rgba(0, 0, 0, 0) 55.8%, rgba(0, 0, 0, 
 
-text-align: center;
+0.4) 55.9%);
+max-height: 4.2vw;
+}
+main {
+text-align: left;
+height: 4.1vw;
+}
+footer {
+text-align: left;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4) 72%, rgba(0, 0, 
 
+0, 0) 72.1%);
 }
 
    h1 {    
-font-family: wash; 
-font-size: 5.5vw;  
-letter-spacing: 0.2vw; 
+font-family: helios; 
+font-size: 5.7vw;  
+letter-spacing: 1.8vw; 
 font-weight: 100; 
-line-height: 3vw;  
-color: gold;
-transform: scaleY(1.75); 
-margin: 7.5vw 0 7.2vw 0; 
-text-shadow: black 0 0 9px;
- } 
-
-   p1 {    
-font-family: wash; 
-font-size: 1.2vw;  
-letter-spacing: 0.3vw; 
-font-weight: 100; 
-line-height: 3vw;  
-color: gold;
-margin: 8vw 0 12.2vw 0; 
+line-height: 2vw;  
+color: gainsboro;
+transform: scaleY(0.75); 
+margin: 2.5vw 2vw 1vw 2vw; 
 text-shadow: black 0 0 9px;
 font-variant: small-caps; 
  } 
 
+   p1 {    
+font-family: robotoslab; 
+font-size: 1.5vw;  
+letter-spacing: 0.3vw; 
+font-weight: 100; 
+line-height: 2.8vw;  
+color: gainsboro;
+margin: 0; 
+text-shadow: black 0 0 3px;
+font-variant: small-caps; 
+ } 
+
+   p2 {    
+font-family: robotoslab; 
+font-size: 1.2vw;  
+letter-spacing: 0.1vw; 
+font-weight: 100; 
+line-height: 2vw;  
+color: gainsboro;
+margin: 0; 
+text-shadow: black 0 0 3px;
+font-variant: small-caps; 
+ } 
+
  ul.hr {
-margin: 0.4vw  0.2vw 0.6vw  0.2vw;/* Обнуляем значение отступов */
+margin: 0  0.2vw 0.6vw  -3vw;/* Обнуляем значение отступов */
     padding: 1vw; /* Значение полей */
    }
    ul.hr li {
     display: inline; /* Отображать как строчный элемент */
-margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
-    padding: 0.2vw; /* Поля вокруг текста */
+margin: -2vw; /* Отступ слева */
+    padding: 0; /* Поля вокруг текста */
    }
    ul.hr li a {
-    display: inline; /* Отображать как строчный элемент */
+    display: inline-block; /* Отображать как строчный элемент */
 margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
-    border: 0.2vw solid gold; /* Рамка вокруг текста */
     padding: 0.2vw; /* Поля вокруг текста */
-    color: gold;
-    background: rgba(0, 128, 128, 0.3); /* Цвет фона */
-    padding: 0.5vw 0.9vw;
+    color: gainsboro;
+    padding: 0.25vw 0.9vw;
     text-decoration: none;
-    border-radius: 0.8vw;
-    box-shadow: 0 0 9px black,
-	         inset 0 0 4.5px black;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, rgba(60, 
+
+200, 200, 0.3) 15.1%, rgba(60, 200, 200, 0.3) 85%, rgba(0, 0, 0, 0) 
+
+85.1%);
+    width: 20vw;
    }
    ul.hr li a:hover {
-    background: linear-gradient(145deg, #708090 25%, #000000 100%);
     color: white;
     text-decoration: none;
-    border: 0.2vw solid white; /* Рамка вокруг текста */
-    box-shadow: 0 0 9px green,
-	         inset 0 0 4.5px black;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, #708090 
+
+15.1%, #708090 85%, rgba(0, 0, 0, 0) 85.1%);
 }
    ul.hr li a:visited {    
-    color: gold;     
     text-decoration: none;
 }
    ul.hr li a:visited:hover {
     color: white;
     text-decoration: none;
-    box-shadow: 0 0 9px green,
-	         inset 0 0 4.5px black;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, #708090 
+
+15.1%, #708090 85%, rgba(0, 0, 0, 0) 85.1%);
 }
 
+ ul.t1 {
+margin: -1.14vw -3vw -1.6vw -1.6vw;/* Обнуляем значение отступов */
+    padding: 1vw; /* Значение полей */
+   }
+   ul.t1 li {
+    display: inline; /* Отображать как строчный элемент */
+margin: -2.9vw; /* Отступ слева */
+    padding: 0; /* Поля вокруг текста */
+   }
+   ul.t1 li a {
+    display: inline-block; /* Отображать как строчный элемент */
+margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
+    padding: 0.2vw; /* Поля вокруг текста */
+    color: gainsboro;
+    padding: 0.25vw 0.9vw;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, rgba(60, 
+
+200, 200, 0.3) 15.1%, rgba(60, 200, 200, 0.3) 85%, rgba(0, 0, 0, 0) 
+
+85.1%);
+    width: 26vw;
+   }
+   ul.t1 li a:hover {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, #708090 
+
+15.1%, #708090 85%, rgba(0, 0, 0, 0) 85.1%);
+}
+   ul.t1 li a:visited {    
+    text-decoration: none;
+}
+   ul.t1 li a:visited:hover {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 15%, #708090 
+
+15.1%, #708090 85%, rgba(0, 0, 0, 0) 85.1%);
+}
 
   </style>
 
@@ -113,23 +194,44 @@ margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
 <body>
 
 <header>
+
+<ul class="t1">
+
+<li><p2><a href="lanin_universe_cat.html" target="_top">Друзья и 
+
+благодарности</a></p2></li>
+<li><p2><a href="lanin_universe_cat.html" target="_top">Контакты и 
+
+ресурсы&nbsp;&nbsp;&nbsp;</a></p2></li>
+</ul>
+
+</header>
+
+<main>
 <h1>
 Румит Кин
 </h1>
+</main>
+
+<footer>
 <ul class="hr">
-<li><p1><a href="../index.html" target="_top">Главная страница</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Друзья и благодарности</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Контакты и ресурсы</a></p1></li>
+<li><p1><a href="lanin_universe_cat.html" 
+
+target="_top">&nbsp;&nbsp;&nbsp;На главную&nbsp;</a></p1></li>
+<li><p1><a href="lanin_universe_cat.html" 
+
+target="_top">&nbsp;РумипедиЯ&nbsp;</a></p1></li>
+<li><p1><a href="lanin_universe_cat.html" 
+
+target="_top">&nbsp;Библиотека&nbsp;</a></p1></li>
+<li><p1><a href="lanin_universe_cat.html" 
+
+target="_top">&nbsp;Магазин&nbsp;</a></p1></li>
 </ul>
-<ul class="hr">
-<li><p1><a href="../rumipedia/a/andrei_tokomin.html" target="_top">РумипедиЯ</a></p1></li>
-<li><p1><a href="../library/main.html" target="_top">Библиотека</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Магазин</a></p1></li>
-</ul>
+</footer>
 
 
 
-</header>
 
 <article>
 
