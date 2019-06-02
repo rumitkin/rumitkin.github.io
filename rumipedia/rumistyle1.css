@@ -57,14 +57,14 @@ aside {
     background-size: 100% auto;
     padding: 0; /* Поля */
     margin:  0  0 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 21%; /* Ширина сайдбара в процентах */
     min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 пикселей */
    }  }
 @media all and (min-width: 550px) and (max-width: 699px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
@@ -74,7 +74,7 @@ aside {
 @media all and (min-width: 490px) and (max-width: 549px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
@@ -84,7 +84,7 @@ aside {
 @media all and (min-width: 420px) and (max-width: 489px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
@@ -94,7 +94,7 @@ aside {
 @media all and (min-width: 376px) and (max-width: 419px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
@@ -104,7 +104,7 @@ aside {
 @media all and (max-width: 375px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-    border-radius: 2vw;
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: auto 100%;
@@ -179,7 +179,7 @@ font-size: 1vw;
 font-weight: 100; 
 line-height: 2vw;  
 letter-spacing: 0.1vw; 
-color: gold;  
+color: Wheat;  
     text-shadow: black 0 0 2px;
  }  } 
 @media all and (min-width: 700px) and (max-width:1021px) {
@@ -189,7 +189,7 @@ font-size: 15pt;
 letter-spacing: 1pt; 
 font-weight: 300; 
 line-height: 30pt;  
-color: gold;  
+color: Wheat;  
 transform: scaleY(1.5); 
 margin: 0 0 26px 0;  
     text-shadow: black 0 0 6px;
@@ -200,7 +200,7 @@ font-size: 8pt;
 font-weight: 100; 
 line-height: 2pt;  
 letter-spacing: 1pt; 
-color: gold;  
+color: Wheat;  
     text-shadow: black 0 0 2px;
  }  } 
 @media all and (max-width: 699px) {
@@ -210,7 +210,7 @@ font-size: 21pt;
 letter-spacing: 1pt; 
 font-weight: 300; 
 line-height: 30pt;  
-color: gold;  
+color: Wheat;  
 transform: scaleY(1.5); 
 margin: 30px 40% 26px 0;  
     text-shadow: black 0 0 8px;
@@ -221,7 +221,7 @@ font-size: 11pt;
 font-weight: 100; 
 line-height: 2pt;  
 letter-spacing: 1pt; 
-color: gold;  
+color: Wheat;  
 margin: 0 40% 0 0; 
     text-shadow: black 0 0 4px;
  }  } 
