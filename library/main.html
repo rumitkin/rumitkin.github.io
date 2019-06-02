@@ -35,11 +35,10 @@ font-style: normal;
     
 @media all {
 header {
-    background: url(../img/header_bg.jpg) 100% 100% no-repeat black; /* Цвет фона */
-    background-size: cover; 
+display: flex;
     padding: 0px 0px 0px 0px; /* Поля */
-    margin: 1vw 1vw 1vw 1vw;   
-    border-radius: 2vw;
+    margin: 1vw 1vw 0.6vw 1vw;   
+border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
     min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 пикселей */
     float: center; /* Обтекание слева */
@@ -47,10 +46,11 @@ header {
    }  } 
     
 .ifr1 {
-    width: 100%; /* Ширина сайдбара в процентах */
-    height: 29vw;
+flex-grow: 1;
+    height: 13.5vw;
     border: 0;
-    align: center;
+border-radius: 8px;    
+
 }
         
         
@@ -68,7 +68,7 @@ article {
 	margin: 0 1vw 1vw 1vw;   
 	padding: 5px 5px 5px 5px; 
 	border:  0.2vw solid black;
-	border-radius: 2vw;    
+border-radius: 8px;    
 	min-width: 270px;   
 	}        
 
