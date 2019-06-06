@@ -1,0 +1,53 @@
+@media all {
+header {
+display: flex;
+    	padding: 0px 0px 0px 0px; /* Поля */
+    	margin: 1vw 1vw 0.6vw 1vw;   
+	border-radius: 8px;    
+    	width: 98%; /* Ширина сайдбара в процентах */
+    	float: center; /* Обтекание слева */
+    	text-align: center;
+   }  } 
+    
+@media all and (min-width: 700px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 13.5vw;
+} }
+@media all and (min-width: 550px) and (max-width: 699px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 29vw;
+   } }
+@media all and (min-width: 490px) and (max-width: 549px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 35vw;
+   } }
+@media all and (min-width: 420px) and (max-width: 489px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 40vw;
+   } }
+@media all and (min-width: 376px) and (max-width: 419px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 45vw;
+   } }
+@media all and (max-width: 375px) {
+.ifr1 {
+	flex-grow: 1;
+	border: 0;
+	border-radius: 8px;    
+	height: 50vw;
+   } }
