@@ -33,20 +33,20 @@ main {
 /* Область сайдбара */
 @media all and (min-width: 700px) {
 aside {
-    background: url(../rumipedia/img/rumi_glob1.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob1.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     margin:  0  0 1vw 1vw;   
-border-radius: 8px;    
+    border-radius: 8px;    
     width: 21%; /* Ширина сайдбара в процентах */
     min-width: 200px;  /* Сайдбар не будет уменьшаться меньше 200 пикселей */
    }  }
 @media all and (min-width: 550px) and (max-width: 699px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-border-radius: 8px;    
+    border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 29vw;
@@ -54,9 +54,9 @@ border-radius: 8px;
 @media all and (min-width: 490px) and (max-width: 549px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-border-radius: 8px;    
+    border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 35vw;
@@ -64,9 +64,9 @@ border-radius: 8px;
 @media all and (min-width: 420px) and (max-width: 489px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-border-radius: 8px;    
+    border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 40vw;
@@ -74,9 +74,9 @@ border-radius: 8px;
 @media all and (min-width: 376px) and (max-width: 419px) {
 aside {
     margin: 0 1vw 1vw 1vw;   
-border-radius: 8px;    
+    border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: 100% auto;
     padding: 0; /* Поля */
     height: 45vw;
@@ -86,7 +86,7 @@ aside {
     margin: 0 1vw 1vw 1vw;   
 border-radius: 8px;    
     width: 98%; /* Ширина сайдбара в процентах */
-    background: url(../rumipedia/img/rumi_glob2.jpg) no-repeat black; /* Цвет фона */
+    background: url(rumi_glob2.jpg) no-repeat black; /* Цвет фона */
     background-size: auto 100%;
     padding: 0; /* Поля */
     height: 50vw;
@@ -105,25 +105,25 @@ border-radius: 8px;
     width: 100%; /* Ширина картинки */
     text-align: center;
   } }
-@media all and (min-width: 550px) and (max-width: 699px) {
+@media all and (min-width: 600px) and (max-width: 699px) {
 .rumipedia_glob {
     margin-top: 20px;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
     text-align: center;
   } }
-@media all and (min-width: 490px) and (max-width: 549px) {
+@media all and (min-width: 490px) and (max-width: 599px) {
 .rumipedia_glob {
     margin: 0;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
-text-align: center;
+text-align: left;
+  padding: 1px 2% 1px 2%;  
   } }
 @media all and (min-width: 420px) and (max-width: 489px) {
 .rumipedia_glob {
      margin: 0 10px 0 0;   /* Жмем картинку к краям */
     width: 100%; /* Ширина картинки */
-text-align: center;
-  padding-top: 4px;  
-  padding-bottom: 4px;  
+text-align: left;
+  padding: 1px 2% 1px 2%;  
   } }
 @media all and (min-width: 376px) and (max-width: 419px) {
 .rumipedia_glob {
@@ -148,7 +148,7 @@ font-size: 1.8vw;
 letter-spacing: 0.2vw; 
 font-weight: 300; 
 line-height: 3vw;  
-color: #FFFACD;  
+color: #EEE8AA;  
 transform: scaleY(1.5); 
 margin: 0 0 26px 0; 
     text-shadow: black 0 0 6px;
@@ -159,7 +159,7 @@ font-size: 1vw;
 font-weight: 100; 
 line-height: 2vw;  
 letter-spacing: 0.1vw; 
-color: #FFFACD;  
+color: #EEE8AA;  
     text-shadow: black 0 0 2px;
  }  } 
 @media all and (min-width: 700px) and (max-width:1021px) {
@@ -169,41 +169,145 @@ font-size: 15pt;
 letter-spacing: 1pt; 
 font-weight: 300; 
 line-height: 30pt;  
-color: #FFFACD;  
+color: #EEE8AA;  
 transform: scaleY(1.5); 
 margin: 0 0 26px 0;  
-    text-shadow: black 0 0 6px;
+text-shadow: black 0 0 6px;
  } 
    p6 {    
 font-family: wash; 
 font-size: 8pt;  
 font-weight: 100; 
-line-height: 2pt;  
+line-height: 18pt; 
 letter-spacing: 1pt; 
-color: #FFFACD;  
-    text-shadow: black 0 0 2px;
+color: #EEE8AA;  
+text-shadow: black 0 0 2px;
  }  } 
-@media all and (max-width: 699px) {
+@media all and (min-width: 550px) and (max-width: 699px) {
    h4 {    
 font-family: wash; 
 font-size: 21pt;  
 letter-spacing: 1pt; 
 font-weight: 300; 
 line-height: 30pt;  
-color: #FFFACD;  
+color: #EEE8AA;  
 transform: scaleY(1.5); 
-margin: 30px 40% 26px 0;  
-    text-shadow: black 0 0 8px;
+margin: 24px 30% 20px 0;  
+text-shadow: black 0 0 8px;
  } 
    p6 {    
 font-family: wash; 
 font-size: 11pt;  
 font-weight: 100; 
-line-height: 2pt;  
+line-height: 18pt; 
 letter-spacing: 1pt; 
-color: #FFFACD;  
-margin: 0 40% 0 0; 
-    text-shadow: black 0 0 4px;
+color: #EEE8AA;  
+margin: 0 30% 0 0; 
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ }  } 
+@media all and (min-width: 450px) and (max-width: 549px) {
+   h4 {    
+font-family: wash; 
+font-size: 21pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 30pt;  
+color: #EEE8AA;  
+transform: scaleY(1.5); 
+margin: 24px 0 20px 0;  
+text-shadow: black 0 0 8px;
+ } 
+   p6 {    
+font-family: wash; 
+font-size: 11pt;  
+font-weight: 100; 
+line-height: 18pt; 
+letter-spacing: 1pt; 
+color: #EEE8AA;  
+margin: 0; 
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ }  } 
+@media all and (min-width: 330px) and (max-width: 449px) {
+   h4 {    
+font-family: wash; 
+font-size: 19pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 30pt;  
+color: gold;  
+transform: scaleY(1.5); 
+margin: 30px 0 26px 0;  
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ } 
+   p6 {    
+font-family: wash; 
+font-size: 9pt;  
+font-weight: 100; 
+line-height: 14pt;  
+letter-spacing: 1pt; 
+color: gold;  
+margin: 0; 
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ }  } 
+@media all and (min-width: 260px) and (max-width: 329px) {
+   h4 {    
+font-family: wash; 
+font-size: 19pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 19pt;  
+color: gold;  
+transform: scaleY(1.2); 
+margin: 15px 0 12px 0;  
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ } 
+   p6 {    
+font-family: arial; 
+font-size: 6vw;  
+font-weight: 100; 
+line-height: 2pt;  
+letter-spacing: 0.4vw; 
+color: gold;  
+margin: 0; 
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ }  } 
+@media all and (max-width: 259px) {
+   h4 {    
+font-family: wash; 
+font-size: 16pt;  
+letter-spacing: 1pt; 
+font-weight: 300; 
+line-height: 24pt;  
+color: gold;  
+transform: scaleY(1.2); 
+margin: 10px 0 9px 0;  
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
+ } 
+   p6 {    
+font-family: arial; 
+font-size: 6vw;  
+font-weight: 100; 
+line-height: 1.6pt;  
+letter-spacing: 0.4vw; 
+color: gold;  
+margin: 0; 
+text-shadow: black 0 0 4px,
+	black 0 0 8px,
+	black 0 0 12px;
  }  } 
 
 
