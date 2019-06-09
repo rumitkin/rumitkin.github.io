@@ -306,11 +306,11 @@ h99 {
 	text-align: center; /* Растягиваем текст */
 	position: absolute;
 	z-index: 900;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-	top: 36vw;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 38vw;
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
@@ -389,7 +389,7 @@ margin-left: auto;
 margin-right: auto;
 left: 0;
 right: 0;
-	top: 39vw;
+	top: 41vw;
 
 }
 .header-menu:hover {
