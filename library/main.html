@@ -16,388 +16,149 @@ charset="utf-8">
   </script>
 
 	        <link rel="stylesheet" href="../header.css">
-
+  <link rel="stylesheet" href="https://rumitkin.github.io/library/lib-main.css">
 	  
       <style>
-        /* Тело всего сайта*/
-body {
-    background: #DCDCDC; /* Цвет фона */
-    margin: 0;   /* Жмем страницу к краям */
-overflow-x:hidden;  /*для горизонтального*/
-  }
-@font-face{
-font-family: 'wash';
-src: url('../fonts/wash.eot');
-src: url('../fonts/wash.eot?iefix') format('eot'),
-url('../fonts/wash.woff') format('woff'),
-url('../fonts/wash.ttf') format('truetype'),
-url('../fonts/wash.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}    
-          
-        
-article {
-	display: flex;
-	flex-direction: column;
-	padding: 0; /* Поля */
-	table-layout: fixed;
-	width: 100%;
-	}
-        
-.book-main-block  {    
-	display: flex;
-	flex-direction: raw;
-	margin: 0 1vw 1vw 1vw;   
-	padding: 5px 5px 5px 5px; 
-	border:  0.2vw solid black;
-border-radius: 8px;    
-	min-width: 270px;   
-	}        
-
-.book-img-block {    
-	margin: 1vw 0 1vw 1vw;   
-	padding: 5px 5px 5px 5px; 
-	min-width: 270px;   
-	width: 30%;
-	}        
-
-.book-text-block {    
-	flex-grow: 1;
-	margin: 1vw  1vw 1vw 0;   
-	padding: 5px 5px 5px 1vw; 
-	border-left:  0.2vw solid black;
-	min-width: 270px;   
-	text-align: justify;
-	width: 60%;
-	}        
-        
-
-/* Заголовок статьи */
-@media all and (min-width:1022px) {
-    h1 {    
-font-family: Georgia; 
-font-size: 30pt;   
-line-height: 60pt;  
-letter-spacing: 1vw; 
-font-style: bold;  
-font-variant: small-caps; 
-transform: scaleY(2); 
-color: #000000;  
-margin: 1vw 0 1vw 0;   
-text-align: left;
-}  }
-@media all and (min-width: 700px) and (max-width:1021px) {
-     h1 {    
-font-family: Georgia; 
-font-size: 30pt;   
-line-height: 60pt;  
-letter-spacing: 0.5vw; 
-font-style: bold;  
-font-variant: small-caps; 
-transform: scaleY(2); 
-color: #000000;  
-margin: 0.8vw 0 0.8vw 0;   
-text-align: left;
-}  }
-@media all and (min-width: 450px) and (max-width: 699px) {
-     h1 {    
-font-family: Georgia; 
-font-size: 28pt;   
-line-height: 60pt;  
-letter-spacing: 0.1vw; 
-font-style: bold;  
-font-variant: small-caps; 
-color: #000000;  
-margin: 0.4vw 0 0.4vw 0;   
-text-align: center;
-transform: scaleY(2); 
-}  }
-@media all and (max-width: 449px) {
-     h1 {    
-display: none;
-}  }
-
-/* Подзаголовок статьи */
-@media all and (min-width:1022px) {
-   h2 {    
-font-family: Georgia; 
-font-size: 20pt;  
-font-weight: normal; 
-line-height: 6pt;  
-letter-spacing: 1px; 
-color: #000000;  
-margin: 20px 0 20px 0;  
-text-align: left;
- } }
-@media all and (min-width: 450px) and (max-width:1021px) {
-   h2 {    
-font-family: Georgia; 
-font-size: 20pt;  
-font-weight: normal; 
-line-height: 24pt; 
-letter-spacing: 1px; 
-color: #000000;  
-margin: 40px 0 10px 0;  
-text-align: left;
- } }
-@media all and (max-width: 449px) {
-   h2 {    
-font-family: Georgia; 
-font-size: 16pt;  
-font-weight: normal; 
-line-height: 18pt; 
-letter-spacing: 1px; 
-color: #000000;  
-margin: 40px 0 10px 0;  
-text-align: left;
- } }
-
-/* Основной шрифт */
-@media all and (min-width:900px) {
-  p {    
-   font-family: Arial;  
-   font-size: 13pt;   
-   color: #000000;   
- }  }
-@media all and (max-width:899px) {
-  p {    
-   font-family: Arial;  
-   font-size: 14pt;   
-   color: #000000;   
- }}
- 
-/* Курсивный шрифт для подписи картинки */
-   p1 {    
-font-family: wash; 
-font-size: 1.2vw;  
-letter-spacing: 0.15vw; 
-font-weight: 100; 
-line-height: 2vw;  
-color: gold;
-margin: 2vw 0 2vw 0; 
-    text-shadow: black 0 0 9px;
-font-variant: small-caps; 
- } 
-/* Шрифт для анкеты */
-@media all and (min-width:900px) {
-   p2 {    
-    font-family: Arial; 
-    font-size: 14pt;  
-    line-height: 24pt;  
-    font-style: italic;  
-    font-weight: 100; 
-    color: #000000;  
- }  }
-@media all and (max-width:899px) {
-   p2 {    
-    font-family: Arial; 
-    font-size: 14pt;  
-    line-height: 24pt;  
-    font-style: italic;  
-    color: #000000;  }   }
-/* Жирный шрифт для анкеты */
-@media all and (min-width:900px) {
-   p3 {    
-    font-family: Arial; 
-    font-size: 14pt;  
-    line-height: 24pt;  
-    font-style: italic;  
-    font-weight: 600; 
-    color: #000000;  
- } }
-@media all and (max-width:899px) {
-   p3 {    
-    font-family: Arial; 
-    font-size: 14pt;  
-    line-height: 24pt;  
-    font-style: italic;  
-    font-weight: 600; 
-    color: #000000;  
- }  }
-
-
-
-/* Настройки для картинок анкет */
-.book-title-img {
-width: 99%;
-margin: 2px 0 9px 0;   
-border-radius: 4px; 
-}
-
- ul.hr {
-margin: 0.4vw  0.2vw 0.6vw  0.2vw;/* Обнуляем значение отступов */
-    padding: 1vw; /* Значение полей */
-   }
-   ul.hr li {
-    display: block; /* Отображать как строчный элемент */
-margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
-    padding: 0.2vw; /* Поля вокруг текста */
-   }
-   ul.hr li a {
-    display: block; /* Отображать как строчный элемент */
-margin: 0.4vw 0.05vw 0.4vw 0.05vw; /* Отступы  */
-    border: 0.2vw solid gold; /* Рамка вокруг текста */
-    padding: 0.2vw; /* Поля вокруг текста */
-    color: gold;
-    background: #2F4F4F; /* Цвет фона */
-    padding: 0.5vw 0.9vw;
-    text-decoration: none;
-    border-radius: 0.8vw;
-    box-shadow: 0 0 9px black,
-	         inset 0 0 4.5px black;
-    text-align: center;
-   }
-   ul.hr li a:hover {
-    background: linear-gradient(145deg, #708090 25%, #000000 100%);
-    color: white;
-    text-decoration: none;
-    border: 0.2vw solid white; /* Рамка вокруг текста */
-    box-shadow: 0 0 9px green;
-}
-   ul.hr li a:visited {    
-    color: silver;     
-    text-decoration: none;
-}
-   ul.hr li a:visited:hover {
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 0 9px green;
-}
-
-
-/* Стиль для линков */
- a { color: blue; text-decoration: none;}
- a:hover { color: #006400; text-decoration: underline; }
- a:visited { color: #8A2BE2; text-decoration: none; }
- a:visited:hover { color: #006400; text-decoration: underline; }
-
+    
         </style>
 </head> 
 
 <body>
 
 
-<div class="header-menu">
-  <div class="m-title">
-    <h99> МЕНЮ </h99>
-  </div> 
-  <iframe src="../header-mobile-menu.html" scrolling="no">
-    Возможно, ваш браузер не совместим с сайтом Румит Кин!
-  </iframe>
-</div>
 
-<header>
-  <iframe src="../header.html" class="ifr1" scrolling="no">
-    Возможно, ваш браузер не совместим с сайтом Румит Кин!
-  </iframe>
-  <iframe src="../header-mobile.html" class="ifr2" scrolling="no">
-    Возможно, ваш браузер не совместим с сайтом Румит Кин!
-  </iframe>
+
+  <header>
+<iframe src="https://rumitkin.github.io/header.html" class="ifr1" scrolling="no">
+Возможно, ваш браузер не совместим с сайтом Румит Кин!
+</iframe>
 </header>
-  
- <article> 
 
+<article>
+
+<h1>библиотека</h1>
 
  <div class="book-main-block">
-
-	<div class="book-img-block">
-	<img src="k1.jpg" alt="Румит Кин. Песня для Корби. Обложка." 
-
-class="book-title-img">
-
-<ul class="hr">
-<li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сайте</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сторонних ресурсах</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Скачать в форматах <br> .pdf .doc .txt .fb2</a></p1></li>
-<li><p1><a href="lanin_universe_cat.html" target="_top">Купить в <br> бумажном варианте</a></p1></li>
-</ul>
-
-	</div>
-
+   <div class="book-main-block-line1">
+	    <div class="book-img-block">
+	       <img src="https://rumitkin.github.io/library/k1.jpg" alt="Румит Кин. Песня для Корби. Обложка." class="book-title-img">
+         <div class="book-tegline">
+             <img src="teg-ico.png" alt="" class="" width="20vw"><p4>дружба, смерть, музыка, магия, мистика, подростки, приключения, психология, современность, ужасы, руферы</p4><br>
+           </div>
+	    </div>
 	<div class="book-text-block">
-	<h1>Песня для Корби</h1>
-	<hr>
-	<p3>Жанр: </p3><p2>Роман / Мистика, Приключения, Ужасы,  
+    <h2>Песня для Корби</h2>
+    <h4>Роман / Мистика, Приключения, Ужасы, Подростковая проза.</h4>
+    <div class="book-anketa">
+      <p3>Cостояние: </p3><p2>закончен, издан.</p2><br>
+      <p3>Объём: </p3><p2>684 651 зн. / 17,12 а.л.</p2><br>
+      <p3>Даты: </p3><p2>написан: 17 октября 2012 – 7 марта 2013 / издан: в апреле 2019 </p2><br>
+    </div>
+    <div class="tabs">
+      <ul>
+        <li>
+          <input type="radio" name="tabs-0" checked="checked" id="tabs-0-0" />
+          <label for="tabs-0-0"><h3>Аннотация</h3></label>
+          <div>
+            <p>    За несколько дней до выпускного Коля Рябин, по прозвищу Корби, заключает    опрометчивое пари со своим странным одноклассником Андреем Токоминым.    Поначалу все кажется не более чем игрой, и ни он, ни его друзья не    подозревают, чем обернется для них эта последняя шалость их уходящего    детства. Однако теперь они все связаны страшной судьбой, а смерть идет за    ними по пятам.    </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs-0" id="tabs-0-1" />
+          <label for="tabs-0-1"><h3>Примечания авторов</h3></label>
+          <div>
+            <p>  «Песня для Корби» – это попытка ответить на важный вопрос: какой могла бы  быть история положительного героя подросткового возраста, наследника  «крапивинских мальчиков» и «волшебных детей» сегодня, в современном  контексте, в обыденно-реалистических декорациях (поначалу), но не по  заимствованному шаблону вроде магической школы или городского фэнтези?  Мы решили быть достаточно мрачными, жесткими и даже грубоватыми в  каких-то отдельных моментах, чтобы на их фоне отчетливее подчеркнуть: это  светлая вещь. Это история о дружбе; о том, что люди способны измениться –  это имеет предельное значение для нас; о том, кто мы друг для друга; о поисках  той идеи, философии или мифологии, на которую «волшебный ребенок», равно  как и пишущий о нем, мог бы опереться сегодня, в эпоху страшной  неуверенности и утраты всех привычных горизонтов смысла.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs-0" id="tabs-0-2" />
+          <label for="tabs-0-2"><h3>Ссылки</h3></label>
+          <div>
+            <p>          Более подробно о романе и его героях можно узнать из энциклопедии <a         href="corby_novel.html"> &laquo;Румипедии&raquo;</a>.         	</p>
+         	  <p>         Книгу в бумажном варианте можно купить в <a         href="corby_novel.html">магазине</a>.         </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+   <div class="book-main-block-line2">
 
-Подростковая проза.</p2>
-	<br>
-	<p3>Cостояние: </p3><p2>закончен, издан.</p2>
-	<br>
-	<p3>Объём: </p3><p2>684 651 зн. / 17,12 а.л.</p2>
-	<br>
-	<p3>Даты: </p3><p2>написан: 17 октября 2012 – 7 марта 2013 / издан: 
-
-в апреле 2019 </p2>
-	<br>
-	<p3>Теги: </p3><p2>дружба, смерть, музыка, магия, мистика, 
-
-подростки, приключения, психология, современность, ужасы, руферы.</p2>
-
-	<h2>Аннотация</h2>
-	<hr><p>
-За несколько дней до выпускного Коля Рябин, по прозвищу Корби, заключает 
-
-опрометчивое пари со своим странным одноклассником Андреем Токоминым. 
-
-Поначалу все кажется не более чем игрой, и ни он, ни его друзья не 
-
-подозревают, чем обернется для них эта последняя шалость их уходящего 
-
-детства. Однако теперь они все связаны страшной судьбой, а смерть идет за 
-
-ними по пятам. 
-	</p>
-
-
-	<h2>Примечание авторов</h2>
-	<hr><p>
-«Песня для Корби» – это попытка ответить на важный вопрос: какой могла бы 
-
-быть история положительного героя подросткового возраста, наследника 
-
-«крапивинских мальчиков» и «волшебных детей» сегодня, в современном 
-
-контексте, в обыденно-реалистических декорациях (поначалу), но не по 
-
-заимствованному шаблону вроде магической школы или городского фэнтези? 
-
-Мы решили быть достаточно мрачными, жесткими и даже грубоватыми в 
-
-каких-то отдельных моментах, чтобы на их фоне отчетливее подчеркнуть: это 
-
-светлая вещь. Это история о дружбе; о том, что люди способны измениться – 
-
-это имеет предельное значение для нас; о том, кто мы друг для друга; о поисках 
-
-той идеи, философии или мифологии, на которую «волшебный ребенок», равно 
-
-как и пишущий о нем, мог бы опереться сегодня, в эпоху страшной 
-
-неуверенности и утраты всех привычных горизонтов смысла.
- </p>
-
-	<h2>Ссылки</h2>
-	<hr><p>
-Более подробно о романе и его героях можно узнать из энциклопедии <a 
-
-href="corby_novel.html"> &laquo;Румипедии&raquo;</a>. 
-	</p>
-	<p>
-Книгу в бумажном варианте можно купить в <a 
-
-href="corby_novel.html">магазине</a>.
-	</p>
-	</div>
-
+       <div>
+     <ul class="hr">
+     <li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сайте</a></p1></li>
+     <li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сторонних ресурсах</a></p1></li>
+     <li><p1><a href="lanin_universe_cat.html" target="_top">Скачать в форматах <br> .pdf .doc .txt .fb2</a></p1></li>
+     <li><p1><a href="lanin_universe_cat.html" target="_top">Купить в<br> бумажном варианте</a></p1></li>
+     </ul>
+   </div>
+   </div>
 </div>
 
- <div class="book-main-block">
-   12345
+<div class="book-main-block">
+  <div class="book-main-block-line1">
+     <div class="book-img-block">
+        <img src="https://rumitkin.github.io/library/z3.jpg" alt="Румит Кин. Земля в иллюминаторе. Обложка." class="book-title-img">
+        <div class="book-tegline">
+                    <img src="teg-ico.png" alt="" class="" width="20vw"><p4> будущее, другой мир, дружба, смерть, магия, мистика, дети, приключения, философия, наука, битвы, герои, добро, зло, постапокалипсис, фантастика </p4><br>
+          </div>
+     </div>
+ <div class="book-text-block">
+   <h2>Земля в иллюминаторе</h2>
+   <h4>Роман / Фантастика, Фэнтези, Постапокалипсис, Приключения, Философский роман, Подростковая проза.</h4>
+   <div class="book-anketa">
+     <p3>Cостояние: </p3><p2>закончен, издан.</p2><br>
+     <p3>Объём: </p3><p2>1 608 872 зн. / 40,22 а.л.</p2><br>
+     <p3>Даты: </p3><p2>написан: 2015 – 2017 / издан: в 2018 </p2><br>
    </div>
- <div class="book-main-block">
-   12345
+   <div class="tabs">
+     <ul>
+       <li>
+         <input type="radio" name="tabs-1" checked="checked" id="tabs-1-0" />
+         <label for="tabs-1-0"><h3>Аннотация</h3></label>
+         <div>
+           <p>    Тави и Хинта — друзья из далёкого будущего — пытаются спасти остатки выжившего после серии космических катаклизмов человечества от надвигающегося ужаса окончательной гибели планеты.  </p>
+           <p>На этом пути им помогает школьный учитель, а препятствуют могущественная корпорация, распоряжающаяся последними ресурсами умирающего мира, и мутанты новой эры мрака, армия которых готовится истребить отчаявшихся людей.   </p>
+         </div>
+       </li>
+       <li>
+         <input type="radio" name="tabs-1" id="tabs-1-1" />
+         <label for="tabs-1-1"><h3>Примечания авторов</h3></label>
+         <div>
+           <p> Раздел не заполнен.
+           </p>
+         </div>
+       </li>
+       <li>
+         <input type="radio" name="tabs-1" id="tabs-1-2" />
+         <label for="tabs-1-2"><h3>Ссылки</h3></label>
+         <div>
+           <p>          Более подробно о романе и его героях можно узнать из энциклопедии <a         href="corby_novel.html"> &laquo;Румипедии&raquo;</a>.         	</p>
+           <p>         Книгу в бумажном варианте можно купить в <a         href="corby_novel.html">магазине</a>.         </p>
+         </div>
+       </li>
+     </ul>
    </div>
- </article>
-   </body> 
+ </div>
+</div>
+  <div class="book-main-block-line2">
+
+      <div>
+    <ul class="hr">
+    <li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сайте</a></p1></li>
+    <li><p1><a href="lanin_universe_cat.html" target="_top">Читать на <br> сторонних ресурсах</a></p1></li>
+    <li><p1><a href="lanin_universe_cat.html" target="_top">Скачать в форматах <br> .pdf .doc .txt .fb2</a></p1></li>
+    <li><p1><a href="lanin_universe_cat.html" target="_top">Купить в<br> бумажном варианте</a></p1></li>
+    </ul>
+  </div>
+  </div>
+
+ </div>
+<div class="book-main-block">
+ 12345
+ </div>
+</article>
+ </body>
+</html>
 </html>
