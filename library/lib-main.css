@@ -1,4 +1,25 @@
 
+@font-face{
+font-family: 'wash';
+src: url('../fonts/wash.eot');
+src: url('../fonts/wash.eot?iefix') format('eot'),
+url('../fonts/wash.woff') format('woff'),
+url('../fonts/wash.ttf') format('truetype'),
+url('../fonts/wash.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Mont';
+src: url('../fonts/mont.eot');
+src: url('../fonts/mont.eot?iefix') format('eot'),
+url('../fonts/mont.woff') format('woff'),
+url('../fonts/mont.ttf') format('truetype'),
+url('../fonts/mont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
 
       @media all and (min-width:900px) {
         .tabs {
@@ -132,16 +153,7 @@ body {
     margin: 0;   /* Жмем страницу к краям */
 overflow-x:hidden;  /*для горизонтального*/
   }
-@font-face{
-font-family: 'wash';
-src: url('../fonts/wash.eot');
-src: url('../fonts/wash.eot?iefix') format('eot'),
-url('../fonts/wash.woff') format('woff'),
-url('../fonts/wash.ttf') format('truetype'),
-url('../fonts/wash.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}
+
 
 
 article {
@@ -218,7 +230,7 @@ article {
     text-align: justify;
   }
   h1 {
-font-family: Montresor;
+font-family: Mont;
 font-size: 9vw;
 line-height: 7vw;
 letter-spacing: 2vw;
