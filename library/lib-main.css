@@ -230,12 +230,13 @@ article {
     text-align: justify;
   }
   h1 {
-font-family: Mont;
-font-size: 9vw;
+font-family: wash;
+font-size: 6.3vw;
 line-height: 7vw;
 letter-spacing: 2vw;
+transform: scaleY(1.3);
 color: tan;
-margin: 1vw 0 2.4vw 4.9vw;
+margin: 5.4vw 0 4.2vw 0;
 text-align: center;
 text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
 }
