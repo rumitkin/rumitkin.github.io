@@ -11,18 +11,30 @@ font-style: normal;
 }
 
 
+/*Класс для простых объектов, которым нужно исчезнуть*/
+@media all and (min-width: 785px) {
+.span-dis  { } }
+@media all and (max-width: 784px) {
+.span-dis  {    display: none;}}
+
+
       @media all and (min-width:900px) {
         .tabs {
             margin: 1px 1px 1px 5px;
 
   	        flex-grow: 1;
         } }
-     @media all and (max-width:899px) {
+     @media all and (min-width:700px) and (max-width:899px) {
        .tabs {
            margin: 0.6vw 0 0.1vw 0.6vw;
  	        flex-grow: 1;
        } }
-
+       @media all and (max-width:699.9px) {
+         .tabs {
+             margin: 1.6vw 0.6vw 1.2vw 2vw;
+             flex: 1 1 auto;
+             height: 300px;
+         } }
 
       .tabs ul,
       .tabs li {
@@ -96,7 +108,6 @@ font-style: normal;
            -webkit-user-select: none;
            user-select: none;
        } }
-
       .tabs input[type="radio"]:checked + label {
           z-index: 1;
           background: #DCDCDC;
@@ -122,7 +133,7 @@ font-style: normal;
             border-color: #1f1f1f;
             padding: 18px;
         } }
-     @media all and (max-width:899px) {
+     @media all and (min-width:700px) and (max-width:899px) {
        .tabs input[type="radio"]:checked:not(:disabled) ~ div {
            display: block;
            background: #DCDCDC;
@@ -131,7 +142,16 @@ font-style: normal;
            border-color: #1f1f1f;
            padding: 0.8vw;
        } }
-
+       @media all and (max-width:699px) {
+         .tabs input[type="radio"]:checked:not(:disabled) ~ div {
+             display: block;
+             background: #DCDCDC;
+             overflow: auto;
+             border-radius: 0 4px 4px 4px;
+             border-color: #1f1f1f;
+             padding: 0.8vw;
+             margin-top: 2vw;
+         } }
       .tabs input[type="radio"]:disabled + label {
           opacity: .5;
           cursor: no-drop;
@@ -153,7 +173,7 @@ article {
 	table-layout: fixed;
 	width: 100%;
 	}
-
+@media all and (min-width: 700px) {
 .book-main-block  {
 	display: flex;
 	flex-direction: column;
@@ -165,35 +185,218 @@ article {
   background: gray;
   box-shadow: inset 0 0 5px #1f1f1f;
 	}
-.book-main-block-line1 {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+  .book-main-block-line1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .span-h2-h4-mobile{
+    display: none;
+  }
+  .book-img-block {
+  	margin: 1vw 0 1vw 1vw;
+  	padding: 5px 5px 5px 5px;
+  	min-width: 270px;
+  	width: 30%;
+  	}
+    .book-title-img {
+    width: 99%;
+    margin: 2px 0 9px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+    }
+    .book-text-block {
+      display: flex;
+    	flex-grow: 1;
+      flex-direction: column;
+    	margin: 1vw  1vw 1vw 0;
+    	padding: 5px 5px 5px 0.5vw;
+    	border-left:  0vw solid #1f1f1f;
+    	min-width: 270px;
+    	text-align: justify;
+    	width: 60%;
+    	}
+      ul.hr {
+        display: flex;
+        flex-direction: row;
+         margin: -1vw  0.2vw 0.1vw  0.2vw;/* Обнуляем значение отступов */
+         padding: 1vw; /* Значение полей */
+        }
+        p1 {
+     font-family: wash;
+     font-size: 1.2vw;
+     letter-spacing: 0.15vw;
+     font-weight: 100;
+     line-height: 2vw;
+     color: gold;
+     margin: 2vw 0 2vw 0;
+         text-shadow: #1f1f1f 0 0 9px;
+     font-variant: small-caps;
+      }
+      .book-tegline {
+        margin: 0.2vw;
+        padding: 0 0.4vw;
+        text-align: justify;
+      }
 }
+  @media all and (min-width: 550px) and (max-width: 699.9px) {
+    .book-main-block  {
+    	display: flex;
+    	flex-direction: column;
+      margin: 2vw 2% 1vw 2%;
+    	padding: 5px 5px 5px 5px;
+    	border:  0.2px solid dimgray;
+    	border-radius: 8px;
+    	min-width: 270px;
+      background: gray;
+      box-shadow: inset 0 0 5px #1f1f1f;
+    	}
+      .book-title-img {
+        align: center;
+      width: 50%;
+      margin: 2px auto 9px auto;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+      }}
+
+        @media all and  (max-width: 699.9px) {
+      .book-main-block-line1 {
+        display: flex;
+	       flex-direction: column;
+          margin: 0;
+        padding: 0;
+      }
+      .span-h2-h4{
+        display: none;
+      }
+      .book-img-block {
+        display: flex;
+        flex-direction: column;
+      	margin: 1vw 0 1vw 1vw;
+      	padding: 5px 5px 5px 5px;
+      	min-width: 270px;
+        flex: 1 1 auto;
+      	}
+        .book-text-block {
+          display: flex;
+        	flex-grow: 1;
+          flex-direction: column;
+        	margin: -1vw  1vw 1vw 0;
+        	padding: 5px 5px 5px 0.5vw;
+        	border-left:  0vw solid #1f1f1f;
+        	min-width: 270px;
+        	text-align: justify;
+        flex: 1 1 auto;
+        	}
+          ul.hr {
+            display: flex;
+            flex-direction: column;
+             margin: -1vw  0.2vw 0.1vw  0.2vw;/* Обнуляем значение отступов */
+             padding: 1vw; /* Значение полей */
+            }
+            p1 {
+         font-family: wash;
+         font-size: 3vw;
+         letter-spacing: 0.15vw;
+         font-weight: 100;
+         line-height: 6vw;
+         color: gold;
+         margin: 2vw 0 2vw 0;
+             text-shadow: #1f1f1f 0 0 9px;
+         font-variant: small-caps;
+          }
+          .book-tegline {
+            margin: 0.2vw;
+            padding: 0 1.5vw 0 0.4vw;
+            text-align: justify;
+          }
+    }
+      @media all and (min-width: 490px) and (max-width: 549.9px) {
+        .book-main-block  {
+          display: flex;
+          flex-direction: column;
+          margin: 2vw 2% 1vw 2%;
+          padding: 5px 5px 5px 5px;
+          border:  0.2px solid dimgray;
+          border-radius: 8px;
+          min-width: 270px;
+          background: gray;
+          box-shadow: inset 0 0 5px #1f1f1f;
+        }
+         .book-title-img {
+                align: center;
+              width: 60%;
+              margin: 2px auto 9px auto;
+              border-radius: 4px;
+              box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+              }}
+          @media all and (min-width: 420px) and (max-width: 489.9px) {
+            .book-main-block  {
+              display: flex;
+              flex-direction: column;
+              margin: 2vw 2% 1vw 2%;
+              padding: 5px 5px 5px 5px;
+              border:  0.2px solid dimgray;
+              border-radius: 8px;
+              min-width: 270px;
+              background: gray;
+              box-shadow: inset 0 0 5px #1f1f1f;
+            }
+             .book-title-img {
+                    align: center;
+                  width: 75%;
+                  margin: 2px auto 9px auto;
+                  border-radius: 4px;
+                  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+                  }}
+              @media all and (min-width: 376px) and (max-width: 419px) {
+                .book-main-block  {
+                  display: flex;
+                  flex-direction: column;
+    	            margin: 4vw 4% 1vw 4%;
+                  padding: 5px 5px 5px 5px;
+                  border:  0.2px solid dimgray;
+                  border-radius: 8px;
+                  min-width: 270px;
+                  background: gray;
+                  box-shadow: inset 0 0 5px #1f1f1f;
+                  }
+                  .book-title-img {
+                    align: center;
+                  width: 90%;
+                  margin: 2px auto 9px auto;
+                  border-radius: 4px;
+                  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+                  } }
+                  @media all and (max-width: 375px) {
+                    .book-main-block  {
+                      display: flex;
+                      flex-direction: column;
+    	                margin: 4vw 4% 1vw 4%;
+                      padding: 5px 5px 5px 5px;
+                      border:  0.2px solid dimgray;
+                      border-radius: 8px;
+                      min-width: 270px;
+                      background: gray;
+                      box-shadow: inset 0 0 5px #1f1f1f;
+                      }
+                      .book-title-img {
+                              align: center;
+                            width: 74vw;
+                            margin: 2px auto 9px auto;
+                            border-radius: 4px;
+                            box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+                            }}
+
 .book-main-block-line2 {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
-.book-img-block {
-	margin: 1vw 0 1vw 1vw;
-	padding: 5px 5px 5px 5px;
-	min-width: 270px;
-	width: 30%;
-	}
-.book-text-block {
-  display: flex;
-	flex-grow: 1;
-  flex-direction: column;
-	margin: 1vw  1vw 1vw 0;
-	padding: 5px 5px 5px 0.5vw;
-	border-left:  0vw solid #1f1f1f;
-	min-width: 270px;
-	text-align: justify;
-	width: 60%;
-	}
+
+
   @media all and (min-width:900px) {
   .book-anketa {
       display: block;
@@ -204,7 +407,7 @@ article {
       padding: 18px;
       margin: 10px 1px 10px 5px;
   } }
- @media all and (max-width:899px) {
+ @media all and (min-width:700px) and (max-width:899px) {
    .book-anketa {
        display: block;
        background: #dcdcdc;
@@ -214,11 +417,18 @@ article {
        padding: 0.8vw;
        margin: 0.4vw 0 0.4vw 0.4vw;
    } }
-  .book-tegline {
-    margin: 0.2vw;
-    padding: 0 0.4vw;
-    text-align: justify;
-  }
+   @media all and (max-width:699px) {
+     .book-anketa {
+         display: block;
+         background: #dcdcdc;
+         overflow: auto;
+         border:  1px solid #1f1f1f;
+         border-radius: 4px;
+         padding: 0.8vw;
+         margin: 1.6vw 0.6vw 1.2vw 2vw;
+         flex: 1 1 auto;
+     } }
+
   h1 {
 font-family: wash;
 font-size: 6.3vw;
@@ -259,25 +469,36 @@ margin: 1vw 0 1vw 0.3vw;
 text-align: left;
 text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
 }  }
-@media all and (min-width: 450px) and (max-width: 699px) {
-     h2 {
-font-family: Georgia;
-font-size: 28pt;
-line-height: 60pt;
-letter-spacing: 0.1vw;
+@media all and (min-width: 450px) and (max-width: 699.9px) {
+  h2 {
+font-family: Arial Black;
+font-size: 7vw;
+line-height: 6vw;
+letter-spacing: 0.7vw;
 font-style: bold;
 font-variant: small-caps;
-color: #1f1f1f;
-margin: 0.4vw 0 0.4vw 0;
+transform: scaleY(1.2);
+color: #f0f0f0;
+margin: 1vw 0 3vw 0.3vw;
 text-align: center;
-transform: scaleY(2);
+text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
 }  }
 @media all and (max-width: 449px) {
-     h2 {
-display: none;
+  h2 {
+font-family: Arial Black;
+font-size: 7.6vw;
+line-height: 7vw;
+letter-spacing: 0.7vw;
+font-style: bold;
+font-variant: small-caps;
+transform: scaleY(1.4);
+color: #f0f0f0;
+margin: 1vw 0 3vw 0.3vw;
+text-align: center;
+text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
 }  }
 /* Подзаголовок статьи */
-@media all and (min-width:1022px) {
+@media all and (min-width:900px) {
    h3 {
 font-family: Georgia;
 font-size: 2vw;
@@ -288,7 +509,7 @@ color: #1f1f1f;
 margin: 2vw 0 2vw 0;
 text-align: left;
  } }
-@media all and (min-width: 450px) and (max-width:1021px) {
+@media all and (min-width: 785px) and (max-width:899px) {
    h3 {
 font-family: Georgia;
 font-size: 2.2vw;
@@ -299,17 +520,28 @@ color: #1f1f1f;
 margin: 2vw 0 2vw 0;
 text-align: left;
  } }
-@media all and (max-width: 449px) {
+ @media all and (min-width: 700px) and (max-width:784px) {
+    h3 {
+ font-family: Georgia;
+ font-size: 2.6vw;
+ font-weight: normal;
+ line-height: 0;
+ letter-spacing: 0.1vw;
+ color: #1f1f1f;
+ margin: 2vw 0 2vw 0;
+ text-align: left;
+  } }
+@media all and (max-width: 699.9px) {
    h3 {
 font-family: Georgia;
-font-size: 16pt;
+font-size: 4vw;
 font-weight: normal;
-line-height: 18pt;
-letter-spacing: 1px;
+line-height: 2vw;
+letter-spacing: 0.1vw;
 color: #1f1f1f;
-margin: 40px 0 10px 0;
+margin: 2vw 0 2vw 0;
 text-align: left;
- } }
+ }}
 /* Основной шрифт */
 @media all and (min-width:900px) {
   p {
@@ -334,7 +566,7 @@ text-align: left;
   text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
   margin: 0.6vw;
 }}
-@media all and (max-width:939px) {
+@media all and (min-width:700px) and (max-width:939px) {
   h4 {
    font-family: Arial;
    font-size: 1.75vw;
@@ -342,6 +574,17 @@ text-align: left;
    text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
    margin: 0.6vw;
  }}
+ @media all and (max-width:699.9px) {
+   h4 {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9ACD32;
+    text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
+    margin: 8px;
+    text-align: center;
+  }}
+
  @media all and (min-width:900px) {
    p4 {
     font-family: Arial;
@@ -359,18 +602,7 @@ text-align: left;
    margin: 0.6vw;
   } }
 
-/* Курсивный шрифт для подписи картинки */
-   p1 {
-font-family: wash;
-font-size: 1.2vw;
-letter-spacing: 0.15vw;
-font-weight: 100;
-line-height: 2vw;
-color: gold;
-margin: 2vw 0 2vw 0;
-    text-shadow: #1f1f1f 0 0 9px;
-font-variant: small-caps;
- }
+
 /* Шрифт для анкеты */
 @media all and (min-width:900px) {
    p2 {
@@ -411,18 +643,9 @@ font-variant: small-caps;
  }  }
 /* Настройки для картинок анкет */
 
-.book-title-img {
-width: 99%;
-margin: 2px 0 9px 0;
-border-radius: 4px;
-box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
-}
- ul.hr {
-   display: flex;
-   flex-direction: row;
-    margin: -1vw  0.2vw 0.1vw  0.2vw;/* Обнуляем значение отступов */
-    padding: 1vw; /* Значение полей */
-   }
+
+
+
    ul.hr li {
     display: inline-block; /* Отображать как строчный элемент */
     margin: 0 0.2vw 0 0.2vw; /* Отступ слева */
