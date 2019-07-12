@@ -10,16 +10,6 @@ font-weight: normal;
 font-style: normal;
 }
 
-@font-face{
-font-family: 'Mont';
-src: url('../fonts/mont.eot');
-src: url('../fonts/mont.eot?iefix') format('eot'),
-url('../fonts/mont.woff') format('woff'),
-url('../fonts/mont.ttf') format('truetype'),
-url('../fonts/mont.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}
 
       @media all and (min-width:900px) {
         .tabs {
