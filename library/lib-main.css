@@ -10,6 +10,16 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face{
+font-family: 'arba';
+src: url('../fonts/arba.eot');
+src: url('../fonts/arba.eot?iefix') format('eot'),
+url('../fonts/arba.woff') format('woff'),
+url('../fonts/arba.ttf') format('truetype'),
+url('../fonts/arba.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
 
 /*Класс для простых объектов, которым нужно исчезнуть*/
 @media all and (min-width: 785px) {
@@ -31,11 +41,10 @@ font-style: normal;
        } }
        @media all and (max-width:699.9px) {
          .tabs {
-             margin: 1.6vw 0.6vw 1.2vw 2vw;
-             flex: 1 1 auto;
-             height: 300px;
+             margin: 0;
          } }
 
+      @media all and (min-width:700px) {
       .tabs ul,
       .tabs li {
           margin: 0;
@@ -82,32 +91,10 @@ font-style: normal;
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
       }
-      @media all and (min-width:900px) {
-        .tabs input[type="radio"] + label {
-            margin: 0 2px 0 0;
-            padding: 0 18px;
-            line-height: 32px;
-            background: #A9A9A9;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-            cursor: pointer;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        } }
-     @media all and (max-width:899px) {
-       .tabs input[type="radio"] + label {
-           margin: 0 2px 0 0;
-           padding: 0 0.8vw;
-           line-height: 32px;
-           background: #A9A9A9;
-           text-align: center;
-           border-radius: 8px 8px 0 0;
-           cursor: pointer;
-           -moz-user-select: none;
-           -webkit-user-select: none;
-           user-select: none;
-       } }
+      .tabs input[type="radio"]:disabled + label {
+          opacity: .5;
+          cursor: no-drop;
+      }
       .tabs input[type="radio"]:checked + label {
           z-index: 1;
           background: #DCDCDC;
@@ -124,6 +111,111 @@ font-style: normal;
       .tabs input[type="radio"] ~ div {
           display: none;
       }
+    }
+    @media all and (max-width:699px) {
+      .tabs ul {
+display: flex;
+flex-direction: column;
+      }
+      .tabs ul,
+      .tabs li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+      .tabs,
+      .tabs input[type="radio"]:checked + label {
+          position: relative;
+      }
+      .tabs li,
+      .tabs input[type="radio"] + label {
+          display: inline-block;
+      }
+      .tabs li > div{
+          position: relative;
+      }
+      .tabs input[type="radio"] {
+          position: relative;
+      }
+      .tabs li {
+        display: block;
+      }
+      .tabs li:first-child {
+        margin-left: 0;
+      }
+      .tabs li > div {
+        border: 0;
+      }
+      .tabs input[type="radio"]:disabled + label {
+          opacity: .5;
+          cursor: no-drop;
+      }
+      .tabs input[type="radio"]:checked + label {
+          z-index: 1;
+          border-bottom-color: #1f1f1f;
+          cursor: default;
+      }
+      .tabs input[type="radio"] {
+          opacity: 0;
+          display: none;
+      }
+      .tabs input[type="radio"] ~ div {
+          display: none;
+      }
+    }
+
+      @media all and (min-width:900px) {
+        .tabs input[type="radio"] + label {
+            margin: 0 2px 0 0;
+            padding: 0 18px;
+            line-height: 32px;
+            background: #A9A9A9;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        } }
+     @media all  and (min-width:700px) and (max-width:899px) {
+       .tabs input[type="radio"] + label {
+           margin: 0 2px 0 0;
+           padding: 0 0.8vw;
+           line-height: 32px;
+           background: #A9A9A9;
+           text-align: center;
+           border-radius: 8px 8px 0 0;
+           cursor: pointer;
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           user-select: none;
+       } }
+       @media all and (max-width:699px) {
+         .tabs input[type="radio"] + label {
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           border-radius: 4px;
+           background-color: #A9A9A9;
+           background-image: url(../rumipedia/img/plus1.png);
+           background-repeat: no-repeat;
+           background-size: contain;
+          width: 88%;
+          padding-left: 12vw;
+          margin-top: 2vw;
+         }
+         .tabs input[type="radio"]:hover + label {
+           background-color: #B0C4DE;
+           background-image: url(../rumipedia/img/plus1-hover.png);
+           background-repeat: no-repeat;
+           background-size: contain;
+         }
+         .tabs input[type="radio"]:checked + label {
+           background-color: tan;
+           background-image: url(../rumipedia/img/minus1.png);
+           background-repeat: no-repeat;
+           background-size: contain;
+         }}
+
       @media all and (min-width:900px) {
         .tabs input[type="radio"]:checked:not(:disabled) ~ div {
             display: block;
@@ -145,17 +237,11 @@ font-style: normal;
        @media all and (max-width:699px) {
          .tabs input[type="radio"]:checked:not(:disabled) ~ div {
              display: block;
-             background: #DCDCDC;
              overflow: auto;
-             border-radius: 0 4px 4px 4px;
-             border-color: #1f1f1f;
              padding: 0.8vw;
              margin-top: 2vw;
          } }
-      .tabs input[type="radio"]:disabled + label {
-          opacity: .5;
-          cursor: no-drop;
-      }
+
 
         /* Тело всего сайта*/
 body {
@@ -234,6 +320,17 @@ article {
          text-shadow: #1f1f1f 0 0 9px;
      font-variant: small-caps;
       }
+      h1 {
+    font-family: wash;
+    font-size: 6.3vw;
+    line-height: 7vw;
+    letter-spacing: 2vw;
+    transform: scaleY(1.3);
+    color: tan;
+    margin: 5.4vw 0 4.2vw 2vw;
+    text-align: center;
+    text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
+    }
       .book-tegline {
         margin: 0.2vw;
         padding: 0 0.4vw;
@@ -246,11 +343,8 @@ article {
     	flex-direction: column;
       margin: 2vw 2% 1vw 2%;
     	padding: 5px 5px 5px 5px;
-    	border:  0.2px solid dimgray;
+    	border:  2px solid #1f1f1f;
     	border-radius: 8px;
-    	min-width: 270px;
-      background: gray;
-      box-shadow: inset 0 0 5px #1f1f1f;
     	}
       .book-title-img {
         align: center;
@@ -275,7 +369,6 @@ article {
         flex-direction: column;
       	margin: 1vw 0 1vw 1vw;
       	padding: 5px 5px 5px 5px;
-      	min-width: 270px;
         flex: 1 1 auto;
       	}
         .book-text-block {
@@ -285,7 +378,6 @@ article {
         	margin: -1vw  1vw 1vw 0;
         	padding: 5px 5px 5px 0.5vw;
         	border-left:  0vw solid #1f1f1f;
-        	min-width: 270px;
         	text-align: justify;
         flex: 1 1 auto;
         	}
@@ -306,88 +398,55 @@ article {
              text-shadow: #1f1f1f 0 0 9px;
          font-variant: small-caps;
           }
+          h1 {
+        font-family: wash;
+        font-size: 6.3vw;
+        line-height: 7vw;
+        letter-spacing: 2vw;
+        transform: scaleY(1.3);
+        color: #f0f0f0;
+        margin: 5.4vw 0 4.2vw 2vw;
+        text-align: center;
+        text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
+        }
           .book-tegline {
             margin: 0.2vw;
             padding: 0 1.5vw 0 0.4vw;
             text-align: justify;
           }
     }
-      @media all and (min-width: 490px) and (max-width: 549.9px) {
+      @media all and (min-width: 420px) and (max-width: 549.9px) {
         .book-main-block  {
           display: flex;
           flex-direction: column;
           margin: 2vw 2% 1vw 2%;
           padding: 5px 5px 5px 5px;
-          border:  0.2px solid dimgray;
+                  border:  2px solid #1f1f1f;
           border-radius: 8px;
-          min-width: 270px;
-          background: gray;
-          box-shadow: inset 0 0 5px #1f1f1f;
         }
          .book-title-img {
                 align: center;
-              width: 60%;
+              width: 68%;
               margin: 2px auto 9px auto;
               border-radius: 4px;
-              box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+              box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
               }}
-          @media all and (min-width: 420px) and (max-width: 489.9px) {
-            .book-main-block  {
-              display: flex;
-              flex-direction: column;
-              margin: 2vw 2% 1vw 2%;
-              padding: 5px 5px 5px 5px;
-              border:  0.2px solid dimgray;
-              border-radius: 8px;
-              min-width: 270px;
-              background: gray;
-              box-shadow: inset 0 0 5px #1f1f1f;
-            }
-             .book-title-img {
-                    align: center;
-                  width: 75%;
-                  margin: 2px auto 9px auto;
-                  border-radius: 4px;
-                  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
-                  }}
-              @media all and (min-width: 376px) and (max-width: 419px) {
+              @media all  and (max-width: 419px) {
                 .book-main-block  {
                   display: flex;
                   flex-direction: column;
     	            margin: 4vw 4% 1vw 4%;
                   padding: 5px 5px 5px 5px;
-                  border:  0.2px solid dimgray;
+                  border:  2px solid #1f1f1f;
                   border-radius: 8px;
-                  min-width: 270px;
-                  background: gray;
-                  box-shadow: inset 0 0 5px #1f1f1f;
                   }
                   .book-title-img {
                     align: center;
                   width: 90%;
                   margin: 2px auto 9px auto;
                   border-radius: 4px;
-                  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
+                  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
                   } }
-                  @media all and (max-width: 375px) {
-                    .book-main-block  {
-                      display: flex;
-                      flex-direction: column;
-    	                margin: 4vw 4% 1vw 4%;
-                      padding: 5px 5px 5px 5px;
-                      border:  0.2px solid dimgray;
-                      border-radius: 8px;
-                      min-width: 270px;
-                      background: gray;
-                      box-shadow: inset 0 0 5px #1f1f1f;
-                      }
-                      .book-title-img {
-                              align: center;
-                            width: 74vw;
-                            margin: 2px auto 9px auto;
-                            border-radius: 4px;
-                            box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;;
-                            }}
 
 .book-main-block-line2 {
   display: flex;
@@ -420,30 +479,17 @@ article {
    @media all and (max-width:699px) {
      .book-anketa {
          display: block;
-         background: #dcdcdc;
          overflow: auto;
-         border:  1px solid #1f1f1f;
          border-radius: 4px;
          padding: 0.8vw;
-         margin: 1.6vw 0.6vw 1.2vw 2vw;
-         flex: 1 1 auto;
+         margin: 0;
      } }
 
-  h1 {
-font-family: wash;
-font-size: 6.3vw;
-line-height: 7vw;
-letter-spacing: 2vw;
-transform: scaleY(1.3);
-color: tan;
-margin: 5.4vw 0 4.2vw 2vw;
-text-align: center;
-text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-}
+
 /* Заголовок статьи */
 @media all and (min-width:1022px) {
     h2 {
-font-family: Arial Black;
+font-family: arba;
 font-size: 3.9vw;
 line-height: 1vw;
 letter-spacing: 0.1vw;
@@ -457,7 +503,7 @@ text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1
 }  }
 @media all and (min-width: 700px) and (max-width:1021px) {
      h2 {
-font-family: Arial Black;
+font-family: arba;
 font-size: 4.5vw;
 line-height: 3.8vw;
 letter-spacing: 0.1vw;
@@ -471,28 +517,28 @@ text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1
 }  }
 @media all and (min-width: 450px) and (max-width: 699.9px) {
   h2 {
-font-family: Arial Black;
+font-family: arba;
 font-size: 7vw;
 line-height: 6vw;
 letter-spacing: 0.7vw;
 font-style: bold;
 font-variant: small-caps;
 transform: scaleY(1.2);
-color: #f0f0f0;
+color: #CD853F;
 margin: 1vw 0 3vw 0.3vw;
 text-align: center;
 text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
 }  }
 @media all and (max-width: 449px) {
   h2 {
-font-family: Arial Black;
+font-family: arba;
 font-size: 7.6vw;
 line-height: 7vw;
 letter-spacing: 0.7vw;
 font-style: bold;
 font-variant: small-caps;
 transform: scaleY(1.4);
-color: #f0f0f0;
+color: #CD853F;
 margin: 1vw 0 3vw 0.3vw;
 text-align: center;
 text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
@@ -533,13 +579,13 @@ text-align: left;
   } }
 @media all and (max-width: 699.9px) {
    h3 {
-font-family: Georgia;
-font-size: 4vw;
-font-weight: normal;
-line-height: 2vw;
-letter-spacing: 0.1vw;
+font-family: Arial;
+font-size: 18px;
+font-weight: bold;
+line-height: 10px;
+letter-spacing: 1px;
 color: #1f1f1f;
-margin: 2vw 0 2vw 0;
+margin: 8px;
 text-align: left;
  }}
 /* Основной шрифт */
@@ -579,7 +625,7 @@ text-align: left;
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
-    color: #9ACD32;
+    color: #7CFC00;
     text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
     margin: 8px;
     text-align: center;
@@ -593,7 +639,7 @@ text-align: left;
     text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
     margin: 0.6vw;
    } }
-@media all and (max-width:899px) {
+@media all and (min-width:700px) and (max-width:899px) {
   p4 {
    font-family: Arial;
    font-size: 14px;
@@ -601,7 +647,14 @@ text-align: left;
    text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
    margin: 0.6vw;
   } }
-
+  @media all and (max-width:699px) {
+    p4 {
+     font-family: Arial;
+     font-size: 14px;
+     color: #7CFC00;
+     text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
+     margin: 0.6vw;
+    } }
 
 /* Шрифт для анкеты */
 @media all and (min-width:900px) {
