@@ -681,6 +681,7 @@ text-align: left;
     text-align: center;
   }}
 
+
  @media all and (min-width:900px) {
    p4 {
     font-family: Arial;
@@ -688,7 +689,17 @@ text-align: left;
     color: #9ACD32;
     text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
     margin: 0.6vw;
-   } }
+   }
+   p4::before{
+       content: " ";
+       display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-image: url(teg-ico.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin-right: 20px;
+   }}
 @media all and (min-width:700px) and (max-width:899px) {
   p4 {
    font-family: Arial;
@@ -696,7 +707,17 @@ text-align: left;
    color: #9ACD32;
    text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
    margin: 0.6vw;
-  } }
+  }
+  p4::before{
+      content: " ";
+      display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(teg-ico.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+  }}
   @media all and (max-width:699px) {
     p4 {
      font-family: Arial;
@@ -704,7 +725,17 @@ text-align: left;
      color: #7CFC00;
      text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
      margin: 0.6vw;
-    } }
+    }
+    p4::before{
+        content: " ";
+        display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(teg-ico-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+    }}
 
 /* Шрифт для анкеты */
 @media all and (min-width:900px) {
