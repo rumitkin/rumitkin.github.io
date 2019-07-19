@@ -322,57 +322,72 @@ text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1
       #izs9 {        display: none;      }
       #izs9:target {        display: block;      }
 
-      .close {
+         .close {
         display: block;
         position: absolute;
-        width: 3vw;
-        height: 3vw;
+        width: 36px;
+        height: 36px;
         top: 0;
         right: 2vw;
         bottom: 0;
         left: auto;
         margin: 10px;
         background: #f1f1f1;
-        border-radius: 1.5vw;
+        border-radius: 18px;
         cursor:pointer;
-        content: url(close.png);
+        background-image: url(close.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         box-shadow: 0 0 20px #1f1f1f, inset 0 0 3px #1f1f1f;
       }
       .close:hover {
         background: tan;
         transform: scale(1.1);
+        background-image: url(close.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         }
         .left-next {
           display: block;
           position: absolute;
-          height: 14%;
-          top: auto;
+          height: 120px;
+          width: 50px;
+          top: 0;
           right: auto;
-          bottom: 43%;
+          bottom: 0;
           left: 2vw;
-          margin: 10px;
+          margin: auto;
           cursor:pointer;
-          content: url(left-blank.png);
+          background-image: url(left-blank.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
         }
         .left-next:hover {
-          content: url(left-tan.png);
-                  transform: scale(1.1);
+          background-image: url(left-tan.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          transform: scale(1.1);
         }
         .right-next {
           display: inline-block;
           position: absolute;
-          height: 14%;
-          top: auto;
+          height: 120px;
+          width: 50px;
+          top: 0;
           right: 2vw;
-          bottom: 43%;
+          bottom: 0;
           left: auto;
-          margin: 10px;
+          margin: auto;
           cursor:pointer;
-          content: url(right-blank.png);
+          background-image: url(right-blank.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
         }
         .right-next:hover {
-          content: url(right-tan.png);
-                  transform: scale(1.1);
+          background-image: url(right-tan.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          transform: scale(1.1);
         }
         .title-text {
           display: block;
