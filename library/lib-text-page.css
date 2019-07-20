@@ -54,7 +54,7 @@ width: 100%;
 .section-simbol {
 			width: 110px;
       height: 35px;
-			background-image: url(section.png);
+			background-image: url(lib-img-section.png);
 			margin: 22px auto 6px auto;
 			opacity: 0.9;
       background-repeat: no-repeat;
