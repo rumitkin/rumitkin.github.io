@@ -333,6 +333,7 @@ article {
          text-decoration: none;
          border: 0.2vw solid white; /* Рамка вокруг текста */
          box-shadow: 0 0 9px green;
+           transition: .7s;
      }
         p1 {
      font-family: wash;
@@ -437,6 +438,7 @@ article {
              text-decoration: none;
              border: 0.2vw solid white; /* Рамка вокруг текста */
              box-shadow: 0 0 3px green;
+
          }
             p1 {
          font-family: wash;
@@ -695,7 +697,7 @@ text-align: left;
        display: inline-block;
    width: 20px;
    height: 20px;
-   background-image: url(teg-ico.png);
+   background-image: url(lib-img-teg-ico.png);
    background-repeat: no-repeat;
    background-size: contain;
    margin-right: 20px;
@@ -713,7 +715,7 @@ text-align: left;
       display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(teg-ico.png);
+  background-image: url(lib-img-teg-ico.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 20px;
@@ -731,7 +733,7 @@ text-align: left;
         display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(teg-ico-mobile.png);
+    background-image: url(lib-img-teg-ico-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 20px;
