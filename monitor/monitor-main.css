@@ -1,0 +1,130 @@
+body {
+  background: gray;
+}
+h1 {
+  text-align: left;
+  font-family: arial;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #1f1f1f;
+  margin: 10px;
+}
+h2 {
+  text-align: left;
+  font-family: arial;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #1f1f1f;
+  margin: 10px;
+}
+p {
+  text-align: left;
+  font-family: arial;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: #1f1f1f;
+  margin: 5px 5px 0 5px;
+}
+
+div.spreadsheet {
+  display: flex;
+  flex-direction: column;
+}
+
+div.spreadsheet > div.string {
+  display: flex;
+  flex-direction: row;
+}
+
+div.spreadsheet > div.string > div {
+  border: 2px solid black;
+  margin: 1px;
+  width: auto;
+  min-width: 200px;
+  max-width: 200px;
+  height: 100px;
+}
+
+div.spreadsheet > div.title > div {
+  background: tan;
+}
+
+div.spreadsheet > div.title > div > p {
+text-align: center;
+font-family: arial;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 2px;
+font-style: normal;
+color: #1f1f1f;
+margin: 10px;
+}
+
+div.spreadsheet > div.string > div.site {
+  background: tan;
+}
+
+div.spreadsheet > div.string > div.site > p {
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #1f1f1f;
+  margin: 10px;
+}
+
+
+div.spreadsheet > div.title > div.site {
+  opacity: 0;
+}
+
+div.spreadsheet > div.rumitkin > div.song-for-korbi,
+div.spreadsheet > div.samlib > div.song-for-korbi,
+div.spreadsheet > div.author-today > div.song-for-korbi,
+div.spreadsheet > div.samlib > div.info {
+  background: YellowGreen;
+}
+
+div.spreadsheet > div.rumitkin > div.info,
+div.spreadsheet > div.proza > div.song-for-korbi,
+div.spreadsheet > div.samlib > div.tales-from-dead-world
+ {
+  background: Gainsboro;
+}
+
+div.spreadsheet > div.proza > div.info,
+div.spreadsheet > div.author-today > div.info,
+div.spreadsheet > div.litres > div.song-for-korbi,
+div.spreadsheet > div.litres > div.marat,
+div.spreadsheet > div.flibusta > div.numb-man,
+div.spreadsheet > div.e-libra > div.numb-man
+ {
+  background: Yellow;
+}
+
+div.spreadsheet > div.proza > div.cold-light,
+div.spreadsheet > div.samlib > div.cold-light,
+div.spreadsheet > div.proza > div.marat,
+div.spreadsheet > div.samlib > div.marat,
+div.spreadsheet > div.samlib > div.armistice-with-darkness,
+div.spreadsheet > div.litres > div.info,
+div.spreadsheet > div.litmir > div.info,
+div.spreadsheet > div.litmir > div.marat,
+div.spreadsheet > div.litmir > div.song-for-korbi,
+div.spreadsheet > div.flibusta > div.info,
+div.spreadsheet > div.flibusta > div.marat,
+div.spreadsheet > div.flibusta > div.song-for-korbi,
+div.spreadsheet > div.e-libra > div.info,
+div.spreadsheet > div.e-libra > div.marat,
+div.spreadsheet > div.e-libra > div.song-for-korbi
+ {
+  background: Tomato;
+}
