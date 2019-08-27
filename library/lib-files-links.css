@@ -85,7 +85,18 @@ text-decoration: none;
 }
 
 
-
+p {
+font-family: arial;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0.5px;
+font-style: bold;
+font-variant: small-caps;
+color: #1f1f1f;
+margin: 5px;
+text-align: center;
+text-decoration: none;
+}
 
 
 
@@ -118,19 +129,19 @@ text-decoration: none;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 10px;
+  margin: 50px 10px 10px 10px;
   text-align: center;
   text-decoration: none;
   }
   h3 {
   font-family: helios;
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 30px 10px 10px 10px;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   }
@@ -143,11 +154,11 @@ text-decoration: none;
     margin-bottom: 80px;
     margin-top: 0;
   }
-  li > a > .big-link,
-  li > .big-link {
+  li > a > h3.big-link,
+  li > h3.big-link {
     font-family: arial;
     font-size: 22px;
-    line-height: 0;
+    line-height: 26px;
     letter-spacing: 1px;
     font-style: bold;
     font-variant: normal;
@@ -208,19 +219,19 @@ text-decoration: none;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   text-align: center;
   text-decoration: none;
   }
   h3 {
   font-family: helios;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 30px 10px 10px 10px;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   }
@@ -233,11 +244,11 @@ text-decoration: none;
     margin-bottom: 80px;
     margin-top: 0;
   }
-  li > a > .big-link,
-  li > .big-link {
+  li > a > h3.big-link,
+  li > h3.big-link {
     font-family: arial;
     font-size: 22px;
-    line-height: 0;
+    line-height: 26px;
     letter-spacing: 1px;
     font-style: bold;
     font-variant: normal;
@@ -298,19 +309,19 @@ text-decoration: none;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   text-align: center;
   text-decoration: none;
   }
   h3 {
   font-family: helios;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.6px;
   font-style: bold;
   font-variant: small-caps;
   color: #1f1f1f;
-  margin: 30px 10px 10px 10px;
+  margin: 7px;
   text-align: center;
   text-decoration: none;
   }
