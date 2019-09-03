@@ -88,6 +88,44 @@ text-decoration: none;
 
 
 
+p.h1-note {
+  font-family: arial;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-style: bold;
+  font-variant: small-caps;
+  color: #1f1f1f;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+p.an1 {
+  font-family: arial;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-style: italic;
+  color: #1f1f1f;
+  margin: 20px 10px 0 10px;
+  text-align: justify;
+  text-decoration: none;
+  text-indent: 0;
+}
+p.an2 {
+  font-family: arial;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-style: normal;
+  color: #1f1f1f;
+  margin: -10px 10px -10px 10px;
+  text-align: justify;
+  text-decoration: none;
+  text-indent: 20px;
+}
+
 
 
 
