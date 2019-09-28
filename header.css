@@ -7,14 +7,14 @@ url('fonts/robotoslab.ttf') format('truetype'),
 url('fonts/robotoslab.svg#webfont') format('svg');
 font-weight: normal;
 font-style: normal;
-}    
+}
 
 @media all and (min-width: 700px) {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 1vw 1vw 0.6vw 1vw;   
-	border-radius: 8px;    
+    	margin: 1vw 1vw 0.6vw 1vw;
+	border-radius: 8px;
     	width: 98%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -23,21 +23,21 @@ header {
 .ifr1 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 13.5vw;
-} 
+}
 .ifr2 {
 	display: none;
 }
-.header-menu {    
-	display: none;  
+.header-menu {
+	display: none;
 } }
 @media all and (min-width: 550px) and (max-width: 699.9px) {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 2vw 2% 1vw 2%;   
-	border-radius: 8px;    
+    	margin: 2vw 2% 1vw 2%;
+	border-radius: 8px;
     	width: 96%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -46,27 +46,27 @@ header {
    }
 .ifr1 {
 	display: none;
-   } 
+   }
 .ifr2 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 29vw;
 }
-h99 {    
-	font-family: robotoslab; 
-	font-size: 20px;  
-	letter-spacing: 1px; 
-	font-weight: 100; 
-	line-height: 30px;  
+h99 {
+	font-family: robotoslab;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	line-height: 30px;
 	color: gainsboro;
-	margin-top: -30px; 
+	margin-top: -30px;
 	text-shadow: black 0 0 3px;
-	font-variant: small-caps; 
- } 
-.header-menu {    
-	margin: 0px 0px 0px 0;   
-	padding: 0;   
+	font-variant: small-caps;
+ }
+.header-menu {
+	margin: 0px 0px 0px 0;
+	padding: 0;
 	display: block;
 	width: 240px;
 	background-color: rgba(60, 200, 200, 0.3);
@@ -77,13 +77,13 @@ h99 {
 	text-align: center; /* Растягиваем текст */
 	position: absolute;
 	z-index: 900;
-	right: 5vw; 
+	right: 5vw;
 	top: 22vw;
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
-} 
-.header-menu div.m-title {  	
+}
+.header-menu div.m-title {
 	margin: 2px;
 	display: inline-block;
 	width: 90%;
@@ -94,18 +94,18 @@ h99 {
 	background-position: 100%;
 	text-align: left;
 }
-.header-menu:hover div.m-title {  
+.header-menu:hover div.m-title {
 	background-image: url(../img/menu-sign-hover.png);
 }
 .header-menu iframe {
 	display: none;
-} 
+}
 .header-menu:hover iframe {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	border: 0;
-	border-radius: 0 0 8px 8px;    
-	height: 220px;
+	border-radius: 0 0 8px 8px;
+	height: 80px; /* Если включить все кнопки высота 220px */
 	z-index: 990;
 	border-top: 2px solid #1f1f1f;
 } }
@@ -114,8 +114,8 @@ h99 {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 2vw 2% 1vw 2%;   
-	border-radius: 8px;    
+    	margin: 2vw 2% 1vw 2%;
+	border-radius: 8px;
     	width: 96%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -123,27 +123,27 @@ header {
    }
 .ifr1 {
 	display: none;
-   } 
+   }
 .ifr2 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 35vw;
-   } 
-h99 {    
-	font-family: robotoslab; 
-	font-size: 20px;  
-	letter-spacing: 1px; 
-	font-weight: 100; 
-	line-height: 30px;  
+   }
+h99 {
+	font-family: robotoslab;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	line-height: 30px;
 	color: gainsboro;
-	margin-top: -30px; 
+	margin-top: -30px;
 	text-shadow: black 0 0 3px;
-	font-variant: small-caps; 
- } 
-.header-menu {    
-	margin: 0px 0px 0px 0;   
-	padding: 0;   
+	font-variant: small-caps;
+ }
+.header-menu {
+	margin: 0px 0px 0px 0;
+	padding: 0;
 	display: block;
 	width: 240px;
 	background-color: rgba(60, 200, 200, 0.3);
@@ -154,13 +154,13 @@ h99 {
 	text-align: center; /* Растягиваем текст */
 	position: absolute;
 	z-index: 900;
-	right: 5vw; 
+	right: 5vw;
 	top: 28vw;
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
-} 
-.header-menu div.m-title {  	
+}
+.header-menu div.m-title {
 	margin: 2px;
 	display: inline-block;
 	width: 90%;
@@ -171,18 +171,18 @@ h99 {
 	background-position: 100%;
 	text-align: left;
 }
-.header-menu:hover div.m-title {  
+.header-menu:hover div.m-title {
 	background-image: url(../img/menu-sign-hover.png);
 }
 .header-menu iframe {
 	display: none;
-} 
+}
 .header-menu:hover iframe {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	border: 0;
-	border-radius: 0 0 8px 8px;    
-	height: 220px;
+	border-radius: 0 0 8px 8px;
+	height: 80px; /* Если включить все кнопки высота 220px */
 	z-index: 990;
 	border-top: 2px solid #1f1f1f;
 } }
@@ -190,8 +190,8 @@ h99 {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 2vw 2% 1vw 2%;   
-	border-radius: 8px;    
+    	margin: 2vw 2% 1vw 2%;
+	border-radius: 8px;
     	width: 96%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -199,27 +199,27 @@ header {
    }
 .ifr1 {
 	display: none;
-   } 
+   }
 .ifr2 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 40vw;
    }
-h99 {    
-	font-family: robotoslab; 
-	font-size: 20px;  
-	letter-spacing: 1px; 
-	font-weight: 100; 
-	line-height: 30px;  
+h99 {
+	font-family: robotoslab;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	line-height: 30px;
 	color: gainsboro;
-	margin-top: -30px; 
+	margin-top: -30px;
 	text-shadow: black 0 0 3px;
-	font-variant: small-caps; 
- } 
-.header-menu {    
-	margin: 0px 0px 0px 0;   
-	padding: 0;   
+	font-variant: small-caps;
+ }
+.header-menu {
+	margin: 0px 0px 0px 0;
+	padding: 0;
 	display: block;
 	width: 200px;
 	background-color: rgba(60, 200, 200, 0.3);
@@ -230,13 +230,13 @@ h99 {
 	text-align: center; /* Растягиваем текст */
 	position: absolute;
 	z-index: 900;
-	right: 5vw; 
+	right: 5vw;
 	top: 31vw;
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
-} 
-.header-menu div.m-title {  	
+}
+.header-menu div.m-title {
 	margin: 2px;
 	display: inline-block;
 	width: 90%;
@@ -247,18 +247,18 @@ h99 {
 	background-position: 100%;
 	text-align: left;
 }
-.header-menu:hover div.m-title {  
+.header-menu:hover div.m-title {
 	background-image: url(../img/menu-sign-hover.png);
 }
 .header-menu iframe {
 	display: none;
-} 
+}
 .header-menu:hover iframe {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	border: 0;
-	border-radius: 0 0 8px 8px;    
-	height: 236px;
+	border-radius: 0 0 8px 8px;
+	height: 80px; /* Если включить все кнопки высота 236px */
 	z-index: 990;
 	border-top: 2px solid #1f1f1f;
 } }
@@ -266,8 +266,8 @@ h99 {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 4vw 4% 1vw 4%;   
-	border-radius: 8px;    
+    	margin: 4vw 4% 1vw 4%;
+	border-radius: 8px;
     	width: 92%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -275,27 +275,27 @@ header {
    }
 .ifr1 {
 	display: none;
-   } 
+   }
 .ifr2 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 45vw;
    }
-h99 {    
-	font-family: robotoslab; 
-	font-size: 20px;  
-	letter-spacing: 1px; 
-	font-weight: 100; 
-	line-height: 30px;  
+h99 {
+	font-family: robotoslab;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	line-height: 30px;
 	color: gainsboro;
-	margin-top: -30px; 
+	margin-top: -30px;
 	text-shadow: black 0 0 3px;
-	font-variant: small-caps; 
- } 
-.header-menu {    
-	margin: 0px 0px 0px 0;   
-	padding: 0;   
+	font-variant: small-caps;
+ }
+.header-menu {
+	margin: 0px 0px 0px 0;
+	padding: 0;
 	display: block;
 	width: 86%;
 	background-color: rgba(60, 200, 200, 0.3);
@@ -314,8 +314,8 @@ h99 {
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
-} 
-.header-menu div.m-title {  	
+}
+.header-menu div.m-title {
 	margin: 2px;
 	display: inline-block;
 	width: 90%;
@@ -326,18 +326,18 @@ h99 {
 	background-position: 100%;
 	text-align: left;
 }
-.header-menu:hover div.m-title {  
+.header-menu:hover div.m-title {
 	background-image: url(../img/menu-sign-hover.png);
 }
 .header-menu iframe {
 	display: none;
-} 
+}
 .header-menu:hover iframe {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	border: 0;
-	border-radius: 0 0 8px 8px;    
-	height: 224px;
+	border-radius: 0 0 8px 8px;
+	height: 80px; /* Если включить все кнопки высота 224px */
 	z-index: 990;
 	border-top: 2px solid #1f1f1f;
 } }
@@ -345,8 +345,8 @@ h99 {
 header {
 	display: flex;
     	padding: 0px 0px 0px 0px; /* Поля */
-    	margin: 4vw 4% 1vw 4%;   
-	border-radius: 8px;    
+    	margin: 4vw 4% 1vw 4%;
+	border-radius: 8px;
     	width: 92%; /* Ширина сайдбара в процентах */
     	float: center; /* Обтекание слева */
     	text-align: center;
@@ -354,27 +354,27 @@ header {
    }
 .ifr1 {
 	display: none;
-   } 
+   }
 .ifr2 {
 	flex-grow: 1;
 	border: 0;
-	border-radius: 8px;    
+	border-radius: 8px;
 	height: 50vw;
     	width: 92%;
-   } 
-h99 {    
-	font-family: robotoslab; 
-	font-size: 6vw;  
-	letter-spacing: 1vw; 
-	font-weight: 100; 
-	line-height: 9vw;  
+   }
+h99 {
+	font-family: robotoslab;
+	font-size: 6vw;
+	letter-spacing: 1vw;
+	font-weight: 100;
+	line-height: 9vw;
 	color: gainsboro;
 	text-shadow: black 0 0 3px;
-	font-variant: small-caps; 
- } 
-.header-menu {    
-	margin: 0px 0px 0px 0;   
-	padding: 0;   
+	font-variant: small-caps;
+ }
+.header-menu {
+	margin: 0px 0px 0px 0;
+	padding: 0;
 	display: block;
 	width: 86%;
 	background-color: rgba(60, 200, 200, 0.3);
@@ -394,8 +394,8 @@ right: 0;
 }
 .header-menu:hover {
 	background-color: #3F6F6F;
-} 
-.header-menu div.m-title {  	
+}
+.header-menu div.m-title {
 	margin: 2px;
 	display: inline-block;
 	width: 90%;
@@ -406,7 +406,7 @@ right: 0;
 	background-position: 100%;
 	text-align: left;
 }
-.header-menu:hover div.m-title {  
+.header-menu:hover div.m-title {
 	background-image: url(../img/menu-sign-hover.png);
 }
 .header-menu iframe {
@@ -414,15 +414,10 @@ right: 0;
  }
 .header-menu:hover iframe {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	border: 0;
-	border-radius: 0 0 8px 8px;    
-	height: 224px;
+	border-radius: 0 0 8px 8px;
+	height: 80px; /* Если включить все кнопки высота 224px */
 	z-index: 990;
 	border-top: 2px solid #1f1f1f;
 } }
-
-
-
-
-
