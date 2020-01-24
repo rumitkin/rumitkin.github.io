@@ -81,12 +81,15 @@ div.spreadsheet > div.string > div.site > p {
   margin: 10px;
 }
 
-
+div.spreadsheet > div.rumitkin_files > div.info,
 div.spreadsheet > div.title > div.site {
   opacity: 0;
 }
 
-div.spreadsheet > div.rumitkin > div.song-for-korbi,
+div.spreadsheet > div.rumitkin_basic > div.song-for-korbi,
+div.spreadsheet > div.rumitkin_files > div.song-for-korbi,
+div.spreadsheet > div.rumitkin_basic > div.and-in-the-earth-below,
+div.spreadsheet > div.rumitkin_files > div.and-in-the-earth-below,
 div.spreadsheet > div.samlib > div.song-for-korbi,
 div.spreadsheet > div.litmir > div.song-for-korbi,
 div.spreadsheet > div.author-today > div.cold-light,
@@ -95,15 +98,18 @@ div.spreadsheet > div.samlib > div.info {
   background: YellowGreen;
 }
 
-div.spreadsheet > div.rumitkin > div.info,
+
 div.spreadsheet > div.proza > div.song-for-korbi,
 div.spreadsheet > div.samlib > div.tales-from-dead-world
  {
   background: Gainsboro;
 }
 
+div.spreadsheet > div.rumitkin_basic > div.info,
 div.spreadsheet > div.proza > div.info,
 div.spreadsheet > div.author-today > div.info,
+div.spreadsheet > div.rumitkin_basic > div.cold-light,
+div.spreadsheet > div.rumitkin_basic > div.marat,
 div.spreadsheet > div.litres > div.song-for-korbi,
 div.spreadsheet > div.litres > div.marat,
 div.spreadsheet > div.flibusta > div.numb-man,
