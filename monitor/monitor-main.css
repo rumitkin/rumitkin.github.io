@@ -97,6 +97,8 @@ div.spreadsheet > div.samlib > div.song-for-korbi,
 div.spreadsheet > div.samlib > div.cold-light,
 div.spreadsheet > div.litmir > div.song-for-korbi,
 div.spreadsheet > div.litmir > div.and-in-the-earth-below,
+div.spreadsheet > div.readli > div.song-for-korbi,
+div.spreadsheet > div.readli > div.and-in-the-earth-below,
 div.spreadsheet > div.author-today > div.cold-light,
 div.spreadsheet > div.author-today > div.song-for-korbi,
 div.spreadsheet > div.author-today > div.and-in-the-earth-below,
@@ -111,6 +113,7 @@ div.spreadsheet > div.samlib > div.tales-from-dead-world
   background: Gainsboro;
 }
 
+div.spreadsheet > div.readli > div.info,
 div.spreadsheet > div.litmir > div.info,
 div.spreadsheet > div.rumitkin_basic > div.rainbow-runner,
 div.spreadsheet > div.rumitkin_basic > div.numb-man,
@@ -129,6 +132,7 @@ div.spreadsheet > div.e-libra > div.numb-man
 
 div.spreadsheet > div.proza > div.cold-light,
 div.spreadsheet > div.proza > div.marat,
+div.spreadsheet > div.readli > div.marat,
 div.spreadsheet > div.samlib > div.marat,
 div.spreadsheet > div.samlib > div.armistice-with-darkness,
 div.spreadsheet > div.litres > div.info,
