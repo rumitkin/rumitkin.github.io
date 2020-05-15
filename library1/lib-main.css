@@ -1,0 +1,274 @@
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-900.eot');
+src: url('../fonts/helvetica-n-900.eot?iefix') format('eot'), url('../fonts/helvetica-n-900.woff') format('woff'), url('../fonts/helvetica-n-900.ttf') format('truetype'), url('../fonts/helvetica-n-900.svg#webfont') format('svg');
+font-weight: 900; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-900-italic.eot');
+src: url('../fonts/helvetica-n-900-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-900-italic.woff') format('woff'), url('../fonts/helvetica-n-900-italic.ttf') format('truetype'), url('../fonts/helvetica-n-900-italic.svg#webfont') format('svg');
+font-weight: 900; font-style: italic;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-700.eot');
+src: url('../fonts/helvetica-n-700.eot?iefix') format('eot'), url('../fonts/helvetica-n-700.woff') format('woff'), url('../fonts/helvetica-n-700.ttf') format('truetype'), url('../fonts/helvetica-n-700.svg#webfont') format('svg');
+font-weight: 700; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-700-italic.eot');
+src: url('../fonts/helvetica-n-700-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-700-italic.woff') format('woff'), url('../fonts/helvetica-n-700-italic.ttf') format('truetype'), url('../fonts/helvetica-n-700-italic.svg#webfont') format('svg');
+font-weight: 700; font-style: italic;;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-500.eot');
+src: url('../fonts/helvetica-n-500.eot?iefix') format('eot'), url('../fonts/helvetica-n-500.woff') format('woff'), url('../fonts/helvetica-n-500.ttf') format('truetype'), url('../fonts/helvetica-n-500.svg#webfont') format('svg');
+font-weight: 500; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-500-italic.eot');
+src: url('../fonts/helvetica-n-500-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-500-italic.woff') format('woff'), url('../fonts/helvetica-n-500-italic.ttf') format('truetype'), url('../fonts/helvetica-n-500-italic.svg#webfont') format('svg');
+font-weight: 500; font-style: italic;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-400_grumov.eot');
+src: url('../fonts/helvetica-n-400_grumov.eot?iefix') format('eot'), url('../fonts/helvetica-n-400_grumov.woff') format('woff'), url('../fonts/helvetica-n-400_grumov.ttf') format('truetype'), url('../fonts/helvetica-n-400_grumov.svg#webfont') format('svg');
+font-weight: 400; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-400_helvetica-oblique.eot');
+src: url('../fonts/helvetica-n-400_helvetica-oblique.eot?iefix') format('eot'), url('../fonts/helvetica-n-400_helvetica-oblique.woff') format('woff'), url('../fonts/helvetica-n-400_helvetica-oblique.ttf') format('truetype'), url('../fonts/helvetica-n-400_helvetica-oblique.svg#webfont') format('svg');
+font-weight: 400; font-style: italic;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-300.eot');
+src: url('../fonts/helvetica-n-300.eot?iefix') format('eot'), url('../fonts/helvetica-n-300.woff') format('woff'), url('../fonts/helvetica-n-300.ttf') format('truetype'), url('../fonts/helvetica-n-300.svg#webfont') format('svg');
+font-weight: 300; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-300-italic.eot');
+src: url('../fonts/helvetica-n-300-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-300-italic.woff') format('woff'), url('../fonts/helvetica-n-300-italic.ttf') format('truetype'), url('../fonts/helvetica-n-300-italic.svg#webfont') format('svg');
+font-weight: 300; font-style: italic;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-200.eot');
+src: url('../fonts/helvetica-n-200.eot?iefix') format('eot'), url('../fonts/helvetica-n-200.woff') format('woff'), url('../fonts/helvetica-n-200.ttf') format('truetype'), url('../fonts/helvetica-n-200.svg#webfont') format('svg');
+font-weight: 200; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-200-italic.eot');
+src: url('../fonts/helvetica-n-200-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-200-italic.woff') format('woff'), url('../fonts/helvetica-n-200-italic.ttf') format('truetype'), url('../fonts/helvetica-n-200-italic.svg#webfont') format('svg');
+font-weight: 200; font-style: italic;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-100.eot');
+src: url('../fonts/helvetica-n-100.eot?iefix') format('eot'), url('../fonts/helvetica-n-100.woff') format('woff'), url('../fonts/helvetica-n-100.ttf') format('truetype'), url('../fonts/helvetica-n-100.svg#webfont') format('svg');
+font-weight: 100; font-style: normal;}
+
+@font-face{font-family: 'helv'; src: url('../fonts/helvetica-n-100-italic.eot');
+src: url('../fonts/helvetica-n-100-italic.eot?iefix') format('eot'), url('../fonts/helvetica-n-100-italic.woff') format('woff'), url('../fonts/helvetica-n-100-italic.ttf') format('truetype'), url('../fonts/helvetica-n-100-italic.svg#webfont') format('svg');
+font-weight: 100; font-style: italic;}
+
+@font-face{font-family: 'helios'; src: url('../fonts/helios.eot');
+src: url('../fonts/helios.eot?iefix') format('eot'), url('../fonts/helios.woff') format('woff'), url('../fonts/helios.ttf') format('truetype'), url('../fonts/helios.svg#webfont') format('svg');
+font-weight: normal; font-style: normal;;}
+
+:root {
+    --body-bg: dimgray;
+    --body-bg-gradient: linear-gradient(110deg, rgba(47, 79, 79, 0.2), rgba(72, 61, 139, 0.2), rgba(47, 79, 79, 0.2), rgba(83, 57, 94, 0.2), rgba(47, 79, 79, 0.2));
+    --edges-plus45deg: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 7px, rgba(255, 255, 255, 0.03) 8px);
+    --edges-minus45deg: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 7px, rgba(255, 255, 255, 0.03) 8px);
+}
+
+
+/* Тело всего сайта*/
+body {background: var(--edges-plus45deg), var(--edges-minus45deg), var(--body-bg-gradient), var(--body-bg);}
+body {margin: 0; padding: 0; box-shadow: inset 0 0 5px #1f1f1f; }
+
+/* Шапка сайта*/
+header {padding: 0 0 10px 0;}
+header p.header-name {font-family: helios; color: #ECECEC; text-align: center; margin: 0; padding: 0; width: 100%;}
+header p.header-tagline {font-family: helv; font-weight: 500; color: #ECECEC; text-align: center; margin: 0; padding: 0; width: 100%;}
+nav {padding: 0;}
+nav a, nav a:visited, nav h1 {display: block; flex-grow: 1; background: skyblue; border-radius: 8px; text-align: center;
+  box-shadow: 0 0 5px #1f1f1f, inset 0px 1px 0px 0px #dcecfb, inset 0 0 2px white;
+  background:linear-gradient(to bottom, skyblue 5%, #006699 100%); background-color:skyblue; border:1px solid #84bbf3;
+  color: #fefefe; font-family: helv; text-decoration:none; text-shadow:0px 1px 0px #528ecc; text-align: center;}
+nav a:hover, nav a:visited:hover {background:linear-gradient(to bottom, #006699 5%, skyblue 100%); color:#ffffff; text-decoration:none;	background-color:skyblue;}
+nav h1 {position: relative; transform: scaleY(1.1); filter: hue-rotate(40deg);}
+nav h1::after {content: "."; font-size: 1px; color: transparent; position: absolute; display: block; bottom: 0; left: 0;
+  background: url(../img1/header-arr.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
+@media all and (min-width: 1400px) {
+  header {width: 1400px; margin: 0 auto;}
+  header p.header-name {font-size: 110px; line-height: 90px; letter-spacing: 10px; text-shadow: 0 0 20px #1f1f1f, 0 0 15px #1f1f1f, 0 0 10px #1f1f1f, 0 0 5px #1f1f1f;
+    transform: translateX(5px) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 23px; letter-spacing: 3px; text-shadow: 0 0 10px #1f1f1f, 0 0 5px #1f1f1f;
+    transform: translateX(5px) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 10px auto; width: 1400px;}
+  nav a:first-child, nav h1:first-child {margin: 10px 10px 10px 20px;}
+  nav a:last-child, nav h1:last-child {margin: 10px 20px 10px 10px;}
+  nav a, nav a:visited, nav h1 {margin: 10px; font-size:20px; font-weight: 700; padding:6px 24px;}
+  nav h1::after {width: 100%; height: 50%; transform: translateY(120%) scaleY(0.9);}}
+@media all and (min-width: 1100px) and (max-width: 1400px) {
+  header {width: 100%; margin: 0;}
+  header p.header-name {font-size: 110px; line-height: 90px; letter-spacing: 10px; text-shadow: 0 0 20px #1f1f1f, 0 0 15px #1f1f1f, 0 0 10px #1f1f1f, 0 0 5px #1f1f1f;
+    transform: translateX(5px) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 23px; letter-spacing: 3px; text-shadow: 0 0 10px #1f1f1f, 0 0 5px #1f1f1f;
+    transform: translateX(5px) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 10px auto; width: 100%;}
+  nav a:first-child, nav h1:first-child {margin: 0.5vw 0.5vw 0.5vw 1vw;}
+  nav a:last-child, nav h1:last-child {margin: 0.5vw 1vw 0.5vw 0.5vw;}
+  nav a, nav a:visited, nav h1 {margin: 0.5vw; font-size:20px; font-weight: 700; padding:6px 0;}
+  nav h1::after {width: 100%; height: 40%; transform: translateY(120%) scaleY(0.9);}}
+@media all and (min-width: 700px) and (max-width: 1100px) {
+  header {width: 100%; margin: 0;}
+  header p.header-name {font-size: 10vw; line-height: 8vw; letter-spacing: 1vw; text-shadow: 0 0 2vw #1f1f1f, 0 0 1.5vw #1f1f1f, 0 0 1vw #1f1f1f, 0 0 0.5vw #1f1f1f;
+    transform: translateX(0.25vw) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 2vw; letter-spacing: 0.2vw; text-shadow: 0 0 1vw #1f1f1f, 0 0 0.5vw #1f1f1f;
+    transform: translateX(0.25vw) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 1vw auto; width: 100%;}
+  nav a:first-child, nav h1:first-child {margin: 0.5vw 0.5vw 0.5vw 1vw;}
+  nav a:last-child, nav h1:last-child {margin: 0.5vw 1vw 0.5vw 0.5vw;}
+  nav a, nav a:visited, nav h1 {margin: 0.5vw; font-size:16px; font-weight: 700; padding:6px 0;}
+  nav h1::after {width: 100%; height: 40%; transform: translateY(120%) scaleY(0.9);}}
+
+
+@media all and (min-width: 550px) and (max-width: 700px) {header div {margin: 2vw 2% 1vw 2%; border: 2px solid #1f1f1f;}}
+@media all and (min-width: 420px) and (max-width: 550px) {header div {margin: 2vw 2% 1vw 2%; border: 2px solid #1f1f1f;}}
+@media all and (max-width: 420px) {header div {margin: 4vw 4% 1vw 4%; border: 2px solid #1f1f1f;}}
+
+
+
+/* Основные блоки */
+article {display: flex; flex-direction: column; padding: 0;}
+@media all and (min-width: 1400px) {article {width: 1400px; margin: 0 auto;}}
+@media all and (max-width: 1400px) {article {width: 100%; margin: 0;}}
+.book-main-block {border-radius: 8px; padding: 5px;}
+.book-main-block {display: flex; flex-direction: column; background: #ECECEC;}
+@media all and (min-width: 1400px) {.book-main-block {margin: 10px 20px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px #1f1f1f;}}
+@media all and (min-width: 700px) and (max-width: 1400px) {.book-main-block {margin: 0.5vw 1vw;	border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px #1f1f1f;}}
+@media all and (min-width: 550px) and (max-width: 700px) {.book-main-block {margin: 2vw 2% 1vw 2%; border: 2px solid #1f1f1f;}}
+@media all and (min-width: 420px) and (max-width: 550px) {.book-main-block {margin: 2vw 2% 1vw 2%; border: 2px solid #1f1f1f;}}
+@media all and (max-width: 420px) {.book-main-block {margin: 4vw 4% 1vw 4%; border: 2px solid #1f1f1f;}}
+.book-main-block-line2 {display: flex; margin: 0 1vw 1vw 1vw; padding: 0; flex-direction: column;}
+@media all and (min-width: 700px) {
+  .book-main-block-line1 {display: flex; flex-direction: row; margin: 0; padding: 0;}
+  .book-img-block {margin: 1vw 0 1vw 1vw;	padding: 5px 5px 5px 5px;	min-width: 270px;	width: 30%;}
+  .book-text-block {display: flex; flex-grow: 1; flex-direction: column; margin: 1vw  1vw 1vw 0; padding: 5px 5px 5px 0.5vw;
+    border-left: 0vw solid #1f1f1f; min-width: 270px; width: 60%;}}
+  .book-anno {flex-grow: 1;}
+@media all and  (max-width: 700px) {
+  .book-main-block-line1 {display: flex; flex-direction: column; margin: 0; padding: 0;}
+  .book-img-block {display: flex; flex-direction: column;	margin: 1vw 0 1vw 1vw; padding: 5px 5px 5px 5px; flex: 1 1 auto;}
+  .book-text-block {display: flex; flex-grow: 1; flex-direction: column; margin: -1vw  1vw 1vw 0; padding: 1.5px;	border-left: 0vw solid #1f1f1f; flex: 1 1 auto;}}
+/* Управление отображением названий книги и жанров */
+@media all and (min-width:700px) {div.book-img-block div.book-title {display: none;}}
+@media all and (max-width:700px) {div.book-text-block div.book-title {display: none;}}
+/* Управление отображением теглайна */
+@media all and (min-width:950px) {div.book-img-block div.book-tagline {display: none;}}
+@media all and (max-width:950px) {div.book-text-block div.book-tagline {display: none;}}
+/* Управление отображением кнопок */
+@media all and (max-width:1200px) {div.book-main-block-line1 div.book-buttons {display: none;}}
+@media all and (min-width:1200px) {div.book-main-block-line2 {display: none;}}
+/*Класс для простых объектов, которым нужно исчезнуть*/
+@media all and (max-width: 784px) {.span-dis {display: none;}}
+/* Механизм скрывания и открывания слишком больших блоков текста*/
+@media all and (max-width: 700px) {.book-anno-shadow{display: none;}}
+@media all and (min-width: 700px) {
+  .book-anno-shadow {margin-top: 5px;}
+  .book-anno-shadow div {content: "."; color: transparent; min-width: 100%; min-height: 10px;
+    transform: scaleX(1.01) scaleY(10) translateY(-5px); background: linear-gradient(transparent, #ECECEC 90%);}
+  .book-anno-shadow a {display: block; font-family: helv; }
+  .book-anno {overflow: hidden; text-overflow: ellipsis; }
+  #cold-light .hide {display: none;}
+  #cold-light:target .hide {display: block;}
+  #cold-light:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #cold-light:target .book-anno-shadow div,
+  #cold-light:target .book-anno-shadow .strip {display: none;}
+  #song-for-korbi .hide {display: none;}
+  #song-for-korbi:target .hide {display: block;}
+  #song-for-korbi:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #song-for-korbi:target .book-anno-shadow div,
+  #song-for-korbi:target .book-anno-shadow .strip {display: none;}}
+@media all and (min-width: 1240px) {#and-in-the-earth-below .book-anno-shadow{display: none;}}
+@media all and (min-width: 700px) and (max-width:1240px) {
+  #and-in-the-earth-below .hide {display: none;}
+  #and-in-the-earth-below:target .hide {display: block;}
+  #and-in-the-earth-below:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #and-in-the-earth-below:target .book-anno-shadow div,
+  #and-in-the-earth-below:target .book-anno-shadow .strip {display: none;}}
+@media all and (min-width: 1210px) {#marat .book-anno-shadow{display: none;}}
+@media all and (min-width: 700px) and (max-width:1210px) {
+  #marat .hide {display: none;}
+  #marat:target .hide {display: block;}
+  #marat:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #marat:target .book-anno-shadow div,
+  #marat:target .book-anno-shadow .strip {display: none;}}
+@media all and (min-width: 1200px) {.book-anno-shadow a {padding-bottom: 15px;}}
+/* Размеры обложки книги и высота текстового блока в соответствии с высотой обложки */
+@media all and (min-width:1400px) {.imgb {width: 400px; height: 600px;} .book-text-block {max-height: 600px;}}
+@media all and (min-width: 950px) and (max-width:1400px) {.imgb {width: 28vw; height: 42vw;} .book-text-block {max-height: 42vw;}}
+@media all and (min-width: 700px) and (max-width: 950px) {.imgb {width: 264px; height: 396px; margin-bottom: 10px;}  .book-text-block {max-height: 500px;}}
+@media all and (min-width: 550px) and (max-width: 700px) {.imgb {align: center; width: 50vw; height: 75vw; margin: 2px auto 9px auto;}}
+@media all and (min-width: 420px) and (max-width: 550px) {.imgb {align: center; width: 68vw; height: 102vw; margin: 2px auto 9px auto;}}
+@media all and (max-width: 420px) {.imgb  {align: center; width: 70vw; height: 105vw; margin: 2px auto 9px auto;}}
+/* Обложка книги и анимация*/
+.imgb {flex-grow: 1;  position: relative;  }
+.imgb a {display: block; width: 100%; height: 100%; transform-origin: left; transition: 2s;}
+.imgb:hover a {transform: scaleX(1.08);}
+.imgb > div {z-index: 900;}
+.imgb span {display: block; width: 50%; background: skyblue; color: #1f1f1f; border-radius: 12px 12px 0 0; padding: 1px;
+  transform: scaleY(1.35); box-shadow: 0 0 2px #1f1f1f, inset 0 0 2px white;}
+.imgb:hover span {background: skyblue; color: #1f1f1f; height: 110%;}
+.imgb p {display: block; right: 0; z-index: 2; position: relative; float: center; text-align: center;
+  width: 100%; height: 5%; transform-origin: right; transition: 1.7s; transform: translateX(-5%) translateY(-300%) rotate(80deg) scaleY(0.66);}
+@media all and (min-width: 1000px) {.imgb:hover p {width: 100%; height: 5%; transform: translateX(-1%) translateY(-300%) rotate(90deg) scaleY(0.66); transform-origin: right;}}
+@media all and (max-width: 1000px) {.imgb:hover p {width: 100%; height: 5%; transform: translateX(0) translateY(-300%) rotate(90deg) scaleY(0.66); transform-origin: right;}}
+.imgb:hover > div, .imgb:hover > div > div, .imgb:hover > div > div > div {transform: perspective(200px) scaleX(0.94) rotateY(-1deg); }
+.imgb div { position: relative; width: 100%; height: 100%; transition: 2s; transform: perspective(100px); transform-origin: left;}
+.imgb, .imgb > div, .imgb > div > div {box-shadow: 0 0 2px #1f1f1f; border-radius: 1px 6px 6px 1px; background: #FFFFFA;}
+.imgb > div > div > div {box-shadow: 0 0 2px #1f1f1f, inset 0 0 2px white; border-radius: 1px 6px 6px 1px;}
+.imgb > div > div > div > div {box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 1.5%, rgba(0, 0, 0, 0.15) 2%, rgba(255, 255, 255, 0.1) 2.5%, transparent 3.5%);}
+#and-in-the-earth-below .imgb > div > div > div {background: url(lib-main-title-imgs/and-in-the-earth-below-800x1200.jpg); background-size: cover;}
+#song-for-korbi .imgb > div > div > div {background: url(lib-main-title-imgs/song-for-korbi_k1.jpg); background-size: cover;}
+#marat .imgb > div > div > div {background: url(lib-main-title-imgs/marat-title-3.jpg); background-size: cover;}
+#rainbow-runner .imgb > div > div > div {background: url(lib-main-title-imgs/rainbow-runner-title.jpg); background-size: cover;}
+#cold-light .imgb > div > div > div {background: url(lib-main-title-imgs/cold-light-title-cropped.jpg); background-size: cover;}
+#numb-man .imgb > div > div > div {background: url(lib-main-title-imgs/the-numb-man-title-croped.jpg); background-size: cover;}
+/* Название книги */
+h2 {margin: 0 0 20px 0; font-family: helv; font-weight: 900; font-variant: small-caps; color: #444;}
+@media all and (min-width: 700px) {h2 {font-size: 35px; line-height: 25px; letter-spacing: 2px; transform: scaleX(1.15); display: inline;}}
+@media all and (min-width: 450px) and (max-width: 700px) {h2 {font-size: 7vw; line-height: 6vw; letter-spacing: 0.7vw; transform: scaleY(1.2); text-align: center;}}
+@media all and (max-width: 450px) {h2 {font-size: 7.6vw; line-height: 7vw; letter-spacing: 0.7vw; transform: scaleY(1.4); text-align: center;}}
+/* Жанр книги */
+h4 {font-family: helv; font-weight: 500; font-size: 18px; line-height: 20px; letter-spacing: 1px; color: #006699;}
+@media all and (min-width: 700px) {h4 {margin: 10px 0;}}
+@media all and (max-width: 700px) {h4 {text-align: center;}}
+/* Основной шрифт */
+p {font-family: helv; font-weight: 400; font-size: 16px; color: #1f1f1f; text-align: justify; margin: 5px 0 12px 0;}
+/* Шрифт и блок анкеты */
+.book-anketa {display: block; margin: 7px 0 9px 0;}
+div.book-anketa p {margin: 2px 0; font-weight: 300;}
+@media all and (min-width: 700px) {.book-anketa {padding: 0;}}
+@media all and (max-width: 700px) {.book-anketa {padding: 0.8vw;}}
+/* Шрифт и блок тэглейна */
+.book-tagline {display: block; margin: 0; filter: opacity(0.75);}
+div.book-tagline p {font-weight: 200; margin: 0; color: #006699;}
+div.book-tagline p::before {content: "# "; display: inline;}
+@media all and (min-width: 700px) {.book-tagline {padding: 0;}}
+@media all and (max-width: 700px) {.book-tagline {padding: 0.8vw;}}
+/* Кнопки */
+.book-buttons {display: flex; min-height: 35px;}
+@media all and (max-width:630px) {.book-buttons {flex-direction: column;}}
+.bb, .bb:visited {box-shadow:inset 0px 1px 0px 0px #dcecfb, 0 0 2px #1f1f1f, inset 0 0 2px white;	background:linear-gradient(to bottom, skyblue 5%, #006699 100%);
+	background-color:skyblue;	border-radius:6px; border:1px solid #84bbf3; display:inline-block; margin: 3px; flex-grow: 1;	cursor:pointer;	color:#fefefe;
+  font-family: helv; font-size:15px; font-weight: 700; padding:6px 24px; text-decoration:none; text-shadow:0px 1px 0px #528ecc; text-align: center;}
+.bb:hover, .bb:visited:hover {background:linear-gradient(to bottom, #006699 5%, skyblue 100%); color:#ffffff; text-decoration:none;	background-color:skyblue;}
+.bb:active {position:relative; top:1px;}
+
+
+
+
+
+/* Подзаголовок статьи */
+h3 {font-family: helv;
+font-size: 18px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 1px;
+color: #333;
+margin: 12px 0;
+text-align: left;
+ }
+
+/* Стиль для линков */
+article a { color: steelblue; text-decoration: none;}
+article a:hover { color: skyblue; text-decoration: underline; }
+article a:visited { color: steelblue; text-decoration: none; }
+article a:visited:hover { color: skyblue; text-decoration: underline; }
