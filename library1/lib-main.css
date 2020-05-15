@@ -82,7 +82,7 @@ nav a, nav a:visited, nav h1 {display: block; flex-grow: 1; background: skyblue;
 nav a:hover, nav a:visited:hover {background:linear-gradient(to bottom, #006699 5%, skyblue 100%); color:#ffffff; text-decoration:none;	background-color:skyblue;}
 nav h1 {position: relative; transform: scaleY(1.1); filter: hue-rotate(40deg);}
 nav h1::after {content: "."; font-size: 1px; color: transparent; position: absolute; display: block; bottom: 0; left: 0;
-  background: url(../img1/header-arr.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
+  background: url(../img/header-arr.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
 @media all and (min-width: 1400px) {
   header {width: 1400px; margin: 0 auto;}
   header p.header-name {font-size: 110px; line-height: 90px; letter-spacing: 10px; text-shadow: 0 0 20px #1f1f1f, 0 0 15px #1f1f1f, 0 0 10px #1f1f1f, 0 0 5px #1f1f1f;
