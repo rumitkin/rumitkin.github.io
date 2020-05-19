@@ -1,0 +1,56 @@
+/* Шапка сайта*/
+
+#header-music, #header-blog, #header-about {display: none;}
+
+header {padding: 0 0 10px 0;}
+header p.header-name {font-family: helios; color: var(--w); text-align: center; margin: 0; padding: 0; width: 100%;}
+header p.header-tagline {font-family: helv; font-weight: 500; color: var(--w); text-align: center; margin: 0; padding: 0; width: 100%;}
+nav {padding: 0;}
+nav a, nav a:visited, nav h1 {display: block; flex-grow: 1; background: skyblue; border-radius: 8px; text-align: center;
+  filter: drop-shadow(0 0 5px var(--t)); box-shadow: inset 0px 1px 0px 0px #dcecfb, inset 0 0 2px white;
+  background: var(--buttons-bg); background-color: skyblue; border:1px solid #84bbf3;
+  color: #fefefe; font-family: helv; text-decoration:none; text-shadow:0px 1px 0px #528ecc; text-align: center;}
+nav a:hover, nav a:visited:hover {background: var(--buttons-hover-bg); color:#ffffff; text-decoration:none;	background-color:skyblue;}
+nav h1 {position: relative; transform: scaleY(1.1); filter: hue-rotate(-40deg) drop-shadow(0 0 5px var(--t));}
+nav h1::after, nav h1::before {content: "."; color: transparent; font-size: 0;
+  position: absolute; display: block; bottom: 0; width: 40px; height: 5px; border-top: 1px solid #84bbf3; border-bottom: 1px solid #84bbf3;
+  background: var(--buttons-bg); background-color:skyblue; }
+nav h1::before {right: 50%; transform-origin: right bottom; transform: translateY(15px) translateX(0.6px) scale(1.03) skewY(6deg);
+  border-radius: 12px 0 0 12px; border-left: 1px solid #84bbf3; box-shadow: inset 2px 0 2px white;}
+nav h1::after {left: 50%; transform-origin: left bottom; transform: translateY(15px) translateX(-0.6px) scale(1.03) skewY(-6deg);
+  border-radius: 0 12px 12px 0; border-right: 1px solid #84bbf3; box-shadow: inset -2px 0 2px white;}
+@media all and (min-width: 1400px) {
+  header {width: 1400px; margin: 0 auto;}
+  header p.header-name {font-size: 110px; line-height: 90px; letter-spacing: 10px; text-shadow: 0 0 20px var(--t), 0 0 15px var(--t), 0 0 10px var(--t), 0 0 5px var(--t);
+    transform: translateX(5px) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 23px; letter-spacing: 3px; text-shadow: 0 0 10px var(--t), 0 0 5px var(--t);
+    transform: translateX(5px) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 10px auto; width: 1400px;}
+  nav a:first-child, nav h1:first-child {margin: 10px 10px 10px 20px;}
+  nav a:last-child, nav h1:last-child {margin: 10px 20px 10px 10px;}
+  nav a, nav a:visited, nav h1 {margin: 10px; font-size:20px; font-weight: 700; padding:6px 24px;}}
+@media all and (min-width: 1100px) and (max-width: 1400px) {
+  header {width: 100%; margin: 0;}
+  header p.header-name {font-size: 110px; line-height: 90px; letter-spacing: 10px; text-shadow: 0 0 20px var(--t), 0 0 15px var(--t), 0 0 10px var(--t), 0 0 5px var(--t);
+    transform: translateX(5px) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 23px; letter-spacing: 3px; text-shadow: 0 0 10px var(--t), 0 0 5px var(--t);
+    transform: translateX(5px) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 10px auto; width: 100%;}
+  nav a:first-child, nav h1:first-child {margin: 0.5vw 0.5vw 0.5vw 1vw;}
+  nav a:last-child, nav h1:last-child {margin: 0.5vw 1vw 0.5vw 0.5vw;}
+  nav a, nav a:visited, nav h1 {margin: 0.5vw; font-size:20px; font-weight: 700; padding:6px 0;}}
+@media all and (min-width: 700px) and (max-width: 1100px) {
+  header {width: 100%; margin: 0;}
+  header p.header-name {font-size: 10vw; line-height: 8vw; letter-spacing: 1vw; text-shadow: 0 0 2vw var(--t), 0 0 1.5vw var(--t), 0 0 1vw var(--t), 0 0 0.5vw var(--t);
+    transform: translateX(0.25vw) scaleX(1) scaleY(0.6);}
+  header p.header-tagline {font-size: 2vw; letter-spacing: 0.2vw; text-shadow: 0 0 1vw var(--t), 0 0 0.5vw var(--t);
+    transform: translateX(0.25vw) scaleX(1.09) scaleY(0.9);}
+  nav {display: flex; flex-direction: row; margin: 0 auto 1vw auto; width: 100%;}
+  nav a:first-child, nav h1:first-child {margin: 0.5vw 0.5vw 0.5vw 1vw;}
+  nav a:last-child, nav h1:last-child {margin: 0.5vw 1vw 0.5vw 0.5vw;}
+  nav a, nav a:visited, nav h1 {margin: 0.5vw; font-size:16px; font-weight: 700; padding:6px 0;}}
+
+
+@media all and (min-width: 550px) and (max-width: 700px) {header div {margin: 2vw 2% 1vw 2%; border: 2px solid var(--t);}}
+@media all and (min-width: 420px) and (max-width: 550px) {header div {margin: 2vw 2% 1vw 2%; border: 2px solid var(--t);}}
+@media all and (max-width: 420px) {header div {margin: 4vw 4% 1vw 4%; border: 2px solid var(--t);}}

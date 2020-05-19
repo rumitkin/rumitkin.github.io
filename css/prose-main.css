@@ -1,0 +1,101 @@
+/* Основные блоки */
+article > div {display: flex; flex-direction: column; background: var(--w);}
+.book-main-block-line2 {display: flex; margin: 0 1vw 1vw 1vw; padding: 0; flex-direction: column;}
+@media all and (min-width: 700px) {
+  .book-main-block-line1 {display: flex; flex-direction: row; margin: 0; padding: 0;}
+  .book-img-block {margin: 1vw 0 1vw 1vw;	padding: 5px 5px 5px 5px;	min-width: 270px;	width: 30%;}
+  .book-text-block {display: flex; flex-grow: 1; flex-direction: column; margin: 1vw  1vw 1vw 0; padding: 5px 5px 5px 0.5vw;
+    border-left: 0vw solid var(--t); min-width: 270px; width: 60%;}}
+  .book-anno {flex-grow: 1;}
+@media all and  (max-width: 700px) {
+  .book-main-block-line1 {display: flex; flex-direction: column; margin: 0; padding: 0;}
+  .book-img-block {display: flex; flex-direction: column;	margin: 1vw 0 1vw 1vw; padding: 5px 5px 5px 5px; flex: 1 1 auto;}
+  .book-text-block {display: flex; flex-grow: 1; flex-direction: column; margin: -1vw  1vw 1vw 0; padding: 1.5px;	border-left: 0vw solid var(--t); flex: 1 1 auto;}}
+/* Управление отображением названий книги и жанров */
+@media all and (min-width:700px) {div.book-img-block div.book-title {display: none;}}
+@media all and (max-width:700px) {div.book-text-block div.book-title {display: none;}}
+/* Управление отображением теглайна */
+@media all and (min-width:950px) {div.book-img-block div.book-tagline {display: none;}}
+@media all and (max-width:950px) {div.book-text-block div.book-tagline {display: none;}}
+/* Управление отображением кнопок */
+@media all and (max-width:1200px) {div.book-main-block-line1 div.book-buttons {display: none;}}
+@media all and (min-width:1200px) {div.book-main-block-line2 {display: none;}}
+/*Класс для простых объектов, которым нужно исчезнуть*/
+@media all and (max-width: 784px) {.span-dis {display: none;}}
+/* Механизм скрывания и открывания слишком больших блоков текста*/
+@media all and (max-width: 700px) {.book-anno-shadow{display: none;}}
+@media all and (min-width: 700px) {
+  .book-anno-shadow {margin-top: 5px;}
+  .book-anno-shadow div {content: "."; color: transparent; min-width: 100%; min-height: 10px;
+    transform: scaleX(1.01) scaleY(10) translateY(-5px); background: linear-gradient(transparent, var(--w) 90%);}
+  .book-anno-shadow a {display: block; font-family: helv; }
+  .book-anno {overflow: hidden; text-overflow: ellipsis; }
+  #cold-light .hide {display: none;}
+  #cold-light:target .hide {display: block;}
+  #cold-light:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #cold-light:target .book-anno-shadow div,
+  #cold-light:target .book-anno-shadow .strip {display: none;}
+@media all and (min-width: 1240px) {#and-in-the-earth-below .book-anno-shadow{display: none;}}
+@media all and (min-width: 700px) and (max-width:1240px) {
+  #and-in-the-earth-below .hide {display: none;}
+  #and-in-the-earth-below:target .hide {display: block;}
+  #and-in-the-earth-below:target .book-text-block {max-height: none; margin-bottom: 10px;}
+  #and-in-the-earth-below:target .book-anno-shadow div,
+  #and-in-the-earth-below:target .book-anno-shadow .strip {display: none;}}
+@media all and (min-width: 1200px) {.book-anno-shadow a {padding-bottom: 15px;}}
+/* Размеры обложки книги и высота текстового блока в соответствии с высотой обложки */
+@media all and (min-width:1400px) {.imgb {width: 400px; height: 600px;} .book-text-block {max-height: 600px;}}
+@media all and (min-width: 950px) and (max-width:1400px) {.imgb {width: 28vw; height: 42vw;} .book-text-block {max-height: 42vw;}}
+@media all and (min-width: 700px) and (max-width: 950px) {.imgb {width: 264px; height: 396px; margin-bottom: 10px;}  .book-text-block {max-height: 500px;}}
+@media all and (min-width: 550px) and (max-width: 700px) {.imgb {align: center; width: 50vw; height: 75vw; margin: 2px auto 9px auto;}}
+@media all and (min-width: 420px) and (max-width: 550px) {.imgb {align: center; width: 68vw; height: 102vw; margin: 2px auto 9px auto;}}
+@media all and (max-width: 420px) {.imgb  {align: center; width: 70vw; height: 105vw; margin: 2px auto 9px auto;}}
+/* Обложка книги и анимация*/
+.imgb {flex-grow: 1;  position: relative;  }
+.imgb a {display: block; width: 100%; height: 100%; transform-origin: left; transition: 2s;}
+.imgb:hover a {transform: scaleX(1.08);}
+.imgb > div {z-index: 900;}
+.imgb span {display: block; width: 50%; background: skyblue; color: var(--t); border-radius: 12px 12px 0 0; padding: 1px;
+  transform: scaleY(1.35); box-shadow: 0 0 2px var(--t), inset 0 0 2px white;}
+.imgb:hover span {background: skyblue; color: var(--t); height: 110%;}
+.imgb p {display: block; right: 0; z-index: 2; position: relative; float: center; text-align: center;
+  width: 100%; height: 5%; transform-origin: right; transition: 1.7s; transform: translateX(-5%) translateY(-300%) rotate(80deg) scaleY(0.66);}
+@media all and (min-width: 1000px) {.imgb:hover p {width: 100%; height: 5%; transform: translateX(-1%) translateY(-300%) rotate(90deg) scaleY(0.66); transform-origin: right;}}
+@media all and (max-width: 1000px) {.imgb:hover p {width: 100%; height: 5%; transform: translateX(0) translateY(-300%) rotate(90deg) scaleY(0.66); transform-origin: right;}}
+.imgb:hover > div, .imgb:hover > div > div, .imgb:hover > div > div > div {transform: perspective(200px) scaleX(0.94) rotateY(-1deg); }
+.imgb div { position: relative; width: 100%; height: 100%; transition: 2s; transform: perspective(100px); transform-origin: left;}
+.imgb, .imgb > div, .imgb > div > div {box-shadow: 0 0 2px var(--t); border-radius: 1px 6px 6px 1px; background: #FFFFFA;}
+.imgb > div > div > div {box-shadow: 0 0 2px var(--t), inset 0 0 2px white; border-radius: 1px 6px 6px 1px;}
+.imgb > div > div > div > div {box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1) 1.5%, rgba(0, 0, 0, 0.15) 2%, rgba(255, 255, 255, 0.1) 2.5%, transparent 3.5%);}
+/* Название книги */
+article h2 {margin: 0 0 20px 0;}
+@media all and (min-width: 700px) {article h2 {display: inline;}}
+@media all and (min-width: 450px) and (max-width: 700px) {article h2 {text-align: center;}}
+@media all and (max-width: 450px) {article h2 {text-align: center;}}
+/* Подзаголовок статьи */
+h3 {margin: 12px 0; text-align: left;}
+/*  Жанр книги */
+@media all and (min-width: 700px) {article h4 {margin: 10px 0;}}
+@media all and (max-width: 700px) {article h4 {text-align: center;}}
+/* Основной шрифт */
+article p {text-align: justify; margin: 5px 0 12px 0;}
+/* Шрифт и блок анкеты */
+.book-anketa {display: block; margin: 7px 0 9px 0;}
+div.book-anketa p {margin: 2px 0; font-weight: 300;}
+@media all and (min-width: 700px) {.book-anketa {padding: 0;}}
+@media all and (max-width: 700px) {.book-anketa {padding: 0.8vw;}}
+/* Шрифт и блок тэглейна */
+.book-tagline {display: block; margin: 0; filter: opacity(0.75);}
+div.book-tagline p {font-weight: 200; margin: 0; color: #006699;}
+div.book-tagline p::before {content: "# "; display: inline;}
+@media all and (min-width: 700px) {.book-tagline {padding: 0;}}
+@media all and (max-width: 700px) {.book-tagline {padding: 0.8vw;}}
+/* Кнопки */
+.book-buttons {display: flex; min-height: 35px;}
+@media all and (max-width:630px) {.book-buttons {flex-direction: column;}}
+.bb, .bb:visited {box-shadow:inset 0px 1px 0px 0px #dcecfb, 0 0 2px var(--t), inset 0 0 2px white;	background:var(--buttons-bg);
+	background-color:skyblue;	border-radius:6px; border:1px solid #84bbf3; display:inline-block; margin: 3px; flex-grow: 1;	cursor:pointer;	color:#fefefe;
+  font-family: helv; font-size:15px; font-weight: 700; padding:6px 24px; text-decoration:none; text-shadow:0px 1px 0px #528ecc; text-align: center;}
+.bb:hover, .bb:visited:hover {background:var(--buttons-hover-bg); color:#ffffff; text-decoration:none;	background-color:skyblue;}
+.bb:active {position:relative; top:1px;}

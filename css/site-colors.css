@@ -1,0 +1,19 @@
+
+
+:root {
+
+    --body-bg: dimgray;
+    --body-bg-gradient: linear-gradient(110deg, rgba(47, 79, 79, 0.2), rgba(72, 61, 139, 0.2), rgba(47, 79, 79, 0.2), rgba(83, 57, 94, 0.2), rgba(47, 79, 79, 0.2));
+    --edges-plus45deg: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 7px, rgba(255, 255, 255, 0.03) 8px);
+    --edges-minus45deg: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 7px, rgba(255, 255, 255, 0.03) 8px);
+
+    --buttons-bg: linear-gradient(to bottom, skyblue 5%, #006699 100%);
+    --buttons-hover-bg: linear-gradient(to bottom, #006699 5%, skyblue 100%);
+    --buttons-border: #84bbf3;
+    --buttons-text: #fefefe;
+    --buttons-hover-text: white;
+
+    --t: #1f1f1f; /* Чёрное: текст, тени, границы */
+    --w: #ECECEC; /* Белое: фон блоков, текст заголовков хэдера */
+
+}
