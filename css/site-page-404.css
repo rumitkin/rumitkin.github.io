@@ -1,2 +1,2 @@
 article > div {text-align: center;}
-article img {max-width: 400px; margin: 20px auto;}
+article img {display: block; max-width: 400px; width: 100%; margin: 50px auto 10px auto;}
