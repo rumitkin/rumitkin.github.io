@@ -2,12 +2,10 @@
 article {display: flex; flex-direction: column; padding: 0;}
 @media all and (min-width: 1400px) {article {width: 1400px; margin: 0 auto;}}
 @media all and (max-width: 1400px) {article {width: 100%; margin: 0;}}
-article > div {border-radius: 8px; padding: 5px; background: var(--w);}
-@media all and (min-width: 1400px) {article > div {margin: 10px 20px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
-@media all and (min-width: 700px) and (max-width: 1400px) {article > div {margin: 0.5vw 1vw;	border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
-@media all and (min-width: 550px) and (max-width: 700px) {article > div {margin: 2vw 2% 1vw 2%; border: 2px solid var(--t);}}
-@media all and (min-width: 420px) and (max-width: 550px) {article > div {margin: 2vw 2% 1vw 2%; border: 2px solid var(--t);}}
-@media all and (max-width: 420px) {article > div {margin: 4vw 4% 1vw 4%; border: 2px solid var(--t);}}
+article > div {padding: 5px; background: var(--w);}
+@media all and (min-width: 1400px) {article > div {margin: 10px 20px; border-radius: 8px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
+@media all and (min-width: 700px) and (max-width: 1400px) {article > div {margin: 0.5vw 1vw; border-radius: 8px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
+@media all and (max-width: 700px) {article > div {margin: 0; padding-top: 20px; border-bottom: 2px solid var(--t);}}
 /* 404 -- объявление ошибки */
 article h1 {font-family: helv; font-weight: 900; font-variant: small-caps; color: #444;}
 @media all and (min-width: 700px) {article h1 {font-size: 50px; line-height: 50px; letter-spacing: 4px; transform: scaleX(1.05);}}
