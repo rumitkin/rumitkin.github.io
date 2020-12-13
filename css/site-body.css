@@ -1,2 +1,3 @@
 /* Тело всего сайта*/
+html {max-width: 100%; overflow-x:hidden;}
 body {background: var(--edges-plus45deg), var(--edges-minus45deg), var(--body-bg-gradient), var(--body-bg); margin: 0; padding: 0; box-shadow: inset 0 0 5px var(--t); min-height: 100vh;}
