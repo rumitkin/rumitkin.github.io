@@ -1,10 +1,10 @@
 /* Основные блоки */
-article {display: flex; flex-direction: column; padding: 0;}
-@media all and (min-width: 1400px) {article {width: 1400px; margin: 0 auto;}}
+article {display: flex; padding: 0;}
+@media all and (min-width: 1400px) {article {width: 1400px; max-width: 1400px; margin: 0 auto;}}
 @media all and (max-width: 1400px) {article {width: 100%; margin: 0;}}
 article > div {padding: 5px; background: var(--w);}
-@media all and (min-width: 1400px) {article > div {margin: 10px 20px; border-radius: 8px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
-@media all and (min-width: 700px) and (max-width: 1400px) {article > div {margin: 0.5vw 1vw; border-radius: 8px; border: 0.2px solid dimgray; min-width: 270px; box-shadow: 0 0 5px var(--t);}}
+@media all and (min-width: 1400px) {article > div {margin: 10px 20px; border-radius: 8px; border: 0.2px solid dimgray; box-shadow: 0 0 5px var(--t);}}
+@media all and (min-width: 700px) and (max-width: 1400px) {article > div {margin: 0.5vw 1vw; border-radius: 8px; border: 0.2px solid dimgray; box-shadow: 0 0 5px var(--t);}}
 @media all and (max-width: 700px) {article > div {margin: 0; padding-top: 20px; border-bottom: 2px solid var(--t);}}
 /* 404 -- объявление ошибки */
 article h1 {font-family: helv; font-weight: 900; font-variant: small-caps; color: #444;}
@@ -27,3 +27,7 @@ article a { color: steelblue; text-decoration: none;}
 article a:hover { color: skyblue; text-decoration: underline; }
 article a:visited { color: steelblue; text-decoration: none; }
 article a:visited:hover { color: skyblue; text-decoration: underline; }
+article a p { color: #003399; text-decoration: none;}
+article a:hover p { color: skyblue; text-decoration: underline; }
+article a:visited p { color: #003399; text-decoration: none; }
+article a:visited:hover p { color: skyblue; text-decoration: underline; }
