@@ -6,39 +6,40 @@ article > div {display: flex;}
 #left-column {flex-direction: row;}
 #right-column {flex-direction: column;}
 #close-left-column {display: block; background: skyblue; cursor: pointer;}
+#left-column-checkbox:checked + article #right-column {background: tan;}
 @media all and (min-width: 1400px) {
-  #left-column {margin: 10px 5px 10px 20px; min-width: 530px; max-width: 530px;}
-  #left-column-content {min-width: 500px; max-width: 500px; margin-right: 10px;}
-  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 20px;}
-  #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
-  #left-column-checkbox:checked + #left-column #close-left-column {border-radius: 8px;}
-  #right-column {margin: 10px 20px 10px 5px; flex-grow: 1;}}
+  article #left-column {margin: 10px 5px 10px 20px; min-width: 530px; max-width: 530px;}
+  article #left-column-content {min-width: 500px; max-width: 500px; margin-right: 10px;}
+  #left-column-checkbox:checked + article #left-column {min-width: 20px; max-width: 20px;}
+  article #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
+  #left-column-checkbox:checked + article #left-column #close-left-column {border-radius: 8px;}
+  article #right-column {margin: 10px 20px 10px 5px; flex-grow: 1;}}
 @media all and (min-width: 700px) and (max-width: 1400px) {
-  #left-column {margin: 0.5vw 0.25vw 0.5vw 1vw; min-width: 400px; max-width: 400px;}
-  #left-column-content {min-width: 370px; max-width: 370px; margin-right: 10px;}
-  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 20px;}
-  #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
-  #left-column-checkbox:checked + #left-column #close-left-column {border-radius: 8px;}
-  #right-column {margin: 0.5vw 1vw 0.5vw 0.25vw; flex-grow: 1;}}
+  article #left-column {margin: 0.5vw 0.25vw 0.5vw 1vw; min-width: 400px; max-width: 400px;}
+  article #left-column-content {min-width: 370px; max-width: 370px; margin-right: 10px;}
+  #left-column-checkbox:checked + article #left-column {min-width: 20px; max-width: 20px;}
+  article #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
+  #left-column-checkbox:checked + article #left-column #close-left-column {border-radius: 8px;}
+  article #right-column {margin: 0.5vw 1vw 0.5vw 0.25vw; flex-grow: 1;}}
 @media all and (max-width: 700px) {
-  #left-column {min-width: 30px; max-width: 30px; margin: 0; padding: 0;}
-  #left-column-checkbox:checked + #left-column {min-width: 100%; max-width: 100%; padding: 0;}
-  #left-column-content {display: none;}
-  #left-column-checkbox:checked + #left-column #left-column-content {display: block; min-width: calc(100% - 40px); max-width: calc(100% - 40px); right: 0; top: 30px; position: sticky; max-height: 98vh; overflow-y: scroll; z-index: 99;}
-  #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
-  #left-column-checkbox:checked + #left-column #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
-  #left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}
-  #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
-  #right-column {flex-grow: 1;}}
+  article #left-column {min-width: 30px; max-width: 30px; margin: 0; padding: 0;}
+  #left-column-checkbox:checked + article #left-column {min-width: 100%; max-width: 100%; padding: 0;}
+  article #left-column-content {display: none;}
+  #left-column-checkbox:checked + article #left-column #left-column-content {display: block; min-width: calc(100% - 40px); max-width: calc(100% - 40px); right: 0; top: 30px; position: sticky; max-height: 98vh; overflow-y: scroll; z-index: 99;}
+  article #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
+  #left-column-checkbox:checked + article #left-column #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
+  #left-column-checkbox:checked + article #left-column #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}
+  article #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
+  article #right-column {min-width: calc(100% - 40px); width: auto;}
+  #left-column-checkbox:checked + article #right-column {transform-origin: left; transform: scaleX(0);}}
 #left-column-checkbox {display: none;}
-#close-left-column p {display: block; right: 0; top: 0; z-index: 99; position: sticky; text-align: center; letter-spacing: 1px;
-  width: 95vh; height:30px; transform-origin: left; transform: translateX(12px) translateY(0) rotate(90deg);}
+#close-left-column p {display: block; right: 0; top: 0; z-index: 99; position: sticky; text-align: center; letter-spacing: 1px; width: 95vh; height:30px; transform-origin: left; transform: translateX(12px) translateY(0) rotate(90deg);}
 @media all and (min-width: 700px) {
-  #left-column-content {display: block; right: 0; top: 0; position: sticky; max-height: 98vh; overflow-y: scroll;}
-  #left-column-checkbox:checked + #left-column {background: skyblue;}
-  #left-column-checkbox:checked + #left-column #left-column-content {display: none;}
-  #left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
-  #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}}
+  article #left-column-content {display: block; right: 0; top: 0; position: sticky; max-height: 98vh; overflow-y: scroll;}
+  #left-column-checkbox:checked + article #left-column {background: skyblue;}
+  #left-column-checkbox:checked + article #left-column #left-column-content {display: none;}
+  #left-column-checkbox:checked + article #left-column #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
+  article #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}}
 
 /* Заголовки (в левой скрываемой колонке)*/
 @media all and (min-width: 1400px) {
