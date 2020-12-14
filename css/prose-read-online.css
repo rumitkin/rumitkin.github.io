@@ -5,29 +5,40 @@ article {flex-direction: row;}
 article > div {display: flex;}
 #left-column {flex-direction: row;}
 #right-column {flex-direction: column;}
-#left-column-content {display: block; right: 0; top: 0; position: sticky; max-height: 98vh; overflow-y: scroll;}
 #close-left-column {display: block; background: skyblue; cursor: pointer;}
 @media all and (min-width: 1400px) {
   #left-column {margin: 10px 5px 10px 20px; min-width: 530px; max-width: 530px;}
   #left-column-content {min-width: 500px; max-width: 500px; margin-right: 10px;}
-  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 30px;}
+  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 20px;}
   #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
   #left-column-checkbox:checked + #left-column #close-left-column {border-radius: 8px;}
   #right-column {margin: 10px 20px 10px 5px; flex-grow: 1;}}
 @media all and (min-width: 700px) and (max-width: 1400px) {
-  #left-column {margin: 0.5vw 0.25vw 0.5vw 1vw; min-width: 400px; max-width: 530px;}
-  #left-column-content {min-width: 370px; max-width: 500px; margin-right: 10px;}
-  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 30px;}
+  #left-column {margin: 0.5vw 0.25vw 0.5vw 1vw; min-width: 400px; max-width: 400px;}
+  #left-column-content {min-width: 370px; max-width: 370px; margin-right: 10px;}
+  #left-column-checkbox:checked + #left-column {min-width: 20px; max-width: 20px;}
   #close-left-column {margin: -5px; border-radius: 0 8px 8px 0; min-width: 0; max-width: 30px;}
   #left-column-checkbox:checked + #left-column #close-left-column {border-radius: 8px;}
   #right-column {margin: 0.5vw 1vw 0.5vw 0.25vw; flex-grow: 1;}}
+@media all and (max-width: 700px) {
+  #left-column {min-width: 30px; max-width: 30px; margin: 0; padding: 0;}
+  #left-column-checkbox:checked + #left-column {min-width: 100%; max-width: 100%; padding: 0;}
+  #left-column-content {display: none;}
+  #left-column-checkbox:checked + #left-column #left-column-content {display: block; min-width: calc(100% - 20px - (100vw - 100%)); max-width: calc(100% - 30px - (100vw - 100%)); right: 0; top: 30px; position: sticky; max-height: 98vh; overflow-y: scroll;}
+  #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
+  #left-column-checkbox:checked + #left-column #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
+  #left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}
+  #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
+  #right-column {flex-grow: 1;}}
 #left-column-checkbox {display: none;}
-#left-column-checkbox:checked + #left-column {background: skyblue;}
-#left-column-checkbox:checked + #left-column #left-column-content {display: none;}
 #close-left-column p {display: block; right: 0; top: 0; z-index: 99; position: sticky; text-align: center; letter-spacing: 1px;
   width: 95vh; height:30px; transform-origin: left; transform: translateX(12px) translateY(0) rotate(90deg);}
-#left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
-#close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}
+@media all and (min-width: 700px) {
+  #left-column-content {display: block; right: 0; top: 0; position: sticky; max-height: 98vh; overflow-y: scroll;}
+  #left-column-checkbox:checked + #left-column {background: skyblue;}
+  #left-column-checkbox:checked + #left-column #left-column-content {display: none;}
+  #left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2191   Показать оглавление и другое   \2191";}
+  #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}}
 
 /* Заголовки (в левой скрываемой колонке)*/
 @media all and (min-width: 1400px) {
@@ -38,6 +49,10 @@ article > div {display: flex;}
   #left-column h1, #left-column h2 {margin: 0; padding: 0; text-align: center;}
   #left-column h1 {font-size: 30px; transform: scaleX(0.9) scaleY(1.5); letter-spacing: 0; line-height: 60px;}
   #left-column h2 {font-size: 26px; transform: scaleY(0.9); line-height: 40px;}}
+@media all and (max-width: 700px) {
+  #left-column h1, #left-column h2 {margin: 0; padding: 0; text-align: center;}
+  #left-column h1 {font-size: 6vw; transform: scaleY(1.5); letter-spacing: 0; line-height: 12vw;}
+  #left-column h2 {font-size: 5vw; transform: scaleY(1.1); line-height: 8vw;}}
 
 /* Таблица оглавления (в левой скрываемой колонке)*/
 div.contents {align-self: center;}
@@ -60,27 +75,20 @@ li > a > p {font-size: 16px; letter-spacing: 0.6px; margin: 0; text-align: left;
   li > a > p.big-link, li > p.big-link {line-height: 0;}
   li > a > p:after,  li > a > .big-link::after {display: inline-block;}
   li > a > p {line-height: 0; margin: 0;}}
-@media all and (min-width: 500px) and (max-width: 700px) {
-  .contents {width: 600px;}
-  .book-img-block-extended {width: 450px;}
-  ul {margin-right: 70px; margin-left: 30px;}
+@media all and (max-width: 700px) {
+  #contents {max-width:100%; margin: 0; padding: 0;}
   li > a > p.big-link, li > p.big-link {line-height: 0;}
   li > a > p:after,  li > a > .big-link::after {display: inline-block;}
-  li > a > p {line-height: 0; font-style: bold; font-variant: normal; margin: 0;}}
-@media all and (max-width: 500px) {
-  .contents {width: 90%;}
-  .book-img-block-extended {width: 90%;}
-  ul {margin-right: 0; margin-left: -30px;}
-  li > a > p.big-link, li > p.big-link {line-height: 24px;}
-  li > a > p:after,  li > a > .big-link::after {display: none;}
-  li > a > p {line-height: 18px; font-style: bold; font-variant: normal; margin: 2px 0;}}
+  li > a > p {line-height: 0; margin: 0;}}
 
 /* Картинка обложки книги (в аннотации)*/
 #right-column a.book-pic-link {margin: 20px auto 5px auto;}
-#right-column img.book-pic {width: 100%; margin: 0; border-radius: 8px;}
-#right-column p.pic-alt {display: block; min-height: 30px; margin: 0 auto; background: lightgray; text-align: center; line-height: 30px; border-radius: 8px; text-indent: 0;}
-@media all and (min-width: 1400px) {#right-column a.book-pic-link, #right-column p.pic-alt {width: 620px;}}
-@media all and (min-width: 700px) and (max-width: 1400px) {#right-column a.book-pic-link, #right-column p.pic-alt {width: 80%;}}
+#right-column img.book-pic {width: 100%; margin: 0;}
+#right-column p.pic-alt {display: block; min-height: 30px; margin: 0 auto; background: lightgray; text-align: center; line-height: 30px; text-indent: 0;}
+@media all and (min-width: 1400px) {
+  #right-column p.pic-alt, #right-column img.book-pic {border-radius: 8px;}
+  #right-column a.book-pic-link, #right-column p.pic-alt {width: 620px;}}
+@media all and (max-width: 1400px) {#right-column a.book-pic-link, #right-column p.pic-alt {width: 80%;}}
 
 /* Заголовки и текст (в правой колонке)*/
 #right-column-fields {max-width: 900px; margin: 0 auto;}
@@ -108,201 +116,20 @@ li > a > p {font-size: 16px; letter-spacing: 0.6px; margin: 0; text-align: left;
   #right-column p.epigraph, #right-column p.epigraph-author {font-size: 15px; letter-spacing: 0.6px;}
   #right-column p.epigraph {padding: 8px 0; line-height: 14px; margin: 0 13% 0 0; transform: scaleY(1.4);}
   #right-column p.epigraph-author {padding: 12px 0; line-height: 18px; margin: 0 13% 10px 0; transform: scaleY(1.4);}}
+@media all and (max-width: 700px) {
+  #right-column p {margin: 0 5%;}
+  #right-column p.epigraph, #right-column p.epigraph-author {font-size: 15px; letter-spacing: 0.6px;}
+  #right-column p.epigraph {padding: 8px 0; line-height: 14px; margin: 0 10% 0 0; transform: scaleY(1.4);}
+  #right-column p.epigraph-author {padding: 12px 0; line-height: 18px; margin: 0 10% 10px 0; transform: scaleY(1.4);}}
 
-
-
+/* Девайдер в тексте правой колонки SVG*/
 #right-column div.section-simbol {margin: 25px auto 6px auto; width: 140px; height: 10px; background-repeat: no-repeat; background-size: 100% 100%;
   background-image: url("data:image/svg+xml; utf8; base64, PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNDAnIGhlaWdodD0nMjQnPjxwYXRoIHN0eWxlPSdmaWxsOiMzMzM7JyBkPSdtIDcwLDI0IDUsLTEwIDMsMCA1LDcgNSwtNyA3LDAgMTAsNSAzNSwtNSAwLC00IC0zNSwtNSAtMTAsNSAtNywwIC01LC03IC01LDcgLTMsMCAtNSwtMTAgLTUsMTAgLTMsMCAtNSwtNyAtNSw3IC03LDAgLTEwLC01IC0zNSw1IDAsNCAzNSw1IDEwLC01IDcsMCA1LDcgNSwtNyAzLDAgeicvPjwvc3ZnPg==");}
 
-/* #right-column div.section-simbol {margin: 25px auto 6px auto; width: 140px; height: 10px; background-repeat: no-repeat; background-size: 100% 100%;
+/*<svg xmlns='http://www.w3.org/2000/svg' width='140' height='24'><path style='fill:#333;' d='m 70,24 5,-10 3,0 5,7 5,-7 7,0 10,5 35,-5 0,-4 -35,-5 -10,5 -7,0 -5,-7 -5,7 -3,0 -5,-10 -5,10 -3,0 -5,-7 -5,7 -7,0 -10,-5 -35,5 0,4 35,5 10,-5 7,0 5,7 5,-7 3,0 z'/></svg>
+
+ #right-column div.section-simbol {margin: 25px auto 6px auto; width: 140px; height: 10px; background-repeat: no-repeat; background-size: 100% 100%;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='24'><path style='fill:#333;' d='m 70,24 5,-10 5,0 5,7 5,-7 5,0 10,5 35,-5 0,-4 -35,-5 -10,5 -5,0 -5,-7 -5,7 -5,0 -5,-10 -5,10 -5,0 -5,-7 -5,7 -5,0 -10,-5 -35,5 0,4 35,5 10,-5 5,0 5,7 5,-7 5,0 z'/></svg>");}
 
 #right-column div.section-simbol {margin: 25px auto 6px auto; width: 110px; height: 20px; background-repeat: no-repeat; background-size: 100% 100%;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='110' height='40'><path style='fill:none;stroke:#333;stroke-width:3px;' d='m 55,22 20,5 35,-5 0,-4 -35,-5 -20,5 -20,-5 -35,5 0,4 35,5 z'/><circle cx='55' cy='20' r='9' style='fill:#ECECEC;stroke:#333;stroke-width:3px;'/></svg>");}*/
-
-
-div.book-img-block-extended {align-self: center; width: 650px; margin: 10px 0; display: flex; flex-direction: row;}
-
-
-
-@media all and (min-width: 780px) {
-  .book-img-block-extended {width: 650px;}
-  .title-text { display: block; position: absolute; width: 100%; top: auto; right: auto; bottom: 0; left: auto; background: rgba(102, 102, 102, 0.85); text-align: center; z-index: 999;}
-  .br-dis { display: none; }}
-@media all and (min-width: 500px) and (max-width: 780px) {
-  .book-img-block-extended {width: 450px;}
-  .title-text {display: block; position: absolute; width: 100%; top: auto; right: auto; bottom: 0; left: auto; background: rgba(102, 102, 102, 0.85);
-    text-align: center; z-index: 999;}
-  .br-dis {display: none;}}
-@media all and (max-width: 500px) {
-  .book-img-block-extended {width: 90%;}
-  .title-text { display: block; position: absolute; width: 100%; top: auto; right: auto; bottom: 0; left: auto; background: rgba(102, 102, 102, 0.85); text-align: center;
-    z-index: 999;}
-  p1 {
-  font-family: Georgia;
-  font-size: 24px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  font-style: bold;
-  font-variant: small-caps;
-  color: #f1f1f1;
-  margin: 15px auto;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.book-alt-img-block {
-  flex-grow: 1;
-  margin: 0 10px;
-      transition: .5s;
-}
-.book-alt-img-block:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-.book-alt-img-block:hover > a {
-          cursor:pointer;
-}
-.book-alt-img-block:hover > a > .book-alt-img {
-    box-shadow: 0 0 25px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-    transition: 1s;
-    z-index: 1;
-}
-.book-alt-img {
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-}
-
-      .img-zoom-shadow {
-        z-index: 990;
-        background: rgba(102, 102, 102, 0.5);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-      .img-zoom {
-        z-index: 992;
-        width: auto;
-        height: 88%;
-        text-align: center;
-        padding: 15px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 0 auto auto auto;
-      }
-      .img-zoom > .book-title-img{
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        box-shadow: 0 0 60px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-        margin: auto;
-      }
-
-      #izs1, #izs2, #izs3, #izs4, #izs5, #izs6, #izs7, #izs8, #izs9 {display: none;}
-      #izs1:target, #izs2:target, #izs3:target, #izs4:target, #izs5:target, #izs6:target, #izs7:target, #izs8:target, #izs9:target {display: block;}
-
-
-      .close {
-        display: block;
-        position: absolute;
-        width: 36px;
-        height: 36px;
-        top: 0;
-        right: 2vw;
-        bottom: 0;
-        left: auto;
-        margin: 10px;
-        background: #f1f1f1;
-        border-radius: 18px;
-        cursor:pointer;
-        background-image: url(lib-img-close.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        box-shadow: 0 0 20px #1f1f1f, inset 0 0 3px #1f1f1f;
-      }
-      .close:hover {
-        background: tan;
-        transform: scale(1.1);
-        background-image: url(lib-img-close.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        }
-        .left-next {
-          display: block;
-          position: absolute;
-          height: 120px;
-          width: 50px;
-          top: 0;
-          right: auto;
-          bottom: 0;
-          left: 2vw;
-          margin: auto;
-          cursor:pointer;
-          background-image: url(lib-img-left-blank.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-        }
-        .left-next:hover {
-          background-image: url(lib-img-left-tan.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          transform: scale(1.1);
-        }
-        .right-next {
-          display: inline-block;
-          position: absolute;
-          height: 120px;
-          width: 50px;
-          top: 0;
-          right: 2vw;
-          bottom: 0;
-          left: auto;
-          margin: auto;
-          cursor:pointer;
-          background-image: url(lib-img-right-blank.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-        }
-        .right-next:hover {
-          background-image: url(lib-img-right-tan.png);
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          transform: scale(1.1);
-        }
-
-
-.book-title-img {
-  width: 100%;
-     border-radius: 4px;
-     box-shadow: 0 0 5px #1f1f1f, -1px 0 #1f1f1f, 0 1px #1f1f1f, 1px 0 #1f1f1f, 0 -1px #1f1f1f;
-     }
