@@ -6,7 +6,6 @@ article > div {display: flex;}
 #left-column {flex-direction: row;}
 #right-column {flex-direction: column;}
 #close-left-column {display: block; background: skyblue; cursor: pointer;}
-#left-column-checkbox:checked + article #right-column {background: tan;}
 @media all and (min-width: 1400px) {
   article #left-column {margin: 10px 5px 10px 20px; min-width: 530px; max-width: 530px;}
   article #left-column-content {min-width: 500px; max-width: 500px; margin-right: 10px;}
