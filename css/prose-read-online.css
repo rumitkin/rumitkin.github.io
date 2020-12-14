@@ -24,7 +24,7 @@ article > div {display: flex;}
   #left-column {min-width: 30px; max-width: 30px; margin: 0; padding: 0;}
   #left-column-checkbox:checked + #left-column {min-width: 100%; max-width: 100%; padding: 0;}
   #left-column-content {display: none;}
-  #left-column-checkbox:checked + #left-column #left-column-content {display: block; min-width: calc(100% - 20px - (100vw - 100%)); max-width: calc(100% - 30px - (100vw - 100%)); right: 0; top: 30px; position: sticky; max-height: 98vh; overflow-y: scroll;}
+  #left-column-checkbox:checked + #left-column #left-column-content {display: block; min-width: calc(100% - 40px); max-width: calc(100% - 40px); right: 0; top: 30px; position: sticky; max-height: 98vh; overflow-y: scroll; z-index: 99;}
   #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
   #left-column-checkbox:checked + #left-column #close-left-column {margin: 0; min-width: 30px; max-width: 30px;}
   #left-column-checkbox:checked + #left-column #close-left-column snap::before {content: "\2193   Скрыть оглавление и другое   \2193";}
