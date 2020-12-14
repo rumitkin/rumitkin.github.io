@@ -1,2 +1,2 @@
-article > div {text-align: center;}
+article > div {display: flex; flex-direction: column; flex-grow: 1; text-align: center;}
 article img {display: block; max-width: 400px; width: 100%; margin: 50px auto 10px auto;}
