@@ -1,0 +1,13 @@
+/* Крупные блоки*/
+article {flex-direction: column; width: 100%;}
+article > div {display: flex; flex-direction: column; flex-grow: 1; min-height: 80vh; padding: 0;}
+
+/* Заголовки*/
+article h1, article h2 {margin: 0; text-align: center;}
+article h1 {padding: 20px; transform: scaleY(1.1); letter-spacing: 0; line-height: 40px;}
+@media all and (max-width: 700px) {article h1 {display: none;}}
+article h2 {padding: 10px; font-size: 26px; transform: scaleY(1.1); line-height: 20px;}
+
+/*Список файлов для скачивания*/
+ul {display: flex; flex-direction: column; list-style-type: none; margin: 0 auto 80px auto; padding: 0;}
+li {display: block; padding: 0 40px; margin: 0; border-bottom: solid 2px gray;}
