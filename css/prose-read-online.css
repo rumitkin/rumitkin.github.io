@@ -105,7 +105,7 @@ li > a > p:hover, li > a > p.big-link:hover {transform: scaleY(1.1);}
 #right-column h3.chapter-number {margin: 25px auto -6px auto;}
 #right-column h3.chapter-name {margin: -6px auto 7px auto;}
 #right-column p {font-size: 18px; line-height: 22px; letter-spacing: 0.2px; text-align: justify; text-indent: 35px;}
-#right-column p.link {font-size: 20px; line-height: 22px; letter-spacing: 0.2px; margin: 0 70px; text-align: center;}
+#right-column a p.link {font-size: 20px; line-height: 22px; letter-spacing: 0.2px; margin: 0 auto; text-align: center;}
 #right-column p.epigraph, #right-column p.epigraph-author {text-align: right; font-style: italic; text-indent: 0;}
 #right-column p.epigraph {font-weight: 200;}
 #right-column p.epigraph-author {font-weight: 400;}
