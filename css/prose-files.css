@@ -11,3 +11,4 @@ article h2 {padding: 10px; font-size: 26px; transform: scaleY(1.1); line-height:
 /*Список файлов для скачивания*/
 ul {display: flex; flex-direction: column; list-style-type: none; margin: 0 auto 80px auto; padding: 0; max-width: 100%;}
 li {display: block; padding: 0 40px; margin: 0; border-bottom: solid 2px gray; max-width: 100%;}
+li a, li p {max-width: 100%;}
