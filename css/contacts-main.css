@@ -1,0 +1,5 @@
+article {flex-direction: column; width: 100%;}
+article > div {display: flex; flex-direction: column; flex-grow: 1; min-height: 80vh; padding: 0;}
+article h2 {margin: 0; text-align: left; padding: 20px; font-size: 26px; transform: scaleY(1.1); line-height: 20px;}
+article p {margin: 0; text-align: left; padding: 5px 20px;}
+article a {display: inline-block; cursor: pointer;}
