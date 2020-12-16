@@ -1,5 +1,6 @@
 /* Отключённые кнопки в шапке сайта*/
 #header-music, #header-blog, #header-about, #header-poetry {display: none;}
+#nav-menu:target #header-music, #nav-menu:target #header-blog, #nav-menu:target #header-about, #nav-menu:target #header-poetry {display: none;}
 
 /* Шапка сайта*/
 header {padding: 0 0 10px 0;}
@@ -63,5 +64,3 @@ nav a:hover, nav a:visited:hover {background: var(--buttons-hover-bg); color:#ff
   header {width: inherit; margin: 30px 10px 0 10px;}
   header p.header-name {font-size: 55px; line-height: 70px; letter-spacing: 6px; text-shadow: 0 0 10px var(--t), 0 0 7.5px var(--t), 0 0 5px var(--t), 0 0 2.5px var(--t); margin: 0; transform: scaleY(0.9);}
   header p.header-tagline {font-size: 14px; letter-spacing: 1px; text-shadow: 0 0 5px var(--t), 0 0 2.5vw var(--t); margin: 0 10px;}}
-
-#nav-menu:target #header-music, #nav-menu:target #header-blog, #nav-menu:target #header-about {display: none;}
