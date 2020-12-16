@@ -1,3 +1,6 @@
+/* Отключённые блоки*/
+#rainbow-runner, #marat, #cold-light, #numb-man {display: none;}
+
 /* Основные блоки */
 article {flex-direction: column;}
 article > div {display: flex; flex-direction: column;}
